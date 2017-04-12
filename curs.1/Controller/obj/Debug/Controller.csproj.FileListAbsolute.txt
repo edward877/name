@@ -6,3 +6,5 @@ C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Contr
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\obj\Debug\Controller.dll
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\obj\Debug\Controller.pdb
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Debug\Controller.dll.config
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Debug\GoogleApi.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Debug\GoogleApi.pdb

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using GoogleApi;
 
 namespace Controller
 {
@@ -45,7 +46,7 @@ namespace Controller
             order.id_car = cardb.FindFreeCar(order);
 
             order.reg_date = DateTime.Now;
-            order.cost = CountCost(order);
+            order.cost = CountCost(order, point_of_departure, point_of_arrival);
             order.paid = 0;  //(order.cost/10);
             order.status = "заказ обрабатывается";
             db.Order.InsertOnSubmit(order);
@@ -125,25 +126,28 @@ namespace Controller
             return db.Order.Where(o => o.id_client == id_client).ToList();
         }
 
-        private decimal CountCost(Order order)
+        private decimal CountCost(Order order, string point_of_departure, string point_of_arrival)
         {
             /*
-             * 1км = 16р
+             * 1км = 12р
              * за вес больше 500кг цена увеличивается на 5% за каждые 50кг
              * постоянным клиентом скидка 10%
              * за экспресс доставку надбавка 50%
              */
-
+            ConnectMaps google = new ConnectMaps(point_of_departure, point_of_arrival);
+            Distantion d = new Distantion();
             ClientDB clientdb = new ClientDB(db);
 
-            int price_km = 23;
+            int price_km = 12;
             int good_weight = 500;
             double per_cent = 0.05;
             double discount = 0.1;
 
-            decimal cost;
-            double distance = 100;  //order.point_of_departure - order.point_of_arrival;
-            cost = (decimal)distance * price_km;
+            decimal cost = 300;
+            double distance = Convert.ToDouble(d.ReadXml()); 
+
+
+            cost += (decimal)distance * price_km;
             if(order.weight > good_weight)
             {
                 decimal difference = Math.Floor((order.weight - good_weight) / 50);
@@ -157,6 +161,7 @@ namespace Controller
             {
                 cost += cost / 2;
             }
+            
             return cost;
         }
 

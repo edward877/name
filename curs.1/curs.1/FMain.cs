@@ -3,6 +3,7 @@ using Controller;
 using System;
 using System.Windows.Forms;
 
+
 namespace View
 {
     public partial class FMain : Form
@@ -14,7 +15,6 @@ namespace View
         {
             ConnectDB cdb = new ConnectDB();
             this.db = cdb.DB;
-
             FEntry fe = new FEntry(db);
             fe.ShowDialog();
             InitializeComponent();
