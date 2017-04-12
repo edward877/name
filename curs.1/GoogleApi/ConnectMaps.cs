@@ -24,7 +24,7 @@ namespace GoogleApi
                 Client.OpenRead(@adress))
                 {
                     StreamReader sr = new StreamReader(strm);
-                    FileStream f = new FileStream("D://1.xml", FileMode.Create);
+                    FileStream f = new FileStream("temp.xml", FileMode.Create);
                     StreamWriter sw = new StreamWriter(f);
                     sw.WriteLine(sr.ReadToEnd());
                     sw.Close();

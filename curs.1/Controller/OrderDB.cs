@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using GoogleApi;
+using System.Globalization;
 
 namespace Controller
 {
@@ -129,6 +130,7 @@ namespace Controller
         private decimal CountCost(Order order, string point_of_departure, string point_of_arrival)
         {
             /*
+             * вызов машины = 300р
              * 1км = 12р
              * за вес больше 500кг цена увеличивается на 5% за каждые 50кг
              * постоянным клиентом скидка 10%
@@ -144,8 +146,24 @@ namespace Controller
             double discount = 0.1;
 
             decimal cost = 300;
-            double distance = Convert.ToDouble(d.ReadXml()); 
 
+            double distance = 0;
+            string distanceStr = d.ReadXml();
+            if (distanceStr.Contains("."))
+            {
+                CultureInfo c = CultureInfo.CurrentCulture.Clone() as CultureInfo;
+                c.NumberFormat.NumberDecimalSeparator = ".";
+                distance = double.Parse(d.ReadXml(), c);
+            }
+            else if (distanceStr.Contains(","))
+            {
+                distance = double.Parse(distanceStr.Replace(",", ""));
+            }
+            else if (!distanceStr.Equals("0"))
+            {
+                distance = double.Parse(distanceStr.Replace(",", ""));
+            }
+            else throw new System.ArgumentException("distance cannot be 0", "original");
 
             cost += (decimal)distance * price_km;
             if(order.weight > good_weight)
@@ -165,6 +183,7 @@ namespace Controller
             return cost;
         }
 
+        
         public void SetDriver()
         {
             Order order = db.Order.Where(o => o.id_driver == null).FirstOrDefault();

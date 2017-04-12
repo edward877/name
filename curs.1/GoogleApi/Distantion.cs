@@ -19,7 +19,7 @@ namespace GoogleApi
         public string ReadXml()
         {
             string str;
-            doc.Load("D://1.xml");
+            doc.Load("temp.xml");
 
             XmlNodeList elemList = doc.GetElementsByTagName("distance");             //считали все шаги по маршруту
 
@@ -27,7 +27,7 @@ namespace GoogleApi
 
             str = Regex.Match(str, @"(?<=<text>)(.*)(?= km</text>)").ToString();       // убрали теги и прочее из строки  
 
-
+            File.Delete("temp.xml");
             return str;
         }
         

@@ -180,6 +180,10 @@
       <Project>{0c0239bb-3e91-4056-bec5-54f2a47aedf2}</Project>
       <Name>Controller</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GoogleApi\GoogleApi.csproj">
+      <Project>{4875896F-69F1-4A78-B91D-AB27A8163F79}</Project>
+      <Name>GoogleApi</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{f96284c0-044f-442d-84d6-55406797be85}</Project>
       <Name>Model</Name>
