@@ -1,0 +1,6 @@
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\obj\Debug\DesignLib.ClientF.resources
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\obj\Debug\DesignLib.csproj.GenerateResource.Cache
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\bin\Debug\DesignLib.dll
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\bin\Debug\DesignLib.pdb
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\obj\Debug\DesignLib.dll
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\obj\Debug\DesignLib.pdb

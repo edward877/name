@@ -1,0 +1,8 @@
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
