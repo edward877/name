@@ -14,6 +14,7 @@ namespace Controller
         string connectionString = @"Data Source = (LocalDB)\MSSQLLocalDB;" +
                      @"AttachDbFilename = |DataDirectory|\curs.mdf;" +
                      @"Integrated Security = True; Connect Timeout = 30";
+
         public DBDataContext DB { get { return new DBDataContext(connectionString); }  }
         
     }
