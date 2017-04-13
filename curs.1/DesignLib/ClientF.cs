@@ -8,6 +8,7 @@ using System.Drawing.Drawing2D;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -25,17 +26,27 @@ namespace DesignLib
           //  this.Select();
 
         }
-
+        Model.DBDataContext db;
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
         List<PictureBox> pblist;
         List<Button> btnlist;
+        Thread t;
         private void ClientF_Load(object sender, EventArgs e)
         {
-   
-pblist = new List<PictureBox>();
+            this.Hide();
+            
+            LoginF lf = new LoginF();
+            lf.ShowDialog();
+            try
+            {
+                this.Show();
+            }
+            catch { }
+            db = lf.db;
+            pblist = new List<PictureBox>();
             btnlist = new List<Button>();
             GraphicsPath gp = new GraphicsPath();
             gp.AddLine(0, 40, 860, 40);
@@ -228,7 +239,7 @@ pblist = new List<PictureBox>();
         }
         void deselectbotpan()
         {
-            button6.FlatAppearance.BorderSize = button7.FlatAppearance.BorderSize = button8.FlatAppearance.BorderSize = 0;
+            button6.BackColor = button7.BackColor = button8.BackColor = Color.White;
         }
         void changepan()
         {
@@ -236,8 +247,9 @@ pblist = new List<PictureBox>();
         private void button6_Click(object sender, EventArgs e)
         {
             deselectbotpan();
-            (sender as Button).FlatAppearance.BorderSize = 1;
-            button17.Visible = button14.Visible = button15.Visible = button16.Visible = true;
+            // (sender as Button).FlatAppearance.BorderSize = 1;
+            (sender as Button).BackColor = Color.Khaki;
+             button17.Visible = button14.Visible = button15.Visible = button16.Visible = true;
             pictureBox10.Visible = pictureBox11.Visible = true;
             hidepan();
             if((sender as Button)==button7)

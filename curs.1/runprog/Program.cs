@@ -18,8 +18,11 @@ namespace runprog
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-           
-            Application.Run(new DesignLib.ClientF());
+            try
+            {
+                Application.Run(new DesignLib.ClientF());
+            }
+            catch { }
         }
     }
 }

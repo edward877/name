@@ -8,3 +8,7 @@ C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs
 C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\runprog\obj\Debug\runprog.csproj.GenerateResource.Cache
 C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\runprog\obj\Debug\runprog.exe
 C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\runprog\obj\Debug\runprog.pdb
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\runprog\bin\Debug\Controller.dll
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\runprog\bin\Debug\Model.dll
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\runprog\bin\Debug\Controller.pdb
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\runprog\bin\Debug\Model.pdb
