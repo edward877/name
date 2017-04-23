@@ -11,20 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controller", "Controller\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleApi", "GoogleApi\GoogleApi.csproj", "{4875896F-69F1-4A78-B91D-AB27A8163F79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignLib", "DesignLib\DesignLib.csproj", "{9DAA3290-8DEC-4DE5-80D9-27F8973CA7C9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "runprogr", "runprogr\runprogr.csproj", "{DA2036C6-F482-49BC-84DF-FEA2951360B3}"
 EndProject
-Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "runprog", "runprog\bin\Release\runprog.exe", "{7D41F535-04FC-4489-9ACE-FE8DBF80E116}"
-	ProjectSection(DebuggerProjectSystem) = preProject
-		PortSupplier = 00000000-0000-0000-0000-000000000000
-		Executable = C:\Users\Sindragoz\Documents\Visual Studio 2015\Projects\kursgruzoperevozki\curs.1\runprog\bin\Release\runprog.exe
-		RemoteMachine = DESKTOP-9R434NR
-		StartingDirectory = C:\Users\Sindragoz\Documents\Visual Studio 2015\Projects\kursgruzoperevozki\curs.1\runprog\bin\Release
-		Environment = По умолчанию
-		LaunchingEngine = 00000000-0000-0000-0000-000000000000
-		UseLegacyDebugEngines = No
-		LaunchSQLEngine = No
-		AttachLaunchAction = No
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignLib1", "DesignLib1\DesignLib1.csproj", "{FE027B5E-8BC9-44D4-82D8-2C2CE12B3DB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -66,18 +55,22 @@ Global
 		{4875896F-69F1-4A78-B91D-AB27A8163F79}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4875896F-69F1-4A78-B91D-AB27A8163F79}.Release|x86.ActiveCfg = Release|Any CPU
 		{4875896F-69F1-4A78-B91D-AB27A8163F79}.Release|x86.Build.0 = Release|Any CPU
-		{9DAA3290-8DEC-4DE5-80D9-27F8973CA7C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9DAA3290-8DEC-4DE5-80D9-27F8973CA7C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9DAA3290-8DEC-4DE5-80D9-27F8973CA7C9}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{9DAA3290-8DEC-4DE5-80D9-27F8973CA7C9}.Debug|x86.Build.0 = Debug|Any CPU
-		{9DAA3290-8DEC-4DE5-80D9-27F8973CA7C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9DAA3290-8DEC-4DE5-80D9-27F8973CA7C9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9DAA3290-8DEC-4DE5-80D9-27F8973CA7C9}.Release|x86.ActiveCfg = Release|Any CPU
-		{9DAA3290-8DEC-4DE5-80D9-27F8973CA7C9}.Release|x86.Build.0 = Release|Any CPU
-		{7D41F535-04FC-4489-9ACE-FE8DBF80E116}.Debug|Any CPU.ActiveCfg = Release|x86
-		{7D41F535-04FC-4489-9ACE-FE8DBF80E116}.Debug|x86.ActiveCfg = Release|x86
-		{7D41F535-04FC-4489-9ACE-FE8DBF80E116}.Release|Any CPU.ActiveCfg = Release|x86
-		{7D41F535-04FC-4489-9ACE-FE8DBF80E116}.Release|x86.ActiveCfg = Release|x86
+		{DA2036C6-F482-49BC-84DF-FEA2951360B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA2036C6-F482-49BC-84DF-FEA2951360B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA2036C6-F482-49BC-84DF-FEA2951360B3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DA2036C6-F482-49BC-84DF-FEA2951360B3}.Debug|x86.Build.0 = Debug|Any CPU
+		{DA2036C6-F482-49BC-84DF-FEA2951360B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA2036C6-F482-49BC-84DF-FEA2951360B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA2036C6-F482-49BC-84DF-FEA2951360B3}.Release|x86.ActiveCfg = Release|Any CPU
+		{DA2036C6-F482-49BC-84DF-FEA2951360B3}.Release|x86.Build.0 = Release|Any CPU
+		{FE027B5E-8BC9-44D4-82D8-2C2CE12B3DB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE027B5E-8BC9-44D4-82D8-2C2CE12B3DB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE027B5E-8BC9-44D4-82D8-2C2CE12B3DB5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FE027B5E-8BC9-44D4-82D8-2C2CE12B3DB5}.Debug|x86.Build.0 = Debug|Any CPU
+		{FE027B5E-8BC9-44D4-82D8-2C2CE12B3DB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE027B5E-8BC9-44D4-82D8-2C2CE12B3DB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE027B5E-8BC9-44D4-82D8-2C2CE12B3DB5}.Release|x86.ActiveCfg = Release|Any CPU
+		{FE027B5E-8BC9-44D4-82D8-2C2CE12B3DB5}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

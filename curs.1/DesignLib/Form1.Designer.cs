@@ -30,6 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.profpanel = new System.Windows.Forms.Panel();
+            this.comptb = new System.Windows.Forms.TextBox();
+            this.mailtb = new System.Windows.Forms.TextBox();
+            this.phonetb = new System.Windows.Forms.TextBox();
+            this.otchtb = new System.Windows.Forms.TextBox();
+            this.imyatb = new System.Windows.Forms.TextBox();
+            this.famtb = new System.Windows.Forms.TextBox();
             this.complbl = new System.Windows.Forms.Label();
             this.maillbl = new System.Windows.Forms.Label();
             this.phonelbl = new System.Windows.Forms.Label();
@@ -44,24 +50,18 @@
             this.label4 = new System.Windows.Forms.Label();
             this.loglbl = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comptb = new System.Windows.Forms.TextBox();
-            this.mailtb = new System.Windows.Forms.TextBox();
-            this.phonetb = new System.Windows.Forms.TextBox();
-            this.otchtb = new System.Windows.Forms.TextBox();
-            this.imyatb = new System.Windows.Forms.TextBox();
-            this.famtb = new System.Windows.Forms.TextBox();
             this.dec = new System.Windows.Forms.Button();
             this.app = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.menupan = new System.Windows.Forms.Panel();
-            this.proflbl = new System.Windows.Forms.Label();
-            this.profpb = new System.Windows.Forms.PictureBox();
-            this.ordpb = new System.Windows.Forms.PictureBox();
-            this.ordlbl = new System.Windows.Forms.Label();
-            this.ordmanpb = new System.Windows.Forms.PictureBox();
-            this.ordmanlbl = new System.Windows.Forms.Label();
             this.paypb = new System.Windows.Forms.PictureBox();
             this.paylbl = new System.Windows.Forms.Label();
+            this.ordmanpb = new System.Windows.Forms.PictureBox();
+            this.ordmanlbl = new System.Windows.Forms.Label();
+            this.ordpb = new System.Windows.Forms.PictureBox();
+            this.ordlbl = new System.Windows.Forms.Label();
+            this.profpb = new System.Windows.Forms.PictureBox();
+            this.proflbl = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.wlengthlbl = new System.Windows.Forms.Label();
             this.wlengthpb = new System.Windows.Forms.PictureBox();
@@ -87,10 +87,10 @@
             this.app1 = new System.Windows.Forms.Button();
             this.profpanel.SuspendLayout();
             this.menupan.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.profpb)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordpb)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordmanpb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.paypb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordmanpb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordpb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.profpb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wlengthpb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.papb)).BeginInit();
@@ -133,6 +133,60 @@
             this.profpanel.Name = "profpanel";
             this.profpanel.Size = new System.Drawing.Size(542, 345);
             this.profpanel.TabIndex = 0;
+            // 
+            // comptb
+            // 
+            this.comptb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.comptb.Location = new System.Drawing.Point(132, 267);
+            this.comptb.Name = "comptb";
+            this.comptb.Size = new System.Drawing.Size(157, 31);
+            this.comptb.TabIndex = 18;
+            this.comptb.Visible = false;
+            // 
+            // mailtb
+            // 
+            this.mailtb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.mailtb.Location = new System.Drawing.Point(132, 227);
+            this.mailtb.Name = "mailtb";
+            this.mailtb.Size = new System.Drawing.Size(157, 31);
+            this.mailtb.TabIndex = 16;
+            this.mailtb.Visible = false;
+            // 
+            // phonetb
+            // 
+            this.phonetb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.phonetb.Location = new System.Drawing.Point(132, 187);
+            this.phonetb.Name = "phonetb";
+            this.phonetb.Size = new System.Drawing.Size(157, 31);
+            this.phonetb.TabIndex = 12;
+            this.phonetb.Visible = false;
+            // 
+            // otchtb
+            // 
+            this.otchtb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.otchtb.Location = new System.Drawing.Point(132, 147);
+            this.otchtb.Name = "otchtb";
+            this.otchtb.Size = new System.Drawing.Size(157, 31);
+            this.otchtb.TabIndex = 11;
+            this.otchtb.Visible = false;
+            // 
+            // imyatb
+            // 
+            this.imyatb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.imyatb.Location = new System.Drawing.Point(132, 107);
+            this.imyatb.Name = "imyatb";
+            this.imyatb.Size = new System.Drawing.Size(157, 31);
+            this.imyatb.TabIndex = 10;
+            this.imyatb.Visible = false;
+            // 
+            // famtb
+            // 
+            this.famtb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.famtb.Location = new System.Drawing.Point(132, 67);
+            this.famtb.Name = "famtb";
+            this.famtb.Size = new System.Drawing.Size(157, 31);
+            this.famtb.TabIndex = 9;
+            this.famtb.Visible = false;
             // 
             // complbl
             // 
@@ -308,60 +362,6 @@
             this.label2.Text = "Логин:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // comptb
-            // 
-            this.comptb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.comptb.Location = new System.Drawing.Point(132, 267);
-            this.comptb.Name = "comptb";
-            this.comptb.Size = new System.Drawing.Size(157, 31);
-            this.comptb.TabIndex = 18;
-            this.comptb.Visible = false;
-            // 
-            // mailtb
-            // 
-            this.mailtb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.mailtb.Location = new System.Drawing.Point(132, 227);
-            this.mailtb.Name = "mailtb";
-            this.mailtb.Size = new System.Drawing.Size(157, 31);
-            this.mailtb.TabIndex = 16;
-            this.mailtb.Visible = false;
-            // 
-            // phonetb
-            // 
-            this.phonetb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.phonetb.Location = new System.Drawing.Point(132, 187);
-            this.phonetb.Name = "phonetb";
-            this.phonetb.Size = new System.Drawing.Size(157, 31);
-            this.phonetb.TabIndex = 12;
-            this.phonetb.Visible = false;
-            // 
-            // otchtb
-            // 
-            this.otchtb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.otchtb.Location = new System.Drawing.Point(132, 147);
-            this.otchtb.Name = "otchtb";
-            this.otchtb.Size = new System.Drawing.Size(157, 31);
-            this.otchtb.TabIndex = 11;
-            this.otchtb.Visible = false;
-            // 
-            // imyatb
-            // 
-            this.imyatb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.imyatb.Location = new System.Drawing.Point(132, 107);
-            this.imyatb.Name = "imyatb";
-            this.imyatb.Size = new System.Drawing.Size(157, 31);
-            this.imyatb.TabIndex = 10;
-            this.imyatb.Visible = false;
-            // 
-            // famtb
-            // 
-            this.famtb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.famtb.Location = new System.Drawing.Point(132, 67);
-            this.famtb.Name = "famtb";
-            this.famtb.Size = new System.Drawing.Size(157, 31);
-            this.famtb.TabIndex = 9;
-            this.famtb.Visible = false;
-            // 
             // dec
             // 
             this.dec.BackColor = System.Drawing.Color.Transparent;
@@ -424,56 +424,31 @@
             this.menupan.Size = new System.Drawing.Size(245, 446);
             this.menupan.TabIndex = 3;
             // 
-            // proflbl
+            // paypb
             // 
-            this.proflbl.BackColor = System.Drawing.Color.Transparent;
-            this.proflbl.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.proflbl.ForeColor = System.Drawing.Color.White;
-            this.proflbl.Location = new System.Drawing.Point(35, 0);
-            this.proflbl.Name = "proflbl";
-            this.proflbl.Size = new System.Drawing.Size(205, 37);
-            this.proflbl.TabIndex = 4;
-            this.proflbl.Text = "Профиль";
-            this.proflbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.proflbl.Click += new System.EventHandler(this.proflbl_Click);
-            this.proflbl.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
-            this.proflbl.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
+            this.paypb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("paypb.BackgroundImage")));
+            this.paypb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.paypb.Location = new System.Drawing.Point(0, 205);
+            this.paypb.Name = "paypb";
+            this.paypb.Size = new System.Drawing.Size(36, 37);
+            this.paypb.TabIndex = 9;
+            this.paypb.TabStop = false;
+            this.paypb.Visible = false;
             // 
-            // profpb
+            // paylbl
             // 
-            this.profpb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("profpb.BackgroundImage")));
-            this.profpb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.profpb.Location = new System.Drawing.Point(0, 0);
-            this.profpb.Name = "profpb";
-            this.profpb.Size = new System.Drawing.Size(36, 37);
-            this.profpb.TabIndex = 4;
-            this.profpb.TabStop = false;
-            // 
-            // ordpb
-            // 
-            this.ordpb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ordpb.BackgroundImage")));
-            this.ordpb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ordpb.Location = new System.Drawing.Point(0, 67);
-            this.ordpb.Name = "ordpb";
-            this.ordpb.Size = new System.Drawing.Size(36, 37);
-            this.ordpb.TabIndex = 5;
-            this.ordpb.TabStop = false;
-            this.ordpb.Visible = false;
-            // 
-            // ordlbl
-            // 
-            this.ordlbl.BackColor = System.Drawing.Color.Transparent;
-            this.ordlbl.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ordlbl.ForeColor = System.Drawing.Color.White;
-            this.ordlbl.Location = new System.Drawing.Point(35, 67);
-            this.ordlbl.Name = "ordlbl";
-            this.ordlbl.Size = new System.Drawing.Size(205, 37);
-            this.ordlbl.TabIndex = 6;
-            this.ordlbl.Text = "Создать заказ";
-            this.ordlbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ordlbl.Click += new System.EventHandler(this.ordlbl_Click);
-            this.ordlbl.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
-            this.ordlbl.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
+            this.paylbl.BackColor = System.Drawing.Color.Transparent;
+            this.paylbl.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.paylbl.ForeColor = System.Drawing.Color.White;
+            this.paylbl.Location = new System.Drawing.Point(35, 205);
+            this.paylbl.Name = "paylbl";
+            this.paylbl.Size = new System.Drawing.Size(205, 37);
+            this.paylbl.TabIndex = 10;
+            this.paylbl.Text = "Оплата";
+            this.paylbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.paylbl.Click += new System.EventHandler(this.paylbl_Click);
+            this.paylbl.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
+            this.paylbl.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
             // 
             // ordmanpb
             // 
@@ -501,31 +476,56 @@
             this.ordmanlbl.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
             this.ordmanlbl.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
             // 
-            // paypb
+            // ordpb
             // 
-            this.paypb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("paypb.BackgroundImage")));
-            this.paypb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.paypb.Location = new System.Drawing.Point(0, 205);
-            this.paypb.Name = "paypb";
-            this.paypb.Size = new System.Drawing.Size(36, 37);
-            this.paypb.TabIndex = 9;
-            this.paypb.TabStop = false;
-            this.paypb.Visible = false;
+            this.ordpb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ordpb.BackgroundImage")));
+            this.ordpb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ordpb.Location = new System.Drawing.Point(0, 67);
+            this.ordpb.Name = "ordpb";
+            this.ordpb.Size = new System.Drawing.Size(36, 37);
+            this.ordpb.TabIndex = 5;
+            this.ordpb.TabStop = false;
+            this.ordpb.Visible = false;
             // 
-            // paylbl
+            // ordlbl
             // 
-            this.paylbl.BackColor = System.Drawing.Color.Transparent;
-            this.paylbl.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.paylbl.ForeColor = System.Drawing.Color.White;
-            this.paylbl.Location = new System.Drawing.Point(35, 205);
-            this.paylbl.Name = "paylbl";
-            this.paylbl.Size = new System.Drawing.Size(205, 37);
-            this.paylbl.TabIndex = 10;
-            this.paylbl.Text = "Оплата";
-            this.paylbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.paylbl.Click += new System.EventHandler(this.paylbl_Click);
-            this.paylbl.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
-            this.paylbl.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
+            this.ordlbl.BackColor = System.Drawing.Color.Transparent;
+            this.ordlbl.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ordlbl.ForeColor = System.Drawing.Color.White;
+            this.ordlbl.Location = new System.Drawing.Point(35, 67);
+            this.ordlbl.Name = "ordlbl";
+            this.ordlbl.Size = new System.Drawing.Size(205, 37);
+            this.ordlbl.TabIndex = 6;
+            this.ordlbl.Text = "Создать заказ";
+            this.ordlbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ordlbl.Click += new System.EventHandler(this.ordlbl_Click);
+            this.ordlbl.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
+            this.ordlbl.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
+            // 
+            // profpb
+            // 
+            this.profpb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("profpb.BackgroundImage")));
+            this.profpb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.profpb.Location = new System.Drawing.Point(0, 0);
+            this.profpb.Name = "profpb";
+            this.profpb.Size = new System.Drawing.Size(36, 37);
+            this.profpb.TabIndex = 4;
+            this.profpb.TabStop = false;
+            // 
+            // proflbl
+            // 
+            this.proflbl.BackColor = System.Drawing.Color.Transparent;
+            this.proflbl.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.proflbl.ForeColor = System.Drawing.Color.White;
+            this.proflbl.Location = new System.Drawing.Point(35, 0);
+            this.proflbl.Name = "proflbl";
+            this.proflbl.Size = new System.Drawing.Size(205, 37);
+            this.proflbl.TabIndex = 4;
+            this.proflbl.Text = "Профиль";
+            this.proflbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.proflbl.Click += new System.EventHandler(this.proflbl_Click);
+            this.proflbl.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
+            this.proflbl.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
             // 
             // pictureBox1
             // 
@@ -728,7 +728,7 @@
             this.widthtb.Name = "widthtb";
             this.widthtb.Size = new System.Drawing.Size(40, 35);
             this.widthtb.TabIndex = 3;
-            this.widthtb.Text = "11";
+            this.widthtb.Text = "134534";
             this.widthtb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lengthlbl
@@ -804,7 +804,7 @@
             this.app1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.app1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.app1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.app1.Location = new System.Drawing.Point(274, 430);
+            this.app1.Location = new System.Drawing.Point(255, 417);
             this.app1.Name = "app1";
             this.app1.Size = new System.Drawing.Size(58, 60);
             this.app1.TabIndex = 21;
@@ -839,10 +839,10 @@
             this.profpanel.ResumeLayout(false);
             this.profpanel.PerformLayout();
             this.menupan.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.profpb)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordpb)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordmanpb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.paypb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordmanpb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordpb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.profpb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wlengthpb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.papb)).EndInit();
