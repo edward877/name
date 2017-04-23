@@ -83,6 +83,7 @@
             this.Controls.Add(this.btnAdd);
             this.Name = "FClient";
             this.Text = "FClient";
+            this.Load += new System.EventHandler(this.FClient_Load);
             this.ResumeLayout(false);
 
         }

@@ -127,5 +127,9 @@ namespace View
             company = f_red.textBox3.Text;
         }
 
+        private void FClient_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,0 +1,14 @@
+C:\Users\Sindragoz\Documents\Visual Studio 2015\Projects\kursgruzoperevozki\curs.1\runapp\bin\Release\runapp.exe.config
+C:\Users\Sindragoz\Documents\Visual Studio 2015\Projects\kursgruzoperevozki\curs.1\runapp\bin\Release\runapp.exe
+C:\Users\Sindragoz\Documents\Visual Studio 2015\Projects\kursgruzoperevozki\curs.1\runapp\bin\Release\runapp.pdb
+C:\Users\Sindragoz\Documents\Visual Studio 2015\Projects\kursgruzoperevozki\curs.1\runapp\bin\Release\DesignLib.dll
+C:\Users\Sindragoz\Documents\Visual Studio 2015\Projects\kursgruzoperevozki\curs.1\runapp\bin\Release\Model.dll
+C:\Users\Sindragoz\Documents\Visual Studio 2015\Projects\kursgruzoperevozki\curs.1\runapp\bin\Release\Controller.dll
+C:\Users\Sindragoz\Documents\Visual Studio 2015\Projects\kursgruzoperevozki\curs.1\runapp\bin\Release\DesignLib.pdb
+C:\Users\Sindragoz\Documents\Visual Studio 2015\Projects\kursgruzoperevozki\curs.1\runapp\bin\Release\Model.pdb
+C:\Users\Sindragoz\Documents\Visual Studio 2015\Projects\kursgruzoperevozki\curs.1\runapp\bin\Release\Controller.pdb
+C:\Users\Sindragoz\Documents\Visual Studio 2015\Projects\kursgruzoperevozki\curs.1\runapp\obj\Release\runapp.csprojResolveAssemblyReference.cache
+C:\Users\Sindragoz\Documents\Visual Studio 2015\Projects\kursgruzoperevozki\curs.1\runapp\obj\Release\runapp.Properties.Resources.resources
+C:\Users\Sindragoz\Documents\Visual Studio 2015\Projects\kursgruzoperevozki\curs.1\runapp\obj\Release\runapp.csproj.GenerateResource.Cache
+C:\Users\Sindragoz\Documents\Visual Studio 2015\Projects\kursgruzoperevozki\curs.1\runapp\obj\Release\runapp.exe
+C:\Users\Sindragoz\Documents\Visual Studio 2015\Projects\kursgruzoperevozki\curs.1\runapp\obj\Release\runapp.pdb
