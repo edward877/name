@@ -44,3 +44,5 @@ C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs
 C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\obj\Debug\View.Properties.Resources.resources
 C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\obj\Debug\View.csproj.GenerateResource.Cache
 C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\obj\Debug\curs.1.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\GoogleApi.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\GoogleApi.pdb
