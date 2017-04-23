@@ -3,7 +3,6 @@ using Controller;
 using System;
 using System.Windows.Forms;
 
-
 namespace View
 {
     public partial class FMain : Form
@@ -13,9 +12,9 @@ namespace View
         DBDataContext db;
         public FMain()
         {
-            
             ConnectDB cdb = new ConnectDB();
             this.db = cdb.DB;
+
             FEntry fe = new FEntry(db);
             fe.ShowDialog();
             InitializeComponent();
@@ -52,15 +51,6 @@ namespace View
             FProfit_driver fpd = new FProfit_driver(db);
             fpd.ShowDialog();
         }
-
-        private void FMain_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FMain_Load_1(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

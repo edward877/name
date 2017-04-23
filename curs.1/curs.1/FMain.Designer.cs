@@ -97,7 +97,6 @@
             this.Controls.Add(this.button5);
             this.Name = "FMain";
             this.Text = "FMain";
-            this.Load += new System.EventHandler(this.FMain_Load_1);
             this.ResumeLayout(false);
 
         }

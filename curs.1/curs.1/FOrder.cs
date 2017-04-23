@@ -1,5 +1,4 @@
 ﻿using Controller;
-using GoogleApi;
 using Model;
 using System;
 using System.Windows.Forms;
@@ -72,16 +71,16 @@ namespace View
             {
                 f_red = new FRedactOrder();
 
-            FillFields();
+                FillFields();
 
-            Order order = new Order();
+                Order order = new Order();
 
-            orderdb.Insert(point_of_departure, point_of_arrival, weight, width, height,
+                orderdb.Insert(point_of_departure, point_of_arrival, weight, width, height, 
                     length, express, comment);
 
-            showbd();
+                showbd();
 
-            }
+             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);

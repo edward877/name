@@ -28,13 +28,13 @@ namespace Controller
         {
             Order order = new Order(db);
 
-            
+
             order.id_driver = driverdb.FindFreeDriver();
 
-            if (Visitor.client!=null)
+            if (Visitor.client != null)
             {
                 order.id_client = Visitor.client.id_client;
-            } 
+            }
 
             order.point_of_departure = point_of_departure;
             order.point_of_arrival = point_of_arrival;
@@ -56,7 +56,7 @@ namespace Controller
 
         public void Update(int id_order, int? id_driver, int? id_car, int id_client,
             string point_of_departure, string point_of_arrival, decimal weight, decimal? width,
-            decimal? height, decimal? length, string status, DateTime reg_date, decimal cost, 
+            decimal? height, decimal? length, string status, DateTime reg_date, decimal cost,
             decimal paid, bool express, string comment)
         {
             Order order = db.Order.Where(o => o.id_order == id_order).FirstOrDefault();
@@ -77,7 +77,7 @@ namespace Controller
             order.express = express;
             order.comment = comment;
 
-            if(order.status == "готово")
+            if (order.status == "готово")
             {
                 if (order.id_driver != null)
                     driverdb.SetFree(order.id_driver);
@@ -101,11 +101,11 @@ namespace Controller
         public void Delete(int id_order)
         {
             Order order = db.Order.Where(o => o.id_order == id_order).FirstOrDefault();
-            if (order.status!= "готово")
+            if (order.status != "готово")
             {
                 if (order.id_driver != null)
                     driverdb.SetFree(order.id_driver);
-                    
+
                 if (order.id_car != null)
                     cardb.SetFree(order.id_car);
             }
@@ -114,7 +114,7 @@ namespace Controller
 
             SetDriver();
             SetCar();
-            
+
         }
 
         public List<Order> Show()
@@ -166,24 +166,24 @@ namespace Controller
             else throw new System.ArgumentException("distance cannot be 0", "original");
 
             cost += (decimal)distance * price_km;
-            if(order.weight > good_weight)
+            if (order.weight > good_weight)
             {
                 decimal difference = Math.Floor((order.weight - good_weight) / 50);
                 cost = cost + cost * (difference * (decimal)per_cent);
             }
             if (clientdb.IsVIPClient(order.id_client))
             {
-                cost -= cost*(decimal)discount;
+                cost -= cost * (decimal)discount;
             }
             if (order.express)
             {
                 cost += cost / 2;
             }
-            
+
             return cost;
         }
 
-        
+
         public void SetDriver()
         {
             Order order = db.Order.Where(o => o.id_driver == null).FirstOrDefault();
