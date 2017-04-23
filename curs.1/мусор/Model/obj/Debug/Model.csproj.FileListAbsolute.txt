@@ -1,5 +1,0 @@
-C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Model\bin\Debug\Model.dll
-C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Model\bin\Debug\Model.pdb
-C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Model\obj\Debug\Model.dll
-C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Model\obj\Debug\Model.pdb
-C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Model\bin\Debug\Model.dll.config
