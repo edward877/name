@@ -208,8 +208,6 @@ namespace Controller
                     db.SubmitChanges();
                 }
             }
-
-           
         }
 
     }
