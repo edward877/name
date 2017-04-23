@@ -13,5 +13,37 @@ C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs
 C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\bin\Debug\Model.pdb
 C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\bin\Debug\curs.1.exe
 C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\bin\Debug\curs.1.pdb
-C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\obj\Debug\DesignLib.Form1.resources
-C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\obj\Debug\DesignLib.UserControl1.resources
+E:\curs.1\DesignLib\bin\Debug\DesignLib.dll
+E:\curs.1\DesignLib\bin\Debug\DesignLib.pdb
+E:\curs.1\DesignLib\bin\Debug\Controller.dll
+E:\curs.1\DesignLib\bin\Debug\curs.1.exe
+E:\curs.1\DesignLib\bin\Debug\Model.dll
+E:\curs.1\DesignLib\bin\Debug\Controller.pdb
+E:\curs.1\DesignLib\bin\Debug\curs.1.pdb
+E:\curs.1\DesignLib\bin\Debug\Model.pdb
+E:\curs.1\DesignLib\obj\Debug\DesignLib.csprojResolveAssemblyReference.cache
+E:\curs.1\DesignLib\obj\Debug\DesignLib.ClientF.resources
+E:\curs.1\DesignLib\obj\Debug\DesignLib.LoginF.resources
+E:\curs.1\DesignLib\obj\Debug\DesignLib.Properties.Resources.resources
+E:\curs.1\DesignLib\obj\Debug\DesignLib.csproj.GenerateResource.Cache
+E:\curs.1\DesignLib\obj\Debug\DesignLib.dll
+E:\curs.1\DesignLib\obj\Debug\DesignLib.pdb
+E:\curs.1\DesignLib\obj\Debug\DesignLib.Form1.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Debug\DesignLib.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Debug\DesignLib.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Debug\Controller.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Debug\curs.1.exe
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Debug\Model.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Debug\GoogleApi.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Debug\Controller.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Debug\curs.1.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Debug\Model.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Debug\GoogleApi.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\obj\Debug\DesignLib.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\obj\Debug\DesignLib.ClientF.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\obj\Debug\DesignLib.Form1.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\obj\Debug\DesignLib.LoginF.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\obj\Debug\DesignLib.Properties.Resources.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\obj\Debug\DesignLib.csproj.GenerateResource.Cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\obj\Debug\DesignLib.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\obj\Debug\DesignLib.pdb

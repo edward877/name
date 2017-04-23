@@ -728,7 +728,7 @@
             this.widthtb.Name = "widthtb";
             this.widthtb.Size = new System.Drawing.Size(40, 35);
             this.widthtb.TabIndex = 3;
-            this.widthtb.Text = "134534";
+            this.widthtb.Text = "11";
             this.widthtb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lengthlbl
@@ -804,7 +804,7 @@
             this.app1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.app1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.app1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.app1.Location = new System.Drawing.Point(255, 417);
+            this.app1.Location = new System.Drawing.Point(274, 423);
             this.app1.Name = "app1";
             this.app1.Size = new System.Drawing.Size(58, 60);
             this.app1.TabIndex = 21;
