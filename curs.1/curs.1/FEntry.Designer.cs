@@ -105,6 +105,7 @@
             this.Name = "FEntry";
             this.Text = "FEntry";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FEntry_FormClosing);
+            this.Load += new System.EventHandler(this.FEntry_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
