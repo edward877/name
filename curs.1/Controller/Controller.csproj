@@ -58,6 +58,10 @@
     <Compile Include="Visitor.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\GoogleApi\GoogleApi.csproj">
+      <Project>{4875896f-69f1-4a78-b91d-ab27a8163f79}</Project>
+      <Name>GoogleApi</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{f96284c0-044f-442d-84d6-55406797be85}</Project>
       <Name>Model</Name>

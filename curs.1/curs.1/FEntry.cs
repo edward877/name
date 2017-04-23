@@ -67,9 +67,6 @@ namespace View
             }
         }
 
-        private void FEntry_Load(object sender, EventArgs e)
-        {
 
-        }
     }
 }

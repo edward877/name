@@ -12,7 +12,6 @@ namespace View
         DBDataContext db;
         public FMain()
         {
-            
             ConnectDB cdb = new ConnectDB();
             this.db = cdb.DB;
 
@@ -52,15 +51,6 @@ namespace View
             FProfit_driver fpd = new FProfit_driver(db);
             fpd.ShowDialog();
         }
-
-        private void FMain_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FMain_Load_1(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
