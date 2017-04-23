@@ -20,7 +20,7 @@ namespace runprog
             Application.SetCompatibleTextRenderingDefault(false);
             try
             {
-                Application.Run(new DesignLib.ClientF());
+                Application.Run(new DesignLib.Form1());
             }
             catch { }
         }

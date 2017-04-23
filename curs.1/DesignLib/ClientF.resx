@@ -1526,7 +1526,7 @@
 </value>
   </data>
   <data name="button13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>486, 366</value>
+    <value>515, 392</value>
   </data>
   <data name="button13.Size" type="System.Drawing.Size, System.Drawing">
     <value>36, 36</value>
@@ -1612,7 +1612,7 @@
 </value>
   </data>
   <data name="button12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>423, 366</value>
+    <value>452, 392</value>
   </data>
   <data name="button12.Size" type="System.Drawing.Size, System.Drawing">
     <value>36, 36</value>
@@ -1721,7 +1721,7 @@
     <value>Flat</value>
   </data>
   <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>538, 158</value>
+    <value>567, 184</value>
   </data>
   <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
     <value>33, 32</value>
@@ -1745,7 +1745,7 @@
     <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>243, 306</value>
+    <value>272, 332</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 23</value>
@@ -1775,7 +1775,7 @@
     <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>232, 258</value>
+    <value>261, 284</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>128, 23</value>
@@ -1805,7 +1805,7 @@
     <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>251, 207</value>
+    <value>280, 233</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 23</value>
@@ -1832,7 +1832,7 @@
     <value>5</value>
   </data>
   <data name="panel8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 329</value>
+    <value>395, 355</value>
   </data>
   <data name="panel8.Size" type="System.Drawing.Size, System.Drawing">
     <value>215, 2</value>
@@ -1856,7 +1856,7 @@
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 307</value>
+    <value>395, 333</value>
   </data>
   <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>215, 22</value>
@@ -1877,7 +1877,7 @@
     <value>7</value>
   </data>
   <data name="panel7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 281</value>
+    <value>395, 307</value>
   </data>
   <data name="panel7.Size" type="System.Drawing.Size, System.Drawing">
     <value>215, 2</value>
@@ -1901,7 +1901,7 @@
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 259</value>
+    <value>395, 285</value>
   </data>
   <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>215, 22</value>
@@ -1922,7 +1922,7 @@
     <value>9</value>
   </data>
   <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 231</value>
+    <value>395, 257</value>
   </data>
   <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
     <value>215, 2</value>
@@ -1946,7 +1946,7 @@
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 209</value>
+    <value>395, 235</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>215, 22</value>
@@ -2144,7 +2144,7 @@
     <value>Stretch</value>
   </data>
   <data name="pictureBox9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>387, 48</value>
+    <value>416, 74</value>
   </data>
   <data name="pictureBox9.Size" type="System.Drawing.Size, System.Drawing">
     <value>145, 142</value>
@@ -2165,10 +2165,10 @@
     <value>12</value>
   </data>
   <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 102</value>
+    <value>0, 92</value>
   </data>
   <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 432</value>
+    <value>1000, 465</value>
   </data>
   <data name="panel5.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -2541,7 +2541,7 @@
     <value>Stretch</value>
   </data>
   <data name="panel12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>378, 286</value>
+    <value>395, 278</value>
   </data>
   <data name="panel12.Size" type="System.Drawing.Size, System.Drawing">
     <value>215, 2</value>
@@ -2562,7 +2562,7 @@
     <value>0</value>
   </data>
   <data name="panel13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>378, 222</value>
+    <value>395, 214</value>
   </data>
   <data name="panel13.Size" type="System.Drawing.Size, System.Drawing">
     <value>215, 2</value>
@@ -2671,7 +2671,7 @@
     <value>Flat</value>
   </data>
   <data name="button14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>487, 321</value>
+    <value>512, 323</value>
   </data>
   <data name="button14.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 45</value>
@@ -2783,7 +2783,7 @@
     <value>Flat</value>
   </data>
   <data name="button15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>555, 321</value>
+    <value>580, 323</value>
   </data>
   <data name="button15.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 45</value>
@@ -2899,7 +2899,7 @@
     <value>Flat</value>
   </data>
   <data name="button16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>416, 321</value>
+    <value>441, 323</value>
   </data>
   <data name="button16.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 45</value>
@@ -2989,7 +2989,7 @@
     <value>Stretch</value>
   </data>
   <data name="pictureBox10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 258</value>
+    <value>366, 250</value>
   </data>
   <data name="pictureBox10.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 30</value>
@@ -3093,7 +3093,7 @@
     <value>Stretch</value>
   </data>
   <data name="pictureBox11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 196</value>
+    <value>366, 188</value>
   </data>
   <data name="pictureBox11.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 28</value>
@@ -3209,7 +3209,7 @@
     <value>Flat</value>
   </data>
   <data name="button17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>341, 321</value>
+    <value>366, 323</value>
   </data>
   <data name="button17.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 45</value>
@@ -3233,7 +3233,7 @@
     <value>Microsoft Sans Serif, 18pt</value>
   </data>
   <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>378, 196</value>
+    <value>395, 188</value>
   </data>
   <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>215, 28</value>
@@ -3257,7 +3257,7 @@
     <value>Microsoft Sans Serif, 18pt</value>
   </data>
   <data name="textBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>378, 258</value>
+    <value>395, 250</value>
   </data>
   <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing">
     <value>215, 28</value>
@@ -3278,10 +3278,10 @@
     <value>9</value>
   </data>
   <data name="panel11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 102</value>
+    <value>0, 92</value>
   </data>
   <data name="panel11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 445</value>
+    <value>1000, 465</value>
   </data>
   <data name="panel11.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
@@ -3305,7 +3305,7 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>40</value>
+    <value>25</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>

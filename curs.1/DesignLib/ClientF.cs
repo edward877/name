@@ -33,7 +33,7 @@ namespace DesignLib
         }
         List<PictureBox> pblist;
         List<Button> btnlist;
-        Thread t;
+     
         private void ClientF_Load(object sender, EventArgs e)
         {
             this.Hide();
@@ -181,7 +181,7 @@ namespace DesignLib
             pictureBox5.Visible = true;
             pictureBox1.Visible = false;
             panel5.Visible = true;
-            timer2.Start();
+          //  timer2.Start();
             button6.Visible = button7.Visible = button8.Visible = true;
 
         }

@@ -15,8 +15,9 @@ namespace DesignLib
     {
         
 
-        Controller.ClientDB clientdb;
-        Controller.Visitor visitordb;
+        public Controller.ClientDB clientdb;
+        public Controller.Visitor visitordb;
+        Thread tr1;
         public LoginF()
         {
             InitializeComponent();
@@ -93,13 +94,20 @@ namespace DesignLib
                        button2.Location = new Point(x1, y1 - 200);
                        button1.Location = new Point(x2, y2 - 200);
                        rlogtb.Visible = rpasstb.Visible = rphonetb.Visible = rfnametb.Visible = rcomptb.Visible = false;
-                    label2.Text = "Регистрация прошла успешно!";
-                    timer1.Start();
+                    s = "Регистрация прошла успешно";c = Color.YellowGreen;
+                    setmsglbl();
                 }
             }
         }
-        private void setmsglbl(string s,Color c)
+        string s; Color c;
+        private void setmsglbl()
         {
+            t = t1;
+            panel1.Size = new Size(t1, panel1.Height);
+            timer1.Start();
+            label2.Text = s;
+            label2.ForeColor = c;
+            timer1.Start();
         }
         private void decolortb() {
             foreach (TextBox a in ltb)
@@ -116,6 +124,7 @@ namespace DesignLib
         public Model.DBDataContext db;
         private void LoginF_Load(object sender, EventArgs e)
         {
+           t1= t = panel1.Width;
             ltb = new List<TextBox>();
             foreach (var a in this.Controls)
                 if (a is TextBox)
@@ -128,29 +137,44 @@ namespace DesignLib
             clientdb = new Controller.ClientDB(db);
         }
 
-
+        bool b;
+         delegate void del();
+        
         void logcheck()
         {
-            try
-            {
-                if (visitordb.Log_in(logtb.Text, passtb.Text))
-            {
+            del d1= this.Close;
+           del d2 = setmsglbl;
 
-                this.Close();
-
+            if (visitordb.Log_in(logtb.Text, passtb.Text))
+                Invoke(d1);
+            else
+            {
+                s = "Неверный логин или пароль!";
+                c = Color.Pink;
+                Invoke(d2);
             }
-            else MessageBox.Show("NOPE!");
+
         }
-            catch { MessageBox.Show("NOPE!"); }
-}
         private void button1_Click(object sender, EventArgs e)
         {
+            tr1= new Thread(logcheck) { IsBackground = true };
+            tr1.Start();
+            tr1.Priority = ThreadPriority.Lowest;
+          //  tr1.Join();
 
-            Thread tr = new Thread(logcheck) { IsBackground = true };
-            tr.Start();
-                
+            
+            if (b)
+            {
+                tr1.Abort();
+                this.Close();
+            }
+            else
+            {
+                 }
+            //tr1.Abort();
         }
-        int t = 233;
+        int t;
+        int t1;
         private void timer2_Tick(object sender, EventArgs e)
         {
             if (panel1.Width <= 0)
@@ -163,6 +187,7 @@ namespace DesignLib
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+           
             timer2.Start();
         }
         private Int32 tmpX;

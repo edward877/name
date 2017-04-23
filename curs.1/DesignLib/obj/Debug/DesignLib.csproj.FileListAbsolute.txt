@@ -13,3 +13,5 @@ C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs
 C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\bin\Debug\Model.pdb
 C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\bin\Debug\curs.1.exe
 C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\bin\Debug\curs.1.pdb
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\obj\Debug\DesignLib.Form1.resources
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\obj\Debug\DesignLib.UserControl1.resources
