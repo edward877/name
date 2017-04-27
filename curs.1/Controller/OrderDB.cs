@@ -24,7 +24,7 @@ namespace Controller
 
 
         public void Insert(string point_of_departure, string point_of_arrival, decimal weight,
-            decimal? width, decimal? height, decimal? length, bool express, string comment)
+            decimal? width, decimal? height, decimal? length, bool express,decimal cost, string comment)
         {
             Order order = new Order(db);
 
@@ -126,7 +126,32 @@ namespace Controller
         {
             return db.Order.Where(o => o.id_client == id_client).ToList();
         }
-
+        public double countDistantion(string point_of_departure,string point_of_arrival) {
+            ConnectMaps google = new ConnectMaps(point_of_departure, point_of_arrival);
+            Distantion d = new Distantion();
+            double distance = 0;
+            try
+            {
+                string distanceStr = d.ReadXml();
+                if (distanceStr.Contains("."))
+                {
+                    CultureInfo c = CultureInfo.CurrentCulture.Clone() as CultureInfo;
+                    c.NumberFormat.NumberDecimalSeparator = ".";
+                    distance = double.Parse(d.ReadXml(), c);
+                }
+                else if (distanceStr.Contains(","))
+                {
+                    distance = double.Parse(distanceStr.Replace(",", ""));
+                }
+                else if (!distanceStr.Equals("0"))
+                {
+                    distance = double.Parse(distanceStr.Replace(",", ""));
+                }
+                else throw new System.ArgumentException("distance cannot be 0", "original");
+            }
+            catch { }
+            return distance;
+        } 
         private decimal CountCost(Order order, string point_of_departure, string point_of_arrival)
         {
             /*
@@ -147,7 +172,7 @@ namespace Controller
 
             decimal cost = 300;
 
-            double distance = 0;
+            double distance = countDistantion(point_of_departure,point_of_arrival);
             string distanceStr = d.ReadXml();
             if (distanceStr.Contains("."))
             {

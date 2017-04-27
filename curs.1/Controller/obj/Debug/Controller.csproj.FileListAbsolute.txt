@@ -17,3 +17,13 @@ C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs
 C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
 C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\Controller\obj\Debug\Controller.dll
 C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\Controller\obj\Debug\Controller.pdb
+D:\name-cursovaia\curs.1\Controller\bin\Debug\Controller.dll.config
+D:\name-cursovaia\curs.1\Controller\bin\Debug\Controller.dll
+D:\name-cursovaia\curs.1\Controller\bin\Debug\Controller.pdb
+D:\name-cursovaia\curs.1\Controller\bin\Debug\GoogleApi.dll
+D:\name-cursovaia\curs.1\Controller\bin\Debug\Model.dll
+D:\name-cursovaia\curs.1\Controller\bin\Debug\GoogleApi.pdb
+D:\name-cursovaia\curs.1\Controller\bin\Debug\Model.pdb
+D:\name-cursovaia\curs.1\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
+D:\name-cursovaia\curs.1\Controller\obj\Debug\Controller.dll
+D:\name-cursovaia\curs.1\Controller\obj\Debug\Controller.pdb

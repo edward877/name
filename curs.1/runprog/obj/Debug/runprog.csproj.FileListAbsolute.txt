@@ -42,3 +42,19 @@ C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\runpr
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\runprog\obj\Debug\runprog.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\runprog\obj\Debug\runprog.Properties.Resources.resources
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\runprog\obj\Debug\runprog.csproj.GenerateResource.Cache
+D:\name-cursovaia\curs.1\runprog\bin\Debug\runprog.exe.config
+D:\name-cursovaia\curs.1\runprog\obj\Debug\runprog.exe
+D:\name-cursovaia\curs.1\runprog\bin\Debug\runprog.exe
+D:\name-cursovaia\curs.1\runprog\bin\Debug\runprog.pdb
+D:\name-cursovaia\curs.1\runprog\bin\Debug\DesignLib.dll
+D:\name-cursovaia\curs.1\runprog\bin\Debug\Model.dll
+D:\name-cursovaia\curs.1\runprog\bin\Debug\Controller.dll
+D:\name-cursovaia\curs.1\runprog\bin\Debug\GoogleApi.dll
+D:\name-cursovaia\curs.1\runprog\bin\Debug\DesignLib.pdb
+D:\name-cursovaia\curs.1\runprog\bin\Debug\Model.pdb
+D:\name-cursovaia\curs.1\runprog\bin\Debug\Controller.pdb
+D:\name-cursovaia\curs.1\runprog\bin\Debug\GoogleApi.pdb
+D:\name-cursovaia\curs.1\runprog\obj\Debug\runprog.csprojResolveAssemblyReference.cache
+D:\name-cursovaia\curs.1\runprog\obj\Debug\runprog.Properties.Resources.resources
+D:\name-cursovaia\curs.1\runprog\obj\Debug\runprog.csproj.GenerateResource.Cache
+D:\name-cursovaia\curs.1\runprog\obj\Debug\runprog.pdb

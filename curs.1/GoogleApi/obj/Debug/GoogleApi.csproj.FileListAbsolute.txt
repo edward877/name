@@ -3,3 +3,8 @@ C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Googl
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\GoogleApi\obj\Debug\GoogleApi.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\GoogleApi\obj\Debug\GoogleApi.dll
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\GoogleApi\obj\Debug\GoogleApi.pdb
+D:\name-cursovaia\curs.1\GoogleApi\bin\Debug\GoogleApi.dll
+D:\name-cursovaia\curs.1\GoogleApi\bin\Debug\GoogleApi.pdb
+D:\name-cursovaia\curs.1\GoogleApi\obj\Debug\GoogleApi.csprojResolveAssemblyReference.cache
+D:\name-cursovaia\curs.1\GoogleApi\obj\Debug\GoogleApi.dll
+D:\name-cursovaia\curs.1\GoogleApi\obj\Debug\GoogleApi.pdb

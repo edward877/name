@@ -80,5 +80,10 @@ namespace View
         {
             Close();
         }
+
+        private void FRedactOrder_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -54,20 +54,26 @@
             this.app = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.menupan = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.paypb = new System.Windows.Forms.PictureBox();
-            this.paylbl = new System.Windows.Forms.Label();
             this.ordmanpb = new System.Windows.Forms.PictureBox();
-            this.ordmanlbl = new System.Windows.Forms.Label();
             this.ordpb = new System.Windows.Forms.PictureBox();
-            this.ordlbl = new System.Windows.Forms.Label();
             this.profpb = new System.Windows.Forms.PictureBox();
-            this.proflbl = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.wlengthlbl = new System.Windows.Forms.Label();
             this.wlengthpb = new System.Windows.Forms.PictureBox();
             this.papb = new System.Windows.Forms.PictureBox();
             this.pbpb = new System.Windows.Forms.PictureBox();
             this.orderpan = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pbtb = new System.Windows.Forms.TextBox();
+            this.patb = new System.Windows.Forms.TextBox();
             this.lengthtb = new System.Windows.Forms.TextBox();
             this.heighttb = new System.Windows.Forms.TextBox();
             this.maxbtn = new System.Windows.Forms.Button();
@@ -84,7 +90,16 @@
             this.vespan = new System.Windows.Forms.Panel();
             this.veslbl = new System.Windows.Forms.Label();
             this.waypb = new System.Windows.Forms.PictureBox();
-            this.app1 = new System.Windows.Forms.Button();
+            this.nextbtn = new System.Windows.Forms.Button();
+            this.backbtn = new System.Windows.Forms.Button();
+            this.orderpan2 = new System.Windows.Forms.Panel();
+            this.commenttb = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.orderpan3 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.costlbl = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.ordmanpan = new System.Windows.Forms.Panel();
             this.profpanel.SuspendLayout();
             this.menupan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.paypb)).BeginInit();
@@ -102,6 +117,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.widthlbl)).BeginInit();
             this.vespan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.waypb)).BeginInit();
+            this.orderpan2.SuspendLayout();
+            this.orderpan3.SuspendLayout();
             this.SuspendLayout();
             // 
             // profpanel
@@ -411,18 +428,94 @@
             // menupan
             // 
             this.menupan.BackColor = System.Drawing.Color.Transparent;
+            this.menupan.Controls.Add(this.button5);
+            this.menupan.Controls.Add(this.button4);
+            this.menupan.Controls.Add(this.button3);
+            this.menupan.Controls.Add(this.button2);
             this.menupan.Controls.Add(this.paypb);
-            this.menupan.Controls.Add(this.paylbl);
             this.menupan.Controls.Add(this.ordmanpb);
-            this.menupan.Controls.Add(this.ordmanlbl);
             this.menupan.Controls.Add(this.ordpb);
-            this.menupan.Controls.Add(this.ordlbl);
             this.menupan.Controls.Add(this.profpb);
-            this.menupan.Controls.Add(this.proflbl);
             this.menupan.Location = new System.Drawing.Point(0, 110);
             this.menupan.Name = "menupan";
-            this.menupan.Size = new System.Drawing.Size(245, 446);
+            this.menupan.Size = new System.Drawing.Size(245, 258);
             this.menupan.TabIndex = 3;
+            // 
+            // button5
+            // 
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Tahoma", 14.25F);
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(36, 205);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(205, 37);
+            this.button5.TabIndex = 26;
+            this.button5.Text = "Оплата";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.paylbl_Click);
+            this.button5.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
+            this.button5.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
+            // 
+            // button4
+            // 
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Tahoma", 14.25F);
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(35, 135);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(210, 37);
+            this.button4.TabIndex = 25;
+            this.button4.Text = "Управление заказами";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.ordmanlbl_Click);
+            this.button4.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
+            this.button4.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
+            // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Tahoma", 14.25F);
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(36, 67);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(205, 37);
+            this.button3.TabIndex = 24;
+            this.button3.Text = "Создать заказ";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.ordlbl_Click);
+            this.button3.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
+            this.button3.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Tahoma", 14.25F);
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(37, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(205, 37);
+            this.button2.TabIndex = 23;
+            this.button2.Text = "Профиль";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.proflbl_Click);
+            this.button2.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
+            this.button2.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
             // 
             // paypb
             // 
@@ -435,21 +528,6 @@
             this.paypb.TabStop = false;
             this.paypb.Visible = false;
             // 
-            // paylbl
-            // 
-            this.paylbl.BackColor = System.Drawing.Color.Transparent;
-            this.paylbl.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.paylbl.ForeColor = System.Drawing.Color.White;
-            this.paylbl.Location = new System.Drawing.Point(35, 205);
-            this.paylbl.Name = "paylbl";
-            this.paylbl.Size = new System.Drawing.Size(205, 37);
-            this.paylbl.TabIndex = 10;
-            this.paylbl.Text = "Оплата";
-            this.paylbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.paylbl.Click += new System.EventHandler(this.paylbl_Click);
-            this.paylbl.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
-            this.paylbl.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
-            // 
             // ordmanpb
             // 
             this.ordmanpb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ordmanpb.BackgroundImage")));
@@ -460,21 +538,6 @@
             this.ordmanpb.TabIndex = 7;
             this.ordmanpb.TabStop = false;
             this.ordmanpb.Visible = false;
-            // 
-            // ordmanlbl
-            // 
-            this.ordmanlbl.BackColor = System.Drawing.Color.Transparent;
-            this.ordmanlbl.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ordmanlbl.ForeColor = System.Drawing.Color.White;
-            this.ordmanlbl.Location = new System.Drawing.Point(32, 135);
-            this.ordmanlbl.Name = "ordmanlbl";
-            this.ordmanlbl.Size = new System.Drawing.Size(208, 37);
-            this.ordmanlbl.TabIndex = 8;
-            this.ordmanlbl.Text = "Управление заказами";
-            this.ordmanlbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ordmanlbl.Click += new System.EventHandler(this.ordmanlbl_Click);
-            this.ordmanlbl.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
-            this.ordmanlbl.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
             // 
             // ordpb
             // 
@@ -487,21 +550,6 @@
             this.ordpb.TabStop = false;
             this.ordpb.Visible = false;
             // 
-            // ordlbl
-            // 
-            this.ordlbl.BackColor = System.Drawing.Color.Transparent;
-            this.ordlbl.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ordlbl.ForeColor = System.Drawing.Color.White;
-            this.ordlbl.Location = new System.Drawing.Point(35, 67);
-            this.ordlbl.Name = "ordlbl";
-            this.ordlbl.Size = new System.Drawing.Size(205, 37);
-            this.ordlbl.TabIndex = 6;
-            this.ordlbl.Text = "Создать заказ";
-            this.ordlbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ordlbl.Click += new System.EventHandler(this.ordlbl_Click);
-            this.ordlbl.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
-            this.ordlbl.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
-            // 
             // profpb
             // 
             this.profpb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("profpb.BackgroundImage")));
@@ -511,21 +559,6 @@
             this.profpb.Size = new System.Drawing.Size(36, 37);
             this.profpb.TabIndex = 4;
             this.profpb.TabStop = false;
-            // 
-            // proflbl
-            // 
-            this.proflbl.BackColor = System.Drawing.Color.Transparent;
-            this.proflbl.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.proflbl.ForeColor = System.Drawing.Color.White;
-            this.proflbl.Location = new System.Drawing.Point(35, 0);
-            this.proflbl.Name = "proflbl";
-            this.proflbl.Size = new System.Drawing.Size(205, 37);
-            this.proflbl.TabIndex = 4;
-            this.proflbl.Text = "Профиль";
-            this.proflbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.proflbl.Click += new System.EventHandler(this.proflbl_Click);
-            this.proflbl.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
-            this.proflbl.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
             // 
             // pictureBox1
             // 
@@ -573,8 +606,9 @@
             this.papb.Size = new System.Drawing.Size(47, 47);
             this.papb.TabIndex = 16;
             this.papb.TabStop = false;
-            this.papb.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
-            this.papb.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
+            this.papb.Click += new System.EventHandler(this.papb_Click);
+            this.papb.MouseEnter += new System.EventHandler(this.btn_MouseEnter);
+            this.papb.MouseLeave += new System.EventHandler(this.btn_MouseLeave);
             // 
             // pbpb
             // 
@@ -586,14 +620,21 @@
             this.pbpb.Size = new System.Drawing.Size(47, 47);
             this.pbpb.TabIndex = 17;
             this.pbpb.TabStop = false;
-            this.pbpb.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
-            this.pbpb.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
+            this.pbpb.Click += new System.EventHandler(this.pbpb_Click);
+            this.pbpb.MouseEnter += new System.EventHandler(this.btn_MouseEnter);
+            this.pbpb.MouseLeave += new System.EventHandler(this.btn_MouseLeave);
             // 
             // orderpan
             // 
             this.orderpan.BackColor = System.Drawing.Color.Transparent;
             this.orderpan.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("orderpan.BackgroundImage")));
             this.orderpan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.orderpan.Controls.Add(this.checkBox1);
+            this.orderpan.Controls.Add(this.label6);
+            this.orderpan.Controls.Add(this.label5);
+            this.orderpan.Controls.Add(this.label3);
+            this.orderpan.Controls.Add(this.pbtb);
+            this.orderpan.Controls.Add(this.patb);
             this.orderpan.Controls.Add(this.lengthtb);
             this.orderpan.Controls.Add(this.heighttb);
             this.orderpan.Controls.Add(this.maxbtn);
@@ -612,25 +653,95 @@
             this.orderpan.Name = "orderpan";
             this.orderpan.Size = new System.Drawing.Size(542, 345);
             this.orderpan.TabIndex = 15;
+            this.orderpan.Click += new System.EventHandler(this.orderpan_Click);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkBox1.ForeColor = System.Drawing.Color.White;
+            this.checkBox1.Location = new System.Drawing.Point(32, 107);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(175, 24);
+            this.checkBox1.TabIndex = 32;
+            this.checkBox1.Text = "Экспресс доставка";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(495, 269);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(23, 34);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "м";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(321, 269);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(23, 34);
+            this.label5.TabIndex = 29;
+            this.label5.Text = "м";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(145, 268);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(23, 36);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "м";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pbtb
+            // 
+            this.pbtb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.pbtb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.pbtb.Location = new System.Drawing.Point(363, 36);
+            this.pbtb.Multiline = true;
+            this.pbtb.Name = "pbtb";
+            this.pbtb.Size = new System.Drawing.Size(174, 43);
+            this.pbtb.TabIndex = 27;
+            this.pbtb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.pbtb.Visible = false;
+            this.pbtb.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pbtb_KeyDown);
+            // 
+            // patb
+            // 
+            this.patb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.patb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.patb.Location = new System.Drawing.Point(100, 36);
+            this.patb.Multiline = true;
+            this.patb.Name = "patb";
+            this.patb.Size = new System.Drawing.Size(174, 43);
+            this.patb.TabIndex = 26;
+            this.patb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.patb.Visible = false;
+            this.patb.KeyDown += new System.Windows.Forms.KeyEventHandler(this.patb_KeyDown);
             // 
             // lengthtb
             // 
             this.lengthtb.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lengthtb.Location = new System.Drawing.Point(450, 280);
+            this.lengthtb.Location = new System.Drawing.Point(449, 269);
             this.lengthtb.Name = "lengthtb";
             this.lengthtb.Size = new System.Drawing.Size(40, 35);
             this.lengthtb.TabIndex = 25;
-            this.lengthtb.Text = "11";
             this.lengthtb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // heighttb
             // 
             this.heighttb.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.heighttb.Location = new System.Drawing.Point(276, 279);
+            this.heighttb.Location = new System.Drawing.Point(275, 268);
             this.heighttb.Name = "heighttb";
             this.heighttb.Size = new System.Drawing.Size(40, 35);
             this.heighttb.TabIndex = 24;
-            this.heighttb.Text = "11";
             this.heighttb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // maxbtn
@@ -686,7 +797,6 @@
             this.adrblbl.Name = "adrblbl";
             this.adrblbl.Size = new System.Drawing.Size(178, 79);
             this.adrblbl.TabIndex = 18;
-            this.adrblbl.Text = "г. Москва, Ул. Ленина 3";
             // 
             // adralbl
             // 
@@ -697,7 +807,6 @@
             this.adralbl.Name = "adralbl";
             this.adralbl.Size = new System.Drawing.Size(178, 79);
             this.adralbl.TabIndex = 17;
-            this.adralbl.Text = "г. Москва, Ул. Пушкина 10";
             // 
             // pblbl
             // 
@@ -724,18 +833,17 @@
             // widthtb
             // 
             this.widthtb.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.widthtb.Location = new System.Drawing.Point(100, 280);
+            this.widthtb.Location = new System.Drawing.Point(99, 269);
             this.widthtb.Name = "widthtb";
             this.widthtb.Size = new System.Drawing.Size(40, 35);
             this.widthtb.TabIndex = 3;
-            this.widthtb.Text = "11";
             this.widthtb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lengthlbl
             // 
             this.lengthlbl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lengthlbl.BackgroundImage")));
             this.lengthlbl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.lengthlbl.Location = new System.Drawing.Point(410, 280);
+            this.lengthlbl.Location = new System.Drawing.Point(409, 269);
             this.lengthlbl.Name = "lengthlbl";
             this.lengthlbl.Size = new System.Drawing.Size(34, 34);
             this.lengthlbl.TabIndex = 2;
@@ -745,7 +853,7 @@
             // 
             this.heightlbl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("heightlbl.BackgroundImage")));
             this.heightlbl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.heightlbl.Location = new System.Drawing.Point(235, 280);
+            this.heightlbl.Location = new System.Drawing.Point(234, 269);
             this.heightlbl.Name = "heightlbl";
             this.heightlbl.Size = new System.Drawing.Size(34, 34);
             this.heightlbl.TabIndex = 1;
@@ -755,7 +863,7 @@
             // 
             this.widthlbl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("widthlbl.BackgroundImage")));
             this.widthlbl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.widthlbl.Location = new System.Drawing.Point(60, 280);
+            this.widthlbl.Location = new System.Drawing.Point(59, 269);
             this.widthlbl.Name = "widthlbl";
             this.widthlbl.Size = new System.Drawing.Size(34, 34);
             this.widthlbl.TabIndex = 0;
@@ -794,21 +902,136 @@
             this.waypb.TabIndex = 18;
             this.waypb.TabStop = false;
             // 
-            // app1
+            // nextbtn
             // 
-            this.app1.BackColor = System.Drawing.Color.Transparent;
-            this.app1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("app1.BackgroundImage")));
-            this.app1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.app1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.app1.FlatAppearance.BorderSize = 2;
-            this.app1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.app1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.app1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.app1.Location = new System.Drawing.Point(274, 423);
-            this.app1.Name = "app1";
-            this.app1.Size = new System.Drawing.Size(58, 60);
-            this.app1.TabIndex = 21;
-            this.app1.UseVisualStyleBackColor = false;
+            this.nextbtn.BackColor = System.Drawing.Color.Transparent;
+            this.nextbtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("nextbtn.BackgroundImage")));
+            this.nextbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.nextbtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.nextbtn.FlatAppearance.BorderSize = 2;
+            this.nextbtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.nextbtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.nextbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.nextbtn.Location = new System.Drawing.Point(364, 423);
+            this.nextbtn.Name = "nextbtn";
+            this.nextbtn.Size = new System.Drawing.Size(58, 60);
+            this.nextbtn.TabIndex = 22;
+            this.nextbtn.UseVisualStyleBackColor = false;
+            this.nextbtn.Click += new System.EventHandler(this.nextbtn_Click);
+            // 
+            // backbtn
+            // 
+            this.backbtn.BackColor = System.Drawing.Color.Transparent;
+            this.backbtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("backbtn.BackgroundImage")));
+            this.backbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.backbtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.backbtn.FlatAppearance.BorderSize = 2;
+            this.backbtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.backbtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.backbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backbtn.Location = new System.Drawing.Point(274, 423);
+            this.backbtn.Name = "backbtn";
+            this.backbtn.Size = new System.Drawing.Size(58, 60);
+            this.backbtn.TabIndex = 21;
+            this.backbtn.UseVisualStyleBackColor = false;
+            this.backbtn.Visible = false;
+            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
+            // 
+            // orderpan2
+            // 
+            this.orderpan2.BackColor = System.Drawing.Color.Transparent;
+            this.orderpan2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("orderpan2.BackgroundImage")));
+            this.orderpan2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.orderpan2.Controls.Add(this.commenttb);
+            this.orderpan2.Controls.Add(this.label12);
+            this.orderpan2.Location = new System.Drawing.Point(246, 110);
+            this.orderpan2.Name = "orderpan2";
+            this.orderpan2.Size = new System.Drawing.Size(542, 345);
+            this.orderpan2.TabIndex = 26;
+            this.orderpan2.Visible = false;
+            // 
+            // commenttb
+            // 
+            this.commenttb.Location = new System.Drawing.Point(28, 179);
+            this.commenttb.Multiline = true;
+            this.commenttb.Name = "commenttb";
+            this.commenttb.Size = new System.Drawing.Size(486, 112);
+            this.commenttb.TabIndex = 1;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(23, 135);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(183, 29);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Комментарий:";
+            // 
+            // orderpan3
+            // 
+            this.orderpan3.BackColor = System.Drawing.Color.Transparent;
+            this.orderpan3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("orderpan3.BackgroundImage")));
+            this.orderpan3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.orderpan3.Controls.Add(this.button1);
+            this.orderpan3.Controls.Add(this.costlbl);
+            this.orderpan3.Controls.Add(this.label14);
+            this.orderpan3.Location = new System.Drawing.Point(246, 110);
+            this.orderpan3.Name = "orderpan3";
+            this.orderpan3.Size = new System.Drawing.Size(542, 345);
+            this.orderpan3.TabIndex = 24;
+            this.orderpan3.Visible = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PowderBlue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCyan;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(156, 180);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(238, 78);
+            this.button1.TabIndex = 2;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.MouseEnter += new System.EventHandler(this.btn_MouseEnter);
+            this.button1.MouseLeave += new System.EventHandler(this.btn_MouseLeave);
+            // 
+            // costlbl
+            // 
+            this.costlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.costlbl.ForeColor = System.Drawing.Color.LimeGreen;
+            this.costlbl.Location = new System.Drawing.Point(155, 101);
+            this.costlbl.Name = "costlbl";
+            this.costlbl.Size = new System.Drawing.Size(239, 42);
+            this.costlbl.TabIndex = 1;
+            this.costlbl.Text = "0 руб.";
+            this.costlbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label14
+            // 
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(3, 27);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(536, 42);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "Стоимость доставки:";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ordmanpan
+            // 
+            this.ordmanpan.AutoScroll = true;
+            this.ordmanpan.BackColor = System.Drawing.Color.Transparent;
+            this.ordmanpan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ordmanpan.Location = new System.Drawing.Point(246, 110);
+            this.ordmanpan.Name = "ordmanpan";
+            this.ordmanpan.Size = new System.Drawing.Size(542, 345);
+            this.ordmanpan.TabIndex = 27;
             // 
             // Form1
             // 
@@ -817,7 +1040,11 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 600);
-            this.Controls.Add(this.app1);
+            this.Controls.Add(this.ordmanpan);
+            this.Controls.Add(this.backbtn);
+            this.Controls.Add(this.nextbtn);
+            this.Controls.Add(this.orderpan3);
+            this.Controls.Add(this.orderpan2);
             this.Controls.Add(this.papb);
             this.Controls.Add(this.pbpb);
             this.Controls.Add(this.orderpan);
@@ -855,6 +1082,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.widthlbl)).EndInit();
             this.vespan.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.waypb)).EndInit();
+            this.orderpan2.ResumeLayout(false);
+            this.orderpan2.PerformLayout();
+            this.orderpan3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -888,13 +1118,9 @@
         private System.Windows.Forms.TextBox imyatb;
         private System.Windows.Forms.Panel menupan;
         private System.Windows.Forms.PictureBox profpb;
-        private System.Windows.Forms.Label proflbl;
         private System.Windows.Forms.PictureBox paypb;
-        private System.Windows.Forms.Label paylbl;
         private System.Windows.Forms.PictureBox ordmanpb;
-        private System.Windows.Forms.Label ordmanlbl;
         private System.Windows.Forms.PictureBox ordpb;
-        private System.Windows.Forms.Label ordlbl;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label wlengthlbl;
         private System.Windows.Forms.PictureBox wlengthpb;
@@ -917,6 +1143,25 @@
         private System.Windows.Forms.Panel vespan;
         private System.Windows.Forms.Label veslbl;
         private System.Windows.Forms.PictureBox waypb;
-        private System.Windows.Forms.Button app1;
+        private System.Windows.Forms.TextBox pbtb;
+        private System.Windows.Forms.TextBox patb;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Panel orderpan2;
+        private System.Windows.Forms.TextBox commenttb;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button nextbtn;
+        private System.Windows.Forms.Button backbtn;
+        private System.Windows.Forms.Panel orderpan3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label costlbl;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Panel ordmanpan;
     }
 }

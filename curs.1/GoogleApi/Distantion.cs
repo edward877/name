@@ -18,16 +18,22 @@ namespace GoogleApi
 
         public string ReadXml()
         {
-            string str;
-            doc.Load("temp.xml");
+           
+                string str="";
+            try
+            {
+                doc.Load("temp.xml");
 
-            XmlNodeList elemList = doc.GetElementsByTagName("distance");             //считали все шаги по маршруту
+                XmlNodeList elemList = doc.GetElementsByTagName("distance");             //считали все шаги по маршруту
 
-            str = (elemList[elemList.Count-1].InnerXml) + " ";        //нашли содержимое итоговой дистанции
+                str = (elemList[elemList.Count - 1].InnerXml) + " ";
+                //нашли содержимое итоговой дистанции
 
-            str = Regex.Match(str, @"(?<=<text>)(.*)(?= km</text>)").ToString();       // убрали теги и прочее из строки  
+                str = Regex.Match(str, @"(?<=<text>)(.*)(?= km</text>)").ToString();       // убрали теги и прочее из строки  
 
-            File.Delete("temp.xml");
+                //  File.Delete("temp.xml");
+            }
+            catch { }
             return str;
         }
         

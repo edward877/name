@@ -17,6 +17,7 @@ namespace DesignLib
 
         public Controller.ClientDB clientdb;
         public Controller.Visitor visitordb;
+        public Controller.OrderDB orderdb;
         Thread tr1;
         public LoginF()
         {
@@ -36,7 +37,8 @@ namespace DesignLib
 
         private void button9_Click(object sender, EventArgs e)
         {
-            try { Application.Exit(); } catch  { }
+            Form1.iflog = false;
+            this.Close();
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -134,6 +136,7 @@ namespace DesignLib
             Controller.ConnectDB cdb = new Controller.ConnectDB();
             this.db = cdb.DB;
             visitordb = new Controller.Visitor(db);
+            orderdb = new Controller.OrderDB(db);
             clientdb = new Controller.ClientDB(db);
         }
 

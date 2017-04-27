@@ -345,6 +345,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FRedactOrder";
             this.Text = "FRedactOrder";
+            this.Load += new System.EventHandler(this.FRedactOrder_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
