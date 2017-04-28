@@ -393,7 +393,6 @@ namespace DesignLib
             printves();
         }
 
-        double dist = 0;
         void distcnt()
         {
             try
@@ -405,7 +404,7 @@ namespace DesignLib
                     try
                     {
                         dist = orderdb.countDistantion(adralbl.Text, adrblbl.Text);
-                        wlengthlbl.Text = "" + orderdb.countDistantion(adralbl.Text, adrblbl.Text) + " км";
+                        wlengthlbl.Text = "" + dist + " км";
                     }
                     catch { }
                 }
@@ -414,7 +413,7 @@ namespace DesignLib
         }
 
         double cost;
-        double distance;
+        double dist;
         void printcost()
         {
             costlbl.Text = "" + cost + " руб.";
@@ -423,8 +422,7 @@ namespace DesignLib
         void costcnt()
         {
             costdel cd = printcost;
-            distance = orderdb.countDistantion(adralbl.Text, adrblbl.Text);
-            cost = orderdb.CountCost(distance,ves, checkBox1.Checked, orderdb.Show().Count >= 3);
+            cost = orderdb.CountCost(dist,ves, checkBox1.Checked, orderdb.Show().Count > 3);
             Invoke(cd);
         }
         
@@ -533,7 +531,7 @@ namespace DesignLib
 
         private void button1_Click(object sender, EventArgs e)
         {
-            orderdb.Insert(adralbl.Text, adrblbl.Text, (decimal)ves, Convert.ToDecimal(widthtb.Text), Convert.ToDecimal(heighttb.Text), Convert.ToDecimal(lengthtb.Text), checkBox1.Checked, commenttb.Text);
+            orderdb.Insert(adralbl.Text, adrblbl.Text, (decimal)ves, Convert.ToDecimal(widthtb.Text), Convert.ToDecimal(heighttb.Text), Convert.ToDecimal(lengthtb.Text), checkBox1.Checked, commenttb.Text, dist);
             MessageBox.Show("Заказ на сумму" + cost + " руб. успешно создан!");
         }
 
@@ -630,7 +628,7 @@ namespace DesignLib
                 l.Location = new Point(155, 55);
                 l.Font = new Font(l.Font.Name, 12, l.Font.Style);
                 l.AutoSize = true;
-                l.Text = "" + orderdb.countDistantion(orderdb.Show()[i1].point_of_arrival, orderdb.Show()[i1].point_of_departure) + " км";
+                l.Text = "" + orderdb.Show()[i1].distance + " км";
                 l.ForeColor = Color.FromArgb(255, 4, 193, 229);
                 p[i1].Controls.Add(l);
                 l = new Label();

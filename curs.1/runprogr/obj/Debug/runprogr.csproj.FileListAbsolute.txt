@@ -1,3 +1,0 @@
-C:\Users\Sindragoz\Documents\Visual Studio 2015\Projects\kursgruzoperevozki\curs.1\runprogr\bin\Debug\runprogr.exe.config
-C:\Users\Sindragoz\Documents\Visual Studio 2015\Projects\kursgruzoperevozki\curs.1\runprogr\obj\Debug\runprogr.Properties.Resources.resources
-C:\Users\Sindragoz\Documents\Visual Studio 2015\Projects\kursgruzoperevozki\curs.1\runprogr\obj\Debug\runprogr.csproj.GenerateResource.Cache

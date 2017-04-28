@@ -24,7 +24,7 @@ namespace Controller
 
 
         public void Insert(string point_of_departure, string point_of_arrival, decimal weight,
-            decimal? width, decimal? height, decimal? length, bool express,  string comment)
+            decimal? width, decimal? height, decimal? length, bool express,  string comment, double distance)
         {
             Order order = new Order(db);
 
@@ -46,7 +46,7 @@ namespace Controller
             order.comment = comment;
            
             order.id_car = cardb.FindFreeCar(order);
-            order.distance = (decimal)countDistantion(point_of_departure, point_of_arrival);
+            order.distance = (decimal)distance;
             order.reg_date = DateTime.Now;
             order.cost = (decimal)CountCost(order, order.distance);
             order.paid = 0;  //(order.cost/10);
@@ -128,7 +128,8 @@ namespace Controller
             return db.Order.Where(o => o.id_client == id_client).ToList();
         }
 
-        public double countDistantion(string point_of_departure,string point_of_arrival) {
+        public double countDistantion(string point_of_departure, string point_of_arrival)
+        {
             ConnectMaps google = new ConnectMaps(point_of_departure, point_of_arrival);
             Distantion d = new Distantion();
             double distance = 0;
@@ -153,31 +154,12 @@ namespace Controller
             }
             catch { }
             return distance;
-        } 
+        }
 
         public double CountCost(Order order, decimal? distance)
         {
             ClientDB clientdb = new ClientDB(db);
-
-            //int price_km = 12;
-            //int good_weight = 500;
-            //double per_cent = 0.05;
-            //double discount = 0.1;
-
-            //cost += (decimal)distance * price_km;
-            //if (order.weight > good_weight)
-            //{
-            //    decimal difference = Math.Floor((order.weight - good_weight) / 50);
-            //    cost = cost + cost * (difference * (decimal)per_cent);
-            //}
-            //if (clientdb.IsVIPClient(order.id_client))
-            //{
-            //    cost -= cost * (decimal)discount;
-            //}
-            //if (order.express)
-            //{
-            //    cost += cost / 2;
-            //}
+            
             double cost = 0;
             if (distance > 100)
             {
