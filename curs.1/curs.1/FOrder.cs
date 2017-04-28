@@ -76,7 +76,7 @@ namespace View
                 Order order = new Order();
 
                 orderdb.Insert(point_of_departure, point_of_arrival, weight, width, height,
-                    length, express, comment);
+                    length, express, comment, orderdb.countDistantion(point_of_departure, point_of_arrival));
 
                 showbd();
 
