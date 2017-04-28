@@ -24,7 +24,7 @@ namespace Controller
 
 
         public void Insert(string point_of_departure, string point_of_arrival, decimal weight,
-            decimal? width, decimal? height, decimal? length, bool express,decimal cost, string comment)
+            decimal? width, decimal? height, decimal? length, bool express,  string comment)
         {
             Order order = new Order(db);
 
@@ -44,10 +44,11 @@ namespace Controller
             order.length = length;
             order.express = express;
             order.comment = comment;
+           
             order.id_car = cardb.FindFreeCar(order);
-
+            order.distance = (decimal)countDistantion(point_of_departure, point_of_arrival);
             order.reg_date = DateTime.Now;
-            order.cost = CountCost(order, point_of_departure, point_of_arrival);
+            order.cost = (decimal)CountCost(order, order.distance);
             order.paid = 0;  //(order.cost/10);
             order.status = "заказ обрабатывается";
             db.Order.InsertOnSubmit(order);
@@ -126,6 +127,7 @@ namespace Controller
         {
             return db.Order.Where(o => o.id_client == id_client).ToList();
         }
+
         public double countDistantion(string point_of_departure,string point_of_arrival) {
             ConnectMaps google = new ConnectMaps(point_of_departure, point_of_arrival);
             Distantion d = new Distantion();
@@ -147,67 +149,81 @@ namespace Controller
                 {
                     distance = double.Parse(distanceStr.Replace(",", ""));
                 }
-                else throw new System.ArgumentException("distance cannot be 0", "original");
+                else throw new ArgumentException("distance cannot be 0", "original");
             }
             catch { }
             return distance;
         } 
-        private decimal CountCost(Order order, string point_of_departure, string point_of_arrival)
+
+        public double CountCost(Order order, decimal? distance)
         {
-            /*
-             * вызов машины = 300р
-             * 1км = 12р
-             * за вес больше 500кг цена увеличивается на 5% за каждые 50кг
-             * постоянным клиентом скидка 10%
-             * за экспресс доставку надбавка 50%
-             */
-            ConnectMaps google = new ConnectMaps(point_of_departure, point_of_arrival);
-            Distantion d = new Distantion();
             ClientDB clientdb = new ClientDB(db);
 
-            int price_km = 12;
-            int good_weight = 500;
-            double per_cent = 0.05;
-            double discount = 0.1;
+            //int price_km = 12;
+            //int good_weight = 500;
+            //double per_cent = 0.05;
+            //double discount = 0.1;
 
-            decimal cost = 300;
+            //cost += (decimal)distance * price_km;
+            //if (order.weight > good_weight)
+            //{
+            //    decimal difference = Math.Floor((order.weight - good_weight) / 50);
+            //    cost = cost + cost * (difference * (decimal)per_cent);
+            //}
+            //if (clientdb.IsVIPClient(order.id_client))
+            //{
+            //    cost -= cost * (decimal)discount;
+            //}
+            //if (order.express)
+            //{
+            //    cost += cost / 2;
+            //}
+            double cost = 0;
+            if (distance > 100)
+            {
+                cost += 200 + (double)distance * 15;
+            }
+            else
+            {
+                cost += 400 + (double)distance * 20;
+            }
 
-            double distance = countDistantion(point_of_departure,point_of_arrival);
-            string distanceStr = d.ReadXml();
-            if (distanceStr.Contains("."))
-            {
-                CultureInfo c = CultureInfo.CurrentCulture.Clone() as CultureInfo;
-                c.NumberFormat.NumberDecimalSeparator = ".";
-                distance = double.Parse(d.ReadXml(), c);
-            }
-            else if (distanceStr.Contains(","))
-            {
-                distance = double.Parse(distanceStr.Replace(",", ""));
-            }
-            else if (!distanceStr.Equals("0"))
-            {
-                distance = double.Parse(distanceStr.Replace(",", ""));
-            }
-            else throw new System.ArgumentException("distance cannot be 0", "original");
-
-            cost += (decimal)distance * price_km;
-            if (order.weight > good_weight)
-            {
-                decimal difference = Math.Floor((order.weight - good_weight) / 50);
-                cost = cost + cost * (difference * (decimal)per_cent);
-            }
+            if (order.width > 500)
+                cost =  cost + ((double)order.width - 500) * 2;
+            if (order.express)
+                cost *= 1.5;
             if (clientdb.IsVIPClient(order.id_client))
             {
-                cost -= cost * (decimal)discount;
-            }
-            if (order.express)
-            {
-                cost += cost / 2;
+                cost *= 0.85;
             }
 
             return cost;
         }
 
+        public double CountCost(double distance, double width, bool express, bool vip)
+        {
+
+            double cost = 0;
+            if (distance > 100)
+            {
+                cost += 200 + distance * 15;
+            }
+            else
+            {
+                cost += 400 + distance * 20;
+            }
+
+            if (width > 500)
+                cost += (width - 500) * 2;
+            if (express)
+                cost *= 1.5;
+            if (vip)
+            {
+                cost *= 0.85;
+            }
+
+            return cost;
+        }
 
         public void SetDriver()
         {

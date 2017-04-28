@@ -232,3 +232,4 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/curs.1/curs.1/obj/Debug/build.force

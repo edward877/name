@@ -412,7 +412,9 @@ namespace DesignLib
             }
             catch { }
         }
+
         double cost;
+        double distance;
         void printcost()
         {
             costlbl.Text = "" + cost + " руб.";
@@ -421,27 +423,11 @@ namespace DesignLib
         void costcnt()
         {
             costdel cd = printcost;
-            cost = 0;
-            if (orderdb.countDistantion(adralbl.Text, adrblbl.Text) > 100)
-            {
-                cost += 200 + orderdb.countDistantion(adralbl.Text, adrblbl.Text) * 15;
-            }
-            if (orderdb.countDistantion(adralbl.Text, adrblbl.Text) <= 100)
-            {
-                cost += 400 + orderdb.countDistantion(adralbl.Text, adrblbl.Text) * 20;
-            }
-            if (ves > 500)
-                cost += (ves - 500) * 2;
-            if (checkBox1.Checked)
-                cost *= 1.5;
-            if (orderdb.Show().Count >= 3)
-            {
-                cost *= 0.85;
-            }
+            distance = orderdb.countDistantion(adralbl.Text, adrblbl.Text);
+            cost = orderdb.CountCost(distance,ves, checkBox1.Checked, orderdb.Show().Count >= 3);
             Invoke(cd);
-
-
         }
+        
         private void papb_Click(object sender, EventArgs e)
         {
             patb.Visible = !patb.Visible;
@@ -459,8 +445,7 @@ namespace DesignLib
             adralbl.Visible = true;
             distcnt();
         }
-
-
+        
 
         private void patb_KeyDown(object sender, KeyEventArgs e)
         {
@@ -548,7 +533,7 @@ namespace DesignLib
 
         private void button1_Click(object sender, EventArgs e)
         {
-            orderdb.Insert(adralbl.Text, adrblbl.Text, (decimal)ves, Convert.ToDecimal(widthtb.Text), Convert.ToDecimal(heighttb.Text), Convert.ToDecimal(lengthtb.Text), checkBox1.Checked, (decimal)cost, commenttb.Text);
+            orderdb.Insert(adralbl.Text, adrblbl.Text, (decimal)ves, Convert.ToDecimal(widthtb.Text), Convert.ToDecimal(heighttb.Text), Convert.ToDecimal(lengthtb.Text), checkBox1.Checked, commenttb.Text);
             MessageBox.Show("Заказ на сумму" + cost + " руб. успешно создан!");
         }
 
@@ -557,13 +542,13 @@ namespace DesignLib
         {
             try
             {
-                orderdb.Insert("ульяновск", "подольск", 100, 0, 0, 0, true, 1200, "");
-                orderdb.Insert("ульяновск", "нефтюганск", 100, 0, 0, 0, true, 1200, "");
-                orderdb.Insert("ульяновск", "москва", 100, 0, 0, 0, true, 1200, "");
-                orderdb.Insert("ульяновск", "краснодар", 100, 0, 0, 0, true, 1200, "");
-                orderdb.Insert("ульяновск", "иваново", 100, 0, 0, 0, true, 1200, "");
-                orderdb.Insert("ульяновск", "владивосток", 100, 0, 0, 0, true, 1200, "");
-                orderdb.Insert("ульяновск", "киев", 100, 0, 0, 0, true, 1200, "");
+                //orderdb.Insert("ульяновск", "подольск", 100, 0, 0, 0, true, 1200, "");
+                //orderdb.Insert("ульяновск", "нефтюганск", 100, 0, 0, 0, true, 1200, "");
+                //orderdb.Insert("ульяновск", "москва", 100, 0, 0, 0, true, 1200, "");
+                //orderdb.Insert("ульяновск", "краснодар", 100, 0, 0, 0, true, 1200, "");
+                //orderdb.Insert("ульяновск", "иваново", 100, 0, 0, 0, true, 1200, "");
+                //orderdb.Insert("ульяновск", "владивосток", 100, 0, 0, 0, true, 1200, "");
+                //orderdb.Insert("ульяновск", "киев", 100, 0, 0, 0, true, 1200, "");
             }
             catch { }
             int ordY = 0;

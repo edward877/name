@@ -40,7 +40,6 @@ C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Desig
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Debug\Model.pdb
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Debug\GoogleApi.pdb
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\obj\Debug\DesignLib.csprojResolveAssemblyReference.cache
-C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\obj\Debug\DesignLib.ClientF.resources
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\obj\Debug\DesignLib.Form1.resources
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\obj\Debug\DesignLib.LoginF.resources
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\obj\Debug\DesignLib.Properties.Resources.resources
@@ -65,3 +64,4 @@ D:\name-cursovaia\curs.1\DesignLib\obj\Debug\DesignLib.csproj.GenerateResource.C
 D:\name-cursovaia\curs.1\DesignLib\obj\Debug\DesignLib.dll
 D:\name-cursovaia\curs.1\DesignLib\obj\Debug\DesignLib.pdb
 D:\name-cursovaia\curs.1\DesignLib\obj\Debug\DesignLib.UserControl2.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\obj\Debug\DesignLib.UserControl2.resources

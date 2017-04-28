@@ -43,6 +43,8 @@ namespace Model
 
         private string _comment;
 
+        private System.Nullable<decimal> _distance;
+
         private EntitySet<Profit_driver> _Profit_driver;
 
         private EntityRef<Car> _Car;
@@ -89,6 +91,9 @@ namespace Model
         partial void OnstatusChanged();
         partial void OncommentChanging(string value);
         partial void OncommentChanged();
+
+        partial void OndistanceChanging(System.Nullable<decimal> value);
+        partial void OndistanceChanged();
         #endregion
 
         public Order()
@@ -442,6 +447,26 @@ namespace Model
             }
         }
 
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_distance", DbType = "Decimal(10,2)")]
+        public System.Nullable<decimal> distance
+        {
+            get
+            {
+                return this._distance;
+            }
+            set
+            {
+                if ((this._distance != value))
+                {
+                    this.OndistanceChanging(value);
+                    this.SendPropertyChanging();
+                    this._distance = value;
+                    this.SendPropertyChanged("distance");
+                    this.OndistanceChanged();
+                }
+            }
+        }
+
         [global::System.Data.Linq.Mapping.AssociationAttribute(Name = "Order_Profit_driver", Storage = "_Profit_driver", ThisKey = "id_order", OtherKey = "id_order")]
         public EntitySet<Profit_driver> Profit_driver
         {
@@ -610,7 +635,7 @@ namespace Model
                 str += " ||  express";
             }
             str += " || " + reg_date.ToString("dd'/'MM'/'yyyy") + " || " + cost + " || " + paid +
-                " || " + status + " || " + comment;
+                " || " + status + " || " + comment + "    // " + distance;
             return str;
         }
 

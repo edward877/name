@@ -61,7 +61,7 @@ namespace Controller
 
             count_order = db.Order.Where(o => o.id_client == client_id).Count();
 
-            if (count_order > 5)
+            if (count_order > 3)
             {
                 return true;
             }

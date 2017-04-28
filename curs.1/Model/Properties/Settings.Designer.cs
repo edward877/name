@@ -33,5 +33,17 @@ namespace Model.Properties {
                 return ((string)(this["cursConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Admin\\Documents\\Vis" +
+            "ual Studio 2015\\Projects\\cursovaia\\name\\curs.1\\curs.1\\bin\\Debug\\curs.mdf\";Integr" +
+            "ated Security=True;Connect Timeout=30")]
+        public string cursConnectionString1 {
+            get {
+                return ((string)(this["cursConnectionString1"]));
+            }
+        }
     }
 }

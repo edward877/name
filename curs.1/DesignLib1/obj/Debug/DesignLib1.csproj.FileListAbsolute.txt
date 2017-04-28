@@ -1,4 +1,0 @@
-C:\Users\Sindragoz\Documents\Visual Studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib1\obj\Debug\DesignLib.Form1.resources
-C:\Users\Sindragoz\Documents\Visual Studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib1\obj\Debug\DesignLib1.csproj.GenerateResource.Cache
-C:\Users\Sindragoz\Documents\Visual Studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib1\obj\Debug\DesignLib1.csprojResolveAssemblyReference.cache
-C:\Users\Sindragoz\Documents\Visual Studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib1\obj\Debug\DesignLib1.LoginF.resources
