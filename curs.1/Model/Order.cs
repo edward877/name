@@ -52,8 +52,7 @@ namespace Model
         private EntityRef<Client> _Client;
 
         private EntityRef<Driver> _Driver;
-
-        DBDataContext db;
+        private DBDataContext db;
 
         #region Определения метода расширяемости
         partial void OnLoaded();
@@ -91,7 +90,6 @@ namespace Model
         partial void OnstatusChanged();
         partial void OncommentChanging(string value);
         partial void OncommentChanged();
-
         partial void OndistanceChanging(System.Nullable<decimal> value);
         partial void OndistanceChanged();
         #endregion
@@ -111,7 +109,6 @@ namespace Model
             this._Car = default(EntityRef<Car>);
             this._Client = default(EntityRef<Client>);
             this._Driver = default(EntityRef<Driver>);
-            OnCreated();
             this.db = db;
         }
 
@@ -207,7 +204,7 @@ namespace Model
             }
         }
 
-        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_point_of_departure", DbType = "VarChar(50) NOT NULL", CanBeNull = false)]
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_point_of_departure", DbType = "VarChar(100) NOT NULL", CanBeNull = false)]
         public string point_of_departure
         {
             get
@@ -227,7 +224,7 @@ namespace Model
             }
         }
 
-        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_point_of_arrival", DbType = "VarChar(50) NOT NULL", CanBeNull = false)]
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_point_of_arrival", DbType = "VarChar(100) NOT NULL", CanBeNull = false)]
         public string point_of_arrival
         {
             get
@@ -613,32 +610,6 @@ namespace Model
             this.SendPropertyChanging();
             entity.Order = null;
         }
-
-        public override string ToString()
-        {
-            string str;
-            str = point_of_departure + " || " + _point_of_arrival + " || " +
-                weight;
-            if (width != null) {
-                str += " || " + width;
-            }
-            if (height != null)
-            {
-                str += " || " + height;
-            }
-            if (length != null)
-            {
-                str += " || " + length;
-            }
-            if (express)
-            {
-                str += " ||  express";
-            }
-            str += " || " + reg_date.ToString("dd'/'MM'/'yyyy") + " || " + cost + " || " + paid +
-                " || " + status + " || " + comment + "    // " + distance;
-            return str;
-        }
-
     }
 
 

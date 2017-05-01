@@ -21,6 +21,8 @@ namespace Model
 
         private string _company;
 
+        private string _e_mail;
+
         private EntitySet<Order> _Order;
 
         private EntityRef<User> _User;
@@ -39,6 +41,8 @@ namespace Model
         partial void Onphone_numberChanged();
         partial void OncompanyChanging(string value);
         partial void OncompanyChanged();
+        partial void One_mailChanging(string value);
+        partial void One_mailChanged();
         #endregion
 
         public Client()
@@ -48,7 +52,7 @@ namespace Model
             OnCreated();
         }
 
-        [Column(Storage = "_id_client", AutoSync = AutoSync.OnInsert, DbType = "Int NOT NULL IDENTITY", IsPrimaryKey = true, IsDbGenerated = true)]
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_id_client", AutoSync = AutoSync.OnInsert, DbType = "Int NOT NULL IDENTITY", IsPrimaryKey = true, IsDbGenerated = true)]
         public int id_client
         {
             get
@@ -68,7 +72,7 @@ namespace Model
             }
         }
 
-        [Column(Storage = "_id_user", DbType = "Int NOT NULL")]
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_id_user", DbType = "Int NOT NULL")]
         public int id_user
         {
             get
@@ -92,7 +96,7 @@ namespace Model
             }
         }
 
-        [Column(Storage = "_full_name", DbType = "VarChar(50) NOT NULL", CanBeNull = false)]
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_full_name", DbType = "VarChar(50) NOT NULL", CanBeNull = false)]
         public string full_name
         {
             get
@@ -112,7 +116,7 @@ namespace Model
             }
         }
 
-        [Column(Storage = "_phone_number", DbType = "VarChar(20) NOT NULL", CanBeNull = false)]
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_phone_number", DbType = "VarChar(20) NOT NULL", CanBeNull = false)]
         public string phone_number
         {
             get
@@ -132,7 +136,7 @@ namespace Model
             }
         }
 
-        [Column(Storage = "_company", DbType = "VarChar(30)")]
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_company", DbType = "VarChar(30)")]
         public string company
         {
             get
@@ -152,7 +156,27 @@ namespace Model
             }
         }
 
-        [Association(Name = "Client_Order", Storage = "_Order", ThisKey = "id_client", OtherKey = "id_client")]
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Name = "[e-mail]", Storage = "_e_mail", DbType = "NChar(50)")]
+        public string e_mail
+        {
+            get
+            {
+                return this._e_mail;
+            }
+            set
+            {
+                if ((this._e_mail != value))
+                {
+                    this.One_mailChanging(value);
+                    this.SendPropertyChanging();
+                    this._e_mail = value;
+                    this.SendPropertyChanged("e_mail");
+                    this.One_mailChanged();
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.AssociationAttribute(Name = "Client_Order", Storage = "_Order", ThisKey = "id_client", OtherKey = "id_client")]
         public EntitySet<Order> Order
         {
             get
@@ -165,7 +189,7 @@ namespace Model
             }
         }
 
-        [Association(Name = "User_Client", Storage = "_User", ThisKey = "id_user", OtherKey = "Id_user", IsForeignKey = true, DeleteOnNull = true, DeleteRule = "CASCADE")]
+        [global::System.Data.Linq.Mapping.AssociationAttribute(Name = "User_Client", Storage = "_User", ThisKey = "id_user", OtherKey = "Id_user", IsForeignKey = true, DeleteOnNull = true, DeleteRule = "CASCADE")]
         public User User
         {
             get
@@ -229,12 +253,6 @@ namespace Model
         {
             this.SendPropertyChanging();
             entity.Client = null;
-        }
-
-        public override string ToString()
-        {
-            string str = (company != null) ? company : "";
-            return full_name + " || " + phone_number + " || " + str;
         }
     }
 

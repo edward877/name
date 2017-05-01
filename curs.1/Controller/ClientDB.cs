@@ -15,7 +15,7 @@ namespace Controller
             userdb = new UserDB(db);
         }
 
-        public void Insert(string login, string password, string full_name, string phone_number, string company)
+        public void Insert(string login, string password, string full_name, string phone_number, string company, string email)
         {
                 User user = userdb.Insert(login, password, "client");
 
@@ -24,6 +24,7 @@ namespace Controller
                 client.full_name = full_name;
                 client.phone_number = phone_number;
                 client.company = company;
+                client.e_mail = email;
                 db.Client.InsertOnSubmit(client);
                 db.SubmitChanges();
 

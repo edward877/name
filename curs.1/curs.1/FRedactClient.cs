@@ -66,7 +66,7 @@ namespace View
 
                 password = textBox6.Text;
 
-                clientdb.Insert(login, password, full_name, phone_number, company);
+               // clientdb.Insert(login, password, full_name, phone_number, company);
 
             }
             Close();
