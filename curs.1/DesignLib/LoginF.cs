@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -54,12 +55,11 @@ namespace DesignLib
             int y1 = button1.Location.Y;
             int x2 = button2.Location.X;
             int y2 = button2.Location.Y;
-            
             if (!reg)
             {
                 this.Size = new Size(this.Width, this.Height + 200);
-                button2.Location = new Point(x1, y1 + 200);
-                button1.Location = new Point(x2, y2 + 200);
+                button2.Location = new Point(x2, y1 + 200);
+                button1.Location = new Point(x1, y1 + 200);
                 rlogtb.Visible = rpasstb.Visible = rphonetb.Visible = rfnametb.Visible = rcomptb.Visible = true;
                 reg = !reg;
             }
@@ -80,7 +80,7 @@ namespace DesignLib
                     if (a == rphonetb)
                         try
                         {
-                            Convert.ToInt32(a.Text);
+                            Convert.ToUInt64(a.Text);
                         }
                         catch {
                             
@@ -89,17 +89,44 @@ namespace DesignLib
                             canreg = false;
                         }
                 }
-                if (canreg)
+                foreach (var a in clientdb.Show())
+                    if (a.User.login.Equals(rlogtb.Text)) {
+                        canreg = false;
+                        s = "Логин занят!"; c = Color.Pink;
+                        setmsglbl();
+                        break; }
+                    if (canreg)
                 {
-                    clientdb.Insert(rlogtb.Text, rpasstb.Text,rfnametb.Text,rphonetb.Text,rcomptb.Text);
-                    this.Size = new Size(this.Width, this.Height - 200);
-                       button2.Location = new Point(x1, y1 - 200);
-                       button1.Location = new Point(x2, y2 - 200);
-                       rlogtb.Visible = rpasstb.Visible = rphonetb.Visible = rfnametb.Visible = rcomptb.Visible = false;
-                    s = "Регистрация прошла успешно";c = Color.YellowGreen;
-                    setmsglbl();
+                    tr1 = new Thread(registrationpress) { IsBackground = true };
+                    timer3.Start();
+                    tr1.Start();
+                  
+                        this.Size = new Size(this.Width, this.Height - 200);
+                        button2.Location = new Point(x2, y2 - 200);
+                        button1.Location = new Point(x1, y1 - 200);
+                        rlogtb.Visible = rpasstb.Visible = rphonetb.Visible = rfnametb.Visible = rcomptb.Visible = false;
+                        s = "Регистрация прошла успешно"; c = Color.YellowGreen;
+                        setmsglbl();
+                        canreg = false;
+                   
+                       
+                            setmsglbl();
+                    reg = !reg;
+                   
+
                 }
             }
+        }
+        void registration() {
+            button2.Text = "";
+            clientdb.Insert(rlogtb.Text, rpasstb.Text, rfnametb.Text, rphonetb.Text, rcomptb.Text);
+            button2.Text = "Регистрация";
+            timer3.Stop();
+        }
+        void registrationpress() {
+            del d = registration;
+            Invoke(d);
+           
         }
         string s; Color c;
         private void setmsglbl()
@@ -110,6 +137,7 @@ namespace DesignLib
             label2.Text = s;
             label2.ForeColor = c;
             timer1.Start();
+            button1.Enabled = true;
         }
         private void decolortb() {
             foreach (TextBox a in ltb)
@@ -126,6 +154,7 @@ namespace DesignLib
         public Model.DBDataContext db;
         private void LoginF_Load(object sender, EventArgs e)
         {
+           
            t1= t = panel1.Width;
             ltb = new List<TextBox>();
             foreach (var a in this.Controls)
@@ -138,6 +167,9 @@ namespace DesignLib
             visitordb = new Controller.Visitor(db);
             orderdb = new Controller.OrderDB(db);
             clientdb = new Controller.ClientDB(db);
+          //  GraphicsPath gp = new GraphicsPath();
+          //  gp.AddEllipse(0,0, 61,61);
+        //    button1.Region = new Region(gp);
         }
 
         bool b;
@@ -147,7 +179,7 @@ namespace DesignLib
         {
             del d1= this.Close;
            del d2 = setmsglbl;
-
+            timer4.Start();
             if (visitordb.Log_in(logtb.Text, passtb.Text))
                 Invoke(d1);
             else
@@ -155,25 +187,43 @@ namespace DesignLib
                 s = "Неверный логин или пароль!";
                 c = Color.Pink;
                 Invoke(d2);
+               
             }
+            timer4.Stop();
 
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            tr1= new Thread(logcheck) { IsBackground = true };
-            tr1.Start();
-            tr1.Priority = ThreadPriority.Lowest;
-          //  tr1.Join();
-
-            
-            if (b)
+            int x1 = button1.Location.X;
+            int y1 = button1.Location.Y;
+            int x2 = button2.Location.X;
+            int y2 = button2.Location.Y;
+            if (reg)
             {
-                tr1.Abort();
-                this.Close();
+                this.Size = new Size(this.Width, this.Height - 200);
+                button2.Location = new Point(x2, y2 - 200);
+                button1.Location = new Point(x1, y1 - 200);
+                rlogtb.Visible = rpasstb.Visible = rphonetb.Visible = rfnametb.Visible = rcomptb.Visible = false;
+                reg = !reg;
             }
             else
             {
-                 }
+                button1.Enabled = false;
+                tr1 = new Thread(logcheck) { IsBackground = true };
+                tr1.Start();
+                tr1.Priority = ThreadPriority.Lowest;
+                //  tr1.Join();
+
+
+                if (b)
+                {
+                    tr1.Abort();
+                    this.Close();
+                }
+                else
+                {
+                }
+            }
             //tr1.Abort();
         }
         int t;
@@ -187,6 +237,7 @@ namespace DesignLib
           
             t -= 15;
         }
+        
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -220,6 +271,83 @@ namespace DesignLib
         private void panel2_MouseUp(object sender, MouseEventArgs e)
         {
             MV = false;
+        }
+
+        private void button2_MouseEnter(object sender, EventArgs e)
+        {
+            (sender as Button).ForeColor = SystemColors.GradientInactiveCaption;
+        }
+
+        private void button2_MouseLeave(object sender, EventArgs e)
+        {
+           (sender as Button).ForeColor = Color.White;
+        }
+
+        private void LoginF_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoginF_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button9_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button10_Click_1(object sender, EventArgs e)
+        {
+            //this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void button10_MouseEnter(object sender, EventArgs e)
+        {
+            (sender as Button).ForeColor= SystemColors.GradientInactiveCaption;
+        }
+
+        private void button10_MouseLeave(object sender, EventArgs e)
+        {
+            (sender as Button).ForeColor = SystemColors.ScrollBar;
+        }
+
+        private void button10_Click_2(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void button9_Click_2(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        int k = 0;
+        private void timer3_Tick(object sender, EventArgs e)
+           {
+            k++;
+            if (k > 3)
+            {
+                k = 0;
+                button2.Text = "";
+            }
+            button2.Text += ".";
+        }
+
+        private void timer4_Tick(object sender, EventArgs e)
+        {
+            k++;
+            if (k > 3)
+            {
+                k = 0;
+                button1.Text = "";
+            }
+            button1.Text += ".";
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

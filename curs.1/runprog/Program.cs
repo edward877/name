@@ -7,6 +7,7 @@ using DesignLib;
 
 namespace runprog
 {
+    delegate void del();
     static class Program
     {
         

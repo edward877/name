@@ -96,10 +96,12 @@
             this.commenttb = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.orderpan3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.createordbtn = new System.Windows.Forms.Button();
             this.costlbl = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.ordmanpan = new System.Windows.Forms.Panel();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.profpanel.SuspendLayout();
             this.menupan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.paypb)).BeginInit();
@@ -150,6 +152,7 @@
             this.profpanel.Name = "profpanel";
             this.profpanel.Size = new System.Drawing.Size(542, 345);
             this.profpanel.TabIndex = 0;
+            this.profpanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.profpanel_MouseClick);
             // 
             // comptb
             // 
@@ -797,6 +800,7 @@
             this.adrblbl.Name = "adrblbl";
             this.adrblbl.Size = new System.Drawing.Size(178, 79);
             this.adrblbl.TabIndex = 18;
+            this.adrblbl.MouseClick += new System.Windows.Forms.MouseEventHandler(this.adrblbl_MouseClick);
             // 
             // adralbl
             // 
@@ -807,6 +811,7 @@
             this.adralbl.Name = "adralbl";
             this.adralbl.Size = new System.Drawing.Size(178, 79);
             this.adralbl.TabIndex = 17;
+            this.adralbl.MouseClick += new System.Windows.Forms.MouseEventHandler(this.adralbl_MouseClick);
             // 
             // pblbl
             // 
@@ -974,7 +979,7 @@
             this.orderpan3.BackColor = System.Drawing.Color.Transparent;
             this.orderpan3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("orderpan3.BackgroundImage")));
             this.orderpan3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.orderpan3.Controls.Add(this.button1);
+            this.orderpan3.Controls.Add(this.createordbtn);
             this.orderpan3.Controls.Add(this.costlbl);
             this.orderpan3.Controls.Add(this.label14);
             this.orderpan3.Location = new System.Drawing.Point(246, 110);
@@ -983,23 +988,23 @@
             this.orderpan3.TabIndex = 24;
             this.orderpan3.Visible = false;
             // 
-            // button1
+            // createordbtn
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PowderBlue;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCyan;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(156, 180);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(238, 78);
-            this.button1.TabIndex = 2;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            this.button1.MouseEnter += new System.EventHandler(this.btn_MouseEnter);
-            this.button1.MouseLeave += new System.EventHandler(this.btn_MouseLeave);
+            this.createordbtn.BackColor = System.Drawing.Color.Transparent;
+            this.createordbtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("createordbtn.BackgroundImage")));
+            this.createordbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.createordbtn.FlatAppearance.BorderSize = 0;
+            this.createordbtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PowderBlue;
+            this.createordbtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCyan;
+            this.createordbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.createordbtn.Location = new System.Drawing.Point(156, 180);
+            this.createordbtn.Name = "createordbtn";
+            this.createordbtn.Size = new System.Drawing.Size(238, 78);
+            this.createordbtn.TabIndex = 2;
+            this.createordbtn.UseVisualStyleBackColor = false;
+            this.createordbtn.Click += new System.EventHandler(this.button1_Click);
+            this.createordbtn.MouseEnter += new System.EventHandler(this.btn_MouseEnter);
+            this.createordbtn.MouseLeave += new System.EventHandler(this.btn_MouseLeave);
             // 
             // costlbl
             // 
@@ -1028,10 +1033,48 @@
             this.ordmanpan.AutoScroll = true;
             this.ordmanpan.BackColor = System.Drawing.Color.Transparent;
             this.ordmanpan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ordmanpan.Location = new System.Drawing.Point(246, 110);
+            this.ordmanpan.Location = new System.Drawing.Point(245, 110);
             this.ordmanpan.Name = "ordmanpan";
             this.ordmanpan.Size = new System.Drawing.Size(542, 345);
             this.ordmanpan.TabIndex = 27;
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.Transparent;
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button10.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.button10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button10.Location = new System.Drawing.Point(752, 2);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(22, 31);
+            this.button10.TabIndex = 29;
+            this.button10.Text = "-";
+            this.button10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.Transparent;
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button9.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.button9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button9.Location = new System.Drawing.Point(770, 2);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(29, 31);
+            this.button9.TabIndex = 28;
+            this.button9.Text = "X";
+            this.button9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // Form1
             // 
@@ -1040,6 +1083,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.ordmanpan);
             this.Controls.Add(this.backbtn);
             this.Controls.Add(this.nextbtn);
@@ -1063,6 +1108,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseUp);
             this.profpanel.ResumeLayout(false);
             this.profpanel.PerformLayout();
             this.menupan.ResumeLayout(false);
@@ -1159,9 +1207,11 @@
         private System.Windows.Forms.Button nextbtn;
         private System.Windows.Forms.Button backbtn;
         private System.Windows.Forms.Panel orderpan3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button createordbtn;
         private System.Windows.Forms.Label costlbl;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel ordmanpan;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button9;
     }
 }

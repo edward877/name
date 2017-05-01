@@ -27,3 +27,53 @@ D:\name-cursovaia\curs.1\Controller\bin\Debug\Model.pdb
 D:\name-cursovaia\curs.1\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
 D:\name-cursovaia\curs.1\Controller\obj\Debug\Controller.dll
 D:\name-cursovaia\curs.1\Controller\obj\Debug\Controller.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\Controller.dll.config
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\Controller.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\Controller.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\GoogleApi.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\Model.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\GoogleApi.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\Model.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\Controller\obj\Debug\Controller.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\Controller\obj\Debug\Controller.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\EntityFramework.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\System.Data.SQLite.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\EntityFramework.xml
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\System.Data.SQLite.xml
+E:\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\Controller.dll.config
+E:\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\Controller.dll
+E:\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\Controller.pdb
+E:\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\EntityFramework.dll
+E:\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\EntityFramework.SqlServer.dll
+E:\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\GoogleApi.dll
+E:\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\Model.dll
+E:\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\Newtonsoft.Json.dll
+E:\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\System.Data.SQLite.dll
+E:\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\System.Data.SQLite.EF6.dll
+E:\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\System.Data.SQLite.Linq.dll
+E:\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\GoogleApi.pdb
+E:\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\Model.pdb
+E:\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\EntityFramework.xml
+E:\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\EntityFramework.SqlServer.xml
+E:\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\Newtonsoft.Json.xml
+E:\name-cursovaia (2)\name-cursovaia\curs.1\Controller\bin\Debug\System.Data.SQLite.xml
+E:\name-cursovaia (2)\name-cursovaia\curs.1\Controller\obj\Debug\Controller.dll
+E:\name-cursovaia (2)\name-cursovaia\curs.1\Controller\obj\Debug\Controller.pdb
+E:\name-cursovaia (2)\name-cursovaia\curs.1\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Debug\System.Data.SQLite.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Debug\System.Data.SQLite.xml

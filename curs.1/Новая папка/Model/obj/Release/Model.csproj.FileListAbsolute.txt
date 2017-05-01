@@ -1,5 +1,0 @@
-C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\Model\bin\Release\Model.dll.config
-C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\Model\bin\Release\Model.dll
-C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\Model\bin\Release\Model.pdb
-C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\Model\obj\Release\Model.dll
-C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\Model\obj\Release\Model.pdb

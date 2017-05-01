@@ -24,7 +24,7 @@ namespace Controller
 
 
         public void Insert(string point_of_departure, string point_of_arrival, decimal weight,
-            decimal? width, decimal? height, decimal? length, bool express,  string comment, double distance)
+            decimal? width, decimal? height, decimal? length, bool express,  string comment, double distance, decimal cost)
         {
             Order order = new Order(db);
 
@@ -48,7 +48,7 @@ namespace Controller
             order.id_car = cardb.FindFreeCar(order);
             order.distance = (decimal)distance;
             order.reg_date = DateTime.Now;
-            order.cost = (decimal)CountCost(order, order.distance);
+            order.cost = cost;
             order.paid = 0;  //(order.cost/10);
             order.status = "заказ обрабатывается";
             db.Order.InsertOnSubmit(order);
@@ -182,9 +182,9 @@ namespace Controller
             return cost;
         }
 
-        public double CountCost(double distance, double width, bool express, bool vip)
+        public double CountCost(double distance, double width, bool express, int id)
         {
-
+            ClientDB clientdb = new ClientDB(db);
             double cost = 0;
             if (distance > 100)
             {
@@ -199,7 +199,7 @@ namespace Controller
                 cost += (width - 500) * 2;
             if (express)
                 cost *= 1.5;
-            if (vip)
+            if (clientdb.IsVIPClient(id))
             {
                 cost *= 0.85;
             }

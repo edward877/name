@@ -8,3 +8,12 @@ D:\name-cursovaia\curs.1\GoogleApi\bin\Debug\GoogleApi.pdb
 D:\name-cursovaia\curs.1\GoogleApi\obj\Debug\GoogleApi.csprojResolveAssemblyReference.cache
 D:\name-cursovaia\curs.1\GoogleApi\obj\Debug\GoogleApi.dll
 D:\name-cursovaia\curs.1\GoogleApi\obj\Debug\GoogleApi.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\GoogleApi\bin\Debug\GoogleApi.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\GoogleApi\bin\Debug\GoogleApi.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\GoogleApi\obj\Debug\GoogleApi.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\GoogleApi\obj\Debug\GoogleApi.pdb
+E:\name-cursovaia (2)\name-cursovaia\curs.1\GoogleApi\bin\Debug\GoogleApi.dll
+E:\name-cursovaia (2)\name-cursovaia\curs.1\GoogleApi\bin\Debug\GoogleApi.pdb
+E:\name-cursovaia (2)\name-cursovaia\curs.1\GoogleApi\obj\Debug\GoogleApi.csprojResolveAssemblyReference.cache
+E:\name-cursovaia (2)\name-cursovaia\curs.1\GoogleApi\obj\Debug\GoogleApi.dll
+E:\name-cursovaia (2)\name-cursovaia\curs.1\GoogleApi\obj\Debug\GoogleApi.pdb

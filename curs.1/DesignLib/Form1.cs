@@ -1,4 +1,5 @@
 ﻿using Controller;
+using iTextSharp.text.pdf;
 using Model;
 using System;
 using System.Collections;
@@ -6,16 +7,20 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace DesignLib
 {
+    delegate void DelMap(string s);
     public partial class Form1 : Form
     {
+       
         List<TextBox> tblistprof;
         List<Label> lbllistprof;
         List<PictureBox> pblistmenu;
@@ -24,9 +29,12 @@ namespace DesignLib
         int width = 0;
         int length = 0;
         int waylength = 0;
+        DelMap dm;
         public Form1()
         {
+          
             InitializeComponent();
+           
             ves = 100;
             printves();
             tblistprof = new List<TextBox>();
@@ -62,18 +70,28 @@ namespace DesignLib
             clientdb = lf.clientdb;
             orderdb = lf.orderdb;
 
+           
+
             filluserinfo();
-
-
-            filltextproftblbl();
             for (int i = 0; i < tblistprof.Count; i++)
                 lbllistprof[i].Text = tblistprof[i].Text = userinfo[i];
             hidepans();
             showprofpan();
+            dbthr = new Thread(filldatafromdb) { IsBackground = true };
+            dbthr.Start();
 
 
-            fillorderlistonpanel();
+
         }
+        Thread dbthr;
+        delegate void dbdel();
+        void filldatafromdb()
+        {
+            dbdel d //= filluserinfo;
+= fillorderlistonpanel;
+            Invoke(d);
+        }
+
         string[] s;
         List<Control> proflist;
         List<Control> ordlist;
@@ -116,7 +134,15 @@ namespace DesignLib
             tblistprof.Add(comptb);
             fillvalstbprof();
         }
-
+        void fillpa(string s) {
+            adralbl.Text = patb.Text = s.Replace("Unnamed Road;", "");
+            distcnt();
+        }
+        void fillpb(string s)
+        {
+            adrblbl.Text = pbtb.Text = s.Replace("Unnamed Road;","");
+            distcnt();
+        }
         void fillpblistmenu()
         {
             pblistmenu.Add(profpb);
@@ -133,6 +159,7 @@ namespace DesignLib
             lbllistprof.Add(phonelbl);
             lbllistprof.Add(maillbl);
             lbllistprof.Add(complbl);
+
             lastvalsprof();
         }
         Client client;
@@ -151,10 +178,38 @@ namespace DesignLib
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
             widthtb.Text = lengthtb.Text = heighttb.Text = "0";
-            adralbl.Text = "ульяновск";
-            adrblbl.Text = "подольск";
+            adralbl.Text = "Введите адрес";
+            adrblbl.Text = "Введите адрес";
+        }
+        private Int32 tmpX;
+        private Int32 tmpY;
+        private bool MV = false;
+
+        private void panel2_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (MV)
+            {
+                this.Left = this.Left + (Cursor.Position.X - tmpX);
+                this.Top = this.Top + (Cursor.Position.Y - tmpY);
+                tmpX = Cursor.Position.X;
+                tmpY = Cursor.Position.Y;
+            }
+        }
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            tmpX = Cursor.Position.X;
+            tmpY = Cursor.Position.Y;
+            MV = true;
+            
+            var m = Message.Create(Handle, 0xa1, new IntPtr(2), IntPtr.Zero);
+            WndProc(ref m);
+        }
+
+        private void panel2_MouseUp(object sender, MouseEventArgs e)
+        {
+            MV = false;
         }
         void hidepans()
         {
@@ -253,6 +308,12 @@ namespace DesignLib
                 lbllistprof[i].Text = tblistprof[i].Text;
 
         }
+        void fillstandartvals()
+        {
+            for (int i = 0; i < tblistprof.Count; i++)
+                 tblistprof[i].Text=lbllistprof[i].Text;
+
+        }
         void fillvalstbprof()
         {
             for (int i = 0; i < tblistprof.Count; i++)
@@ -287,7 +348,10 @@ namespace DesignLib
 
         private void dec_Click(object sender, EventArgs e)
         {
-            fillvalstbprof();
+            for (int i = 0; i < tblistprof.Count; i++)
+                lbllistprof[i].Text = tblistprof[i].Text = userinfo[i];
+            filltextproftblbl();
+
         }
 
         private void label3_MouseEnter(object sender, EventArgs e)
@@ -313,6 +377,10 @@ namespace DesignLib
             hidepans();
             hidemenupb();
             showprofpan();
+            filluserinfo();
+            for (int i = 0; i < tblistprof.Count; i++)
+                lbllistprof[i].Text = tblistprof[i].Text = userinfo[i];
+            filltextproftblbl();
             profpb.Visible = true;
         }
         void showprofpan()
@@ -336,6 +404,7 @@ namespace DesignLib
             ordlist[8].Visible = false;
             ordlist[9].Visible = false;
             backbtn.Visible = false;
+            ordcnt = 7;
 
         }
 
@@ -393,6 +462,7 @@ namespace DesignLib
             printves();
         }
 
+       
         void distcnt()
         {
             try
@@ -411,39 +481,43 @@ namespace DesignLib
             }
             catch { }
         }
-
         double cost;
-        double dist;
+        double dist = 0;
         void printcost()
         {
             costlbl.Text = "" + cost + " руб.";
+            createordbtn.Enabled = true;
         }
         delegate void costdel();
         void costcnt()
         {
+            
             costdel cd = printcost;
-            cost = orderdb.CountCost(dist,ves, checkBox1.Checked, orderdb.Show().Count > 3);
+           
+            cost =  orderdb.CountCost(dist, ves, checkBox1.Checked, client.id_client);
             Invoke(cd);
+
+
         }
-        
         private void papb_Click(object sender, EventArgs e)
         {
-            patb.Visible = !patb.Visible;
-            pbtb.Visible = false;
-            adralbl.Visible = !adralbl.Visible;
-            adrblbl.Visible = true;
-            distcnt();
+
+
+            MapF f = new MapF();
+            f.addev(fillpa);
+            f.Show();
+          
         }
 
         private void pbpb_Click(object sender, EventArgs e)
         {
-            pbtb.Visible = !pbtb.Visible;
-            patb.Visible = false;
-            adrblbl.Visible = !adrblbl.Visible;
-            adralbl.Visible = true;
-            distcnt();
+            MapF f = new MapF();
+            f.addev(fillpb);
+            f.Show();
+           
         }
-        
+
+
 
         private void patb_KeyDown(object sender, KeyEventArgs e)
         {
@@ -531,24 +605,209 @@ namespace DesignLib
 
         private void button1_Click(object sender, EventArgs e)
         {
-            orderdb.Insert(adralbl.Text, adrblbl.Text, (decimal)ves, Convert.ToDecimal(widthtb.Text), Convert.ToDecimal(heighttb.Text), Convert.ToDecimal(lengthtb.Text), checkBox1.Checked, commenttb.Text, dist);
+            orderdb.Insert(adralbl.Text, adrblbl.Text, (decimal)ves, Convert.ToDecimal(widthtb.Text), Convert.ToDecimal(heighttb.Text), Convert.ToDecimal(lengthtb.Text), checkBox1.Checked,commenttb.Text,dist, (decimal)cost);
             MessageBox.Show("Заказ на сумму" + cost + " руб. успешно создан!");
+           
+                createorderpan();
+           
         }
 
         List<Panel> p;
-        void fillorderlistonpanel()
+        void createorderpan() {
+            int ordY = 0;
+            
+            Label l;
+            PictureBox pb;
+            p.Add(new Panel());
+            int i1 =p.Count - 1;
+            p[i1].Name = "" + orderdb.Show()[orderdb.Show().Count-1].id_order;
+            p[i1].BackColor = Color.Transparent;
+            p[i1].Location = new Point(0, ordY);
+            p[i1].Size = new Size(ordmanpan.Width - 20, ordmanpan.Height / 4 - 2);
+            p[i1].BackgroundImage = Image.FromFile("whiteborder4.png");
+            p[i1].BackgroundImageLayout = ImageLayout.Stretch;
+            l = new Label();
+            l.Text = "" + orderdb.Show()[orderdb.Show().Count - 1].reg_date.Day + "." + orderdb.Show()[orderdb.Show().Count - 1].reg_date.Month + "." + orderdb.Show()[orderdb.Show().Count - 1].reg_date.Year;
+            l.Location = new Point(2, 5);
+            l.Font = new Font(l.Font.Name, 10, l.Font.Style);
+            l.ForeColor = Color.White;
+            l.AutoSize = true;
+            p[i1].Controls.Add(l);
+            l = new Label();
+            l.Location = new Point(2, 40);
+            l.Font = new Font(l.Font.Name, 18, l.Font.Style);
+            l.Text = orderdb.Show()[orderdb.Show().Count - 1].express ? "Э" : "О";
+            l.AutoSize = true;
+            l.ForeColor = Color.White;
+            p[i1].Controls.Add(l);
+            l = new Label();
+            l.Location = new Point(75, 5);
+            l.Font = new Font(l.Font.Name, 11, l.Font.Style);
+            l.Text = "Пункт А:";
+            l.AutoSize = true;
+            l.ForeColor = Color.White;
+            p[i1].Controls.Add(l);
+            l = new Label();
+            l.Location = new Point(75, 30);
+            l.Font = new Font(l.Font.Name, 11, l.Font.Style);
+            l.Text = "Пункт B:";
+            l.AutoSize = true;
+            l.ForeColor = Color.White;
+            p[i1].Controls.Add(l);
+            l = new Label();
+            l.Location = new Point(145, 5);
+            l.Font = new Font(l.Font.Name, 11, l.Font.Style);
+            l.Text = orderdb.Show()[orderdb.Show().Count - 1].point_of_departure;
+            l.AutoSize = false;
+            l.Size = new Size(220, 20);
+            l.ForeColor = Color.White;
+            p[i1].Controls.Add(l);
+            l = new Label();
+            l.Location = new Point(145, 30);
+            l.Font = new Font(l.Font.Name, 11, l.Font.Style);
+            l.Text = orderdb.Show()[orderdb.Show().Count - 1].point_of_arrival;
+            l.AutoSize = false;
+            l.Size = new Size(220, 20);
+            l.ForeColor = Color.White;
+            p[i1].Controls.Add(l);
+            l = new Label();
+            l.Location = new Point(75, 55);
+            l.Font = new Font(l.Font.Name, 11, l.Font.Style);
+            l.Text = "Расстояние:";
+            l.AutoSize = true;
+            l.ForeColor = Color.White;
+            p[i1].Controls.Add(l);
+            l = new Label();
+            l.Location = new Point(175, 55);
+            l.Font = new Font(l.Font.Name, 11, l.Font.Style);
+            l.AutoSize = true;
+            l.Text = "" + orderdb.Show()[orderdb.Show().Count - 1].distance + " км";
+            l.ForeColor = Color.FromArgb(255, 4, 193, 229);
+            p[i1].Controls.Add(l);
+            l = new Label();
+            l.Location = new Point(360, 35);
+            l.Font = new Font(l.Font.Name, 14, l.Font.Style);
+            l.AutoSize = true;
+            l.Text = "" + orderdb.Show()[orderdb.Show().Count - 1].cost + " руб.";
+            l.ForeColor = Color.FromArgb(0, 202, 33);
+            p[i1].Controls.Add(l);
+            l = new Label();
+            l.Location = new Point(360, 55);
+            l.Font = new System.Drawing.Font(l.Font.Name, 12, l.Font.Style);
+            l.AutoSize = true;
+            l.Text = "" + orderdb.Show()[orderdb.Show().Count - 1].paid + " руб.";
+            l.ForeColor = Color.White;
+            p[i1].Controls.Add(l);
+            l = new Label();
+            l.Location = new Point(p[i1].Size.Width - 15, p[i1].Size.Height - 15);
+            l.AutoSize = false;
+            l.Size = new Size(15, 15);
+            l.BackColor = orderdb.Show()[orderdb.Show().Count - 1].status.Equals("заказ обрабатывается") ? Color.Gold : Color.Green;
+            p[i1].Controls.Add(l);
+            pb = new PictureBox();
+            pb.BackgroundImage = Image.FromFile("removeorder.png");
+            pb.BackgroundImageLayout = ImageLayout.Center;
+            pb.Size = new Size(20, 20);
+            pb.Location = new Point(492, 5);
+            pb.MouseEnter += btn_MouseEnter;
+            pb.MouseLeave += btn_MouseLeave;
+            pb.MouseClick += Pb_MouseClick;
+            p[i1].Controls.Add(pb);
+            pb = new PictureBox();
+            pb.BackgroundImage = Image.FromFile("printorder.png");
+            pb.BackgroundImageLayout = ImageLayout.Center;
+            pb.Size = new Size(20, 20);
+            pb.Location = new Point(468, 5);
+            pb.MouseEnter += btn_MouseEnter;
+            pb.MouseLeave += btn_MouseLeave;
+            pb.MouseClick += Pb_MouseClick1;
+            p[i1].Controls.Add(pb);
+            ordmanpan.Controls.Add(p[i1]);
+           
+            setloactionorderlist();
+
+        }
+
+        private void Pb_MouseClick1(object sender, MouseEventArgs e)
         {
             try
             {
-                //orderdb.Insert("ульяновск", "подольск", 100, 0, 0, 0, true, 1200, "");
-                //orderdb.Insert("ульяновск", "нефтюганск", 100, 0, 0, 0, true, 1200, "");
-                //orderdb.Insert("ульяновск", "москва", 100, 0, 0, 0, true, 1200, "");
-                //orderdb.Insert("ульяновск", "краснодар", 100, 0, 0, 0, true, 1200, "");
-                //orderdb.Insert("ульяновск", "иваново", 100, 0, 0, 0, true, 1200, "");
-                //orderdb.Insert("ульяновск", "владивосток", 100, 0, 0, 0, true, 1200, "");
-                //orderdb.Insert("ульяновск", "киев", 100, 0, 0, 0, true, 1200, "");
-            }
-            catch { }
+                if (p != null)
+                foreach (var a in p)
+                {
+
+                    if (a.Contains(sender as PictureBox))
+                    {
+
+                        //try
+                        //  {
+                        
+
+                            foreach (var b in orderdb.Show())
+                                if (b.id_order == Convert.ToInt32(a.Name)) {
+                                    iTextSharp.text.Document document = new iTextSharp.text.Document();
+                                    PdfWriter writer = PdfWriter.GetInstance(document,
+                                     new FileStream("заказ_от_" + b.reg_date.Day + "." + b.reg_date.Month + "." + b.reg_date.Year + ".pdf", FileMode.OpenOrCreate)
+                                     );
+
+                                    document.Open();
+
+
+
+
+                                    iTextSharp.text.Paragraph p = new iTextSharp.text.Paragraph(); //System.Diagnostics.Process.Start("путь к файлу");
+                                    p = new iTextSharp.text.Paragraph();
+                                    BaseFont bf = BaseFont.CreateFont(@"micross.ttf", BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
+
+                                    p.Alignment = iTextSharp.text.Element.ALIGN_CENTER;
+
+                                    p = new iTextSharp.text.Paragraph();
+                                    p.Add(new iTextSharp.text.Phrase("Заказ от " + b.reg_date.Day + "." + b.reg_date.Month + "." + b.reg_date.Year, new
+                        iTextSharp.text.Font(bf, 16)));
+                                    p.Add(Environment.NewLine);
+                                    p.Alignment = iTextSharp.text.Element.ALIGN_CENTER;
+                                    p.SpacingAfter = 25;
+                                    document.Add(p);
+
+                                    PdfPTable table = new PdfPTable(5);
+                                    p = new iTextSharp.text.Paragraph();
+
+                                    table.AddCell(new PdfPCell(new iTextSharp.text.Phrase("Откуда", new iTextSharp.text.Font(bf, 14))));
+                                    table.AddCell(new PdfPCell(new iTextSharp.text.Phrase("Куда", new iTextSharp.text.Font(bf, 14))));
+                                    table.AddCell(new PdfPCell(new iTextSharp.text.Phrase("Расстояние", new iTextSharp.text.Font(bf, 14))));
+                                    table.AddCell(new PdfPCell(new iTextSharp.text.Phrase("Стоимость", new iTextSharp.text.Font(bf, 14))));
+                                    table.AddCell(new PdfPCell(new iTextSharp.text.Phrase("Оплачено", new iTextSharp.text.Font(bf, 14))));
+
+                                    table.AddCell(new PdfPCell(new iTextSharp.text.Phrase("" + b.point_of_departure, new iTextSharp.text.Font(bf, 14))));//b.point_of_arrival)));
+                                    table.AddCell(new PdfPCell(new iTextSharp.text.Phrase("" + b.point_of_arrival, new iTextSharp.text.Font(bf, 14))));
+                                    table.AddCell(new PdfPCell(new iTextSharp.text.Phrase("" + b.distance + " км", new iTextSharp.text.Font(bf, 14))));
+                                    table.AddCell(new PdfPCell(new iTextSharp.text.Phrase("" + b.cost + " руб.", new iTextSharp.text.Font(bf, 14))));
+                                    table.AddCell(new PdfPCell(new iTextSharp.text.Phrase("" + b.paid + " руб.", new iTextSharp.text.Font(bf, 14))));
+
+                                    p.Add(table);
+                                    document.Add(p);
+
+                                    document.Close();
+                                    writer.Close();
+                                    System.Diagnostics.Process.Start("заказ_от_" + b.reg_date.Day + "." + b.reg_date.Month + "." + b.reg_date.Year + ".pdf");
+                                }
+
+                            //   }
+                            //   catch (Exception ex) { MessageBox.Show(ex.Message); }
+
+                            break;
+
+
+                        }
+        }
+                 }
+                                catch(Exception ex) {  }
+        }
+
+
+            void fillorderlistonpanel()
+        {
+           
             int ordY = 0;
             int i1 = 0;
             Label l;
@@ -557,114 +816,116 @@ namespace DesignLib
 
             foreach (var a in orderdb.Show())
             {
-
-                p.Add(new Panel());
-                p[i1].Name = "" + a.id_order;
-                p[i1].BackColor = Color.Transparent;
-                p[i1].Location = new Point(0, ordY);
-                p[i1].Size = new Size(ordmanpan.Width - 20, ordmanpan.Height / 4 - 2);
-                p[i1].BackgroundImage = Image.FromFile("whiteborder4.png");
-                p[i1].BackgroundImageLayout = ImageLayout.Stretch;
-                l = new Label();
-                l.Name = "idlbl";
-                l.Visible = false;
-                l.Enabled = false;
-                l.Text = "" + a.id_order;
-                l.Location = new Point(5, 5);
-                l.Font = new Font(l.Font.Name, 14, l.Font.Style);
-                l.ForeColor = Color.White;
-                l.AutoSize = true;
-                p[i1].Controls.Add(l);
-                l = new Label();
-                l.Text = "№ " + (i1 + 1);
-                l.Location = new Point(5, 5);
-                l.Font = new Font(l.Font.Name, 14, l.Font.Style);
-                l.ForeColor = Color.White;
-                l.AutoSize = true;
-                p[i1].Controls.Add(l);
-                l = new Label();
-                l.Location = new Point(5, 35);
-                l.Font = new Font(l.Font.Name, 22, l.Font.Style);
-                l.Text = orderdb.Show()[i1].express ? "Э" : "О";
-                l.AutoSize = true;
-                l.ForeColor = Color.White;
-                p[i1].Controls.Add(l);
-                l = new Label();
-                l.Location = new Point(55, 5);
-                l.Font = new Font(l.Font.Name, 12, l.Font.Style);
-                l.Text = "Пункт А:";
-                l.AutoSize = true;
-                l.ForeColor = Color.White;
-                p[i1].Controls.Add(l);
-                l = new Label();
-                l.Location = new Point(55, 30);
-                l.Font = new Font(l.Font.Name, 12, l.Font.Style);
-                l.Text = "Пункт B:";
-                l.AutoSize = true;
-                l.ForeColor = Color.White;
-                p[i1].Controls.Add(l);
-                l = new Label();
-                l.Location = new Point(125, 5);
-                l.Font = new Font(l.Font.Name, 12, l.Font.Style);
-                l.Text = orderdb.Show()[i1].point_of_departure;
-                l.AutoSize = true;
-                l.ForeColor = Color.White;
-                p[i1].Controls.Add(l);
-                l = new Label();
-                l.Location = new Point(125, 30);
-                l.Font = new Font(l.Font.Name, 12, l.Font.Style);
-                l.Text = orderdb.Show()[i1].point_of_arrival;
-                l.AutoSize = true;
-                l.ForeColor = Color.White;
-                p[i1].Controls.Add(l);
-                l = new Label();
-                l.Location = new Point(55, 55);
-                l.Font = new Font(l.Font.Name, 12, l.Font.Style);
-                l.Text = "Расстояние:";
-                l.AutoSize = true;
-                l.ForeColor = Color.White;
-                p[i1].Controls.Add(l);
-                l = new Label();
-                l.Location = new Point(155, 55);
-                l.Font = new Font(l.Font.Name, 12, l.Font.Style);
-                l.AutoSize = true;
-                l.Text = "" + orderdb.Show()[i1].distance + " км";
-                l.ForeColor = Color.FromArgb(255, 4, 193, 229);
-                p[i1].Controls.Add(l);
-                l = new Label();
-                l.Location = new Point(360, 35);
-                l.Font = new Font(l.Font.Name, 14, l.Font.Style);
-                l.AutoSize = true;
-                l.Text = "" + orderdb.Show()[i1].cost + " руб.";
-                l.ForeColor = Color.FromArgb(0, 202, 33);
-                p[i1].Controls.Add(l);
-                l = new Label();
-                l.Location = new Point(360, 55);
-                l.Font = new Font(l.Font.Name, 12, l.Font.Style);
-                l.AutoSize = true;
-                l.Text = "" + orderdb.Show()[i1].paid + " руб.";
-                l.ForeColor = Color.White;
-                p[i1].Controls.Add(l);
-                pb = new PictureBox();
-                pb.BackgroundImage = Image.FromFile("removeorder.png");
-                pb.BackgroundImageLayout = ImageLayout.Center;
-                pb.Size = new Size(20, 20);
-                pb.Location = new Point(492, 5);
-                pb.MouseEnter += btn_MouseEnter;
-                pb.MouseLeave += btn_MouseLeave;
-                pb.MouseClick += Pb_MouseClick;
-                p[i1].Controls.Add(pb);
-                pb = new PictureBox();
-                pb.BackgroundImage = Image.FromFile("printorder.png");
-                pb.BackgroundImageLayout = ImageLayout.Center;
-                pb.Size = new Size(20, 20);
-                pb.Location = new Point(468, 5);
-                pb.MouseEnter += btn_MouseEnter;
-                pb.MouseLeave += btn_MouseLeave;
-                p[i1].Controls.Add(pb);
-                ordmanpan.Controls.Add(p[i1]);
-                ordY += ordmanpan.Height / 4 - 2;
-                i1++;
+                
+                    if (a.id_client == client.id_client)
+                    {
+                        p.Add(new Panel());
+                        p[i1].Name = "" + a.id_order;
+                        p[i1].BackColor = Color.Transparent;
+                        p[i1].Location = new Point(0, ordY);
+                        p[i1].Size = new Size(ordmanpan.Width - 20, ordmanpan.Height / 4 - 2);
+                        p[i1].BackgroundImage = Image.FromFile("whiteborder4.png");
+                        p[i1].BackgroundImageLayout = ImageLayout.Stretch;
+                        l = new Label();
+                        l.Text = "" + a.reg_date.Day + "." + a.reg_date.Month + "." + a.reg_date.Year;
+                        l.Location = new Point(2, 5);
+                        l.Font = new Font(l.Font.Name, 10, l.Font.Style);
+                        l.ForeColor = Color.White;
+                        l.AutoSize = true;
+                        p[i1].Controls.Add(l);
+                        l = new Label();
+                        l.Location = new Point(2, 40);
+                        l.Font = new Font(l.Font.Name, 18, l.Font.Style);
+                        l.Text = a.express ? "Э" : "О";
+                        l.AutoSize = true;
+                        l.ForeColor = Color.White;
+                        p[i1].Controls.Add(l);
+                        l = new Label();
+                        l.Location = new Point(75, 5);
+                        l.Font = new Font(l.Font.Name, 11, l.Font.Style);
+                        l.Text = "Пункт А:";
+                        l.AutoSize = true;
+                        l.ForeColor = Color.White;
+                        p[i1].Controls.Add(l);
+                        l = new Label();
+                        l.Location = new Point(75, 30);
+                        l.Font = new Font(l.Font.Name, 11, l.Font.Style);
+                        l.Text = "Пункт B:";
+                        l.AutoSize = true;
+                        l.ForeColor = Color.White;
+                        p[i1].Controls.Add(l);
+                        l = new Label();
+                        l.Location = new Point(145, 5);
+                        l.Font = new Font(l.Font.Name, 11, l.Font.Style);
+                        l.Text = a.point_of_departure;
+                    l.AutoSize = false;
+                    l.Size = new Size(220, 20);
+                    l.ForeColor = Color.White;
+                        p[i1].Controls.Add(l);
+                        l = new Label();
+                        l.Location = new Point(145, 30);
+                        l.Font = new Font(l.Font.Name, 11, l.Font.Style);
+                        l.Text = a.point_of_arrival;
+                    l.AutoSize = false;
+                    l.Size = new Size(220, 20);
+                    l.ForeColor = Color.White;
+                        p[i1].Controls.Add(l);
+                        l = new Label();
+                        l.Location = new Point(75, 55);
+                        l.Font = new Font(l.Font.Name, 11, l.Font.Style);
+                        l.Text = "Расстояние:";
+                        l.AutoSize = true;
+                        l.ForeColor = Color.White;
+                        p[i1].Controls.Add(l);
+                        l = new Label();
+                        l.Location = new Point(175, 55);
+                        l.Font = new Font(l.Font.Name, 11, l.Font.Style);
+                        // l.AutoSize = true; orderdb.Show()[i1].
+                        l.Text = "" +a.distance + " км";
+                        l.ForeColor = Color.FromArgb(255, 4, 193, 229);
+                        p[i1].Controls.Add(l);
+                        l = new Label();
+                        l.Location = new Point(360, 35);
+                        l.Font = new Font(l.Font.Name, 14, l.Font.Style);
+                        l.AutoSize = true;
+                        l.Text = "" + orderdb.Show()[i1].cost + " руб.";
+                        l.ForeColor = Color.FromArgb(0, 202, 33);
+                        p[i1].Controls.Add(l);
+                        l = new Label();
+                        l.Location = new Point(360, 55);
+                        l.Font = new Font(l.Font.Name, 12, l.Font.Style);
+                        l.AutoSize = true;
+                        l.Text = "" + a.paid + " руб.";
+                        l.ForeColor = Color.White;
+                        p[i1].Controls.Add(l);
+                        l = new Label();
+                        l.Location = new Point(p[i1].Size.Width - 15, p[i1].Size.Height - 15);
+                        l.AutoSize = false;
+                        l.Size = new Size(15, 15);
+                        l.BackColor = a.status.Equals("заказ обрабатывается") ? Color.Gold : Color.Green;
+                        p[i1].Controls.Add(l);
+                        pb = new PictureBox();
+                        pb.BackgroundImage = Image.FromFile("removeorder.png");
+                        pb.BackgroundImageLayout = ImageLayout.Center;
+                        pb.Size = new Size(20, 20);
+                        pb.Location = new Point(492, 5);
+                        pb.MouseEnter += btn_MouseEnter;
+                        pb.MouseLeave += btn_MouseLeave;
+                        pb.MouseClick += Pb_MouseClick;
+                        p[i1].Controls.Add(pb);
+                        pb = new PictureBox();
+                        pb.BackgroundImage = Image.FromFile("printorder.png");
+                        pb.BackgroundImageLayout = ImageLayout.Center;
+                        pb.Size = new Size(20, 20);
+                        pb.Location = new Point(468, 5);
+                        pb.MouseEnter += btn_MouseEnter;
+                        pb.MouseLeave += btn_MouseLeave;
+                        pb.MouseClick += Pb_MouseClick1;
+                        p[i1].Controls.Add(pb);
+                        ordmanpan.Controls.Add(p[i1]);
+                        ordY += ordmanpan.Height / 4 - 2;
+                        i1++;
+                    }
             }
 
 
@@ -677,7 +938,7 @@ namespace DesignLib
         private void setloactionorderlist()
         {
             int ordY1 = 0;
-            int scrollval = ordmanpan.VerticalScroll.Value;
+    
             ordmanpan.VerticalScroll.Value = 0;
 
             foreach (var a in ordmanpan.Controls)
@@ -690,7 +951,8 @@ namespace DesignLib
                 catch { }
                 //
             }
-            ordmanpan.VerticalScroll.Value = scrollval;
+
+
 
         }
 
@@ -713,6 +975,7 @@ namespace DesignLib
                             foreach (var a1 in a.Controls)
                                 (a1 as Control).Dispose();
                             a.Dispose();
+                            p.Remove(a);
                         }
                         catch { }
 
@@ -722,6 +985,50 @@ namespace DesignLib
                 }
 
             setloactionorderlist();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void profpanel_MouseClick(object sender, MouseEventArgs e)
+        {
+            foreach (var a in profpanel.Controls)
+            {
+                if (a is TextBox)
+                    (a as TextBox).Visible = false;
+                if (a is Label)
+                (a as Label).Visible = true;
+            }
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void adralbl_MouseClick(object sender, MouseEventArgs e)
+        {
+            patb.Visible = !patb.Visible;
+            pbtb.Visible = false;
+            adralbl.Visible = !adralbl.Visible;
+            adrblbl.Visible = true;
+            distcnt();
+        }
+
+        private void adrblbl_MouseClick(object sender, MouseEventArgs e)
+        {
+            pbtb.Visible = !pbtb.Visible;
+            patb.Visible = false;
+            adrblbl.Visible = !adrblbl.Visible;
+            adralbl.Visible = true;
+            distcnt();
         }
     }
 }
