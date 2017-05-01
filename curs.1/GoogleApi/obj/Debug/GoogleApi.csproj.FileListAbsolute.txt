@@ -17,3 +17,8 @@ E:\name-cursovaia (2)\name-cursovaia\curs.1\GoogleApi\bin\Debug\GoogleApi.pdb
 E:\name-cursovaia (2)\name-cursovaia\curs.1\GoogleApi\obj\Debug\GoogleApi.csprojResolveAssemblyReference.cache
 E:\name-cursovaia (2)\name-cursovaia\curs.1\GoogleApi\obj\Debug\GoogleApi.dll
 E:\name-cursovaia (2)\name-cursovaia\curs.1\GoogleApi\obj\Debug\GoogleApi.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\GoogleApi\bin\Debug\GoogleApi.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\GoogleApi\bin\Debug\GoogleApi.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\GoogleApi\obj\Debug\GoogleApi.csprojResolveAssemblyReference.cache
+F:\name-cursovaia (4)\name-cursovaia\curs.1\GoogleApi\obj\Debug\GoogleApi.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\GoogleApi\obj\Debug\GoogleApi.pdb

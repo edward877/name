@@ -21,3 +21,53 @@ C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs
 C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\obj\Release\View.csproj.GenerateResource.Cache
 C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\obj\Release\curs.1.exe
 C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\obj\Release\curs.1.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\bin\Release\curs.1.exe.config
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\bin\Release\curs.1.exe
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\bin\Release\curs.1.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\bin\Release\Controller.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\bin\Release\Model.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\bin\Release\GoogleApi.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\bin\Release\Controller.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\bin\Release\Model.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\bin\Release\GoogleApi.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Release\View.csprojResolveAssemblyReference.cache
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Release\View.FCar.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Release\View.FClient.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Release\View.FDriver.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Release\View.FEntry.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Release\View.FMain.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Release\View.FOrder.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Release\View.FProfit_driver.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Release\View.FRedactCar.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Release\View.FRedactClient.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Release\View.FRedactDriver.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Release\View.FRedactOrder.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Release\View.Properties.Resources.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Release\View.csproj.GenerateResource.Cache
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Release\curs.1.exe
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Release\curs.1.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Release\curs.1.exe.config
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Release\curs.1.exe
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Release\curs.1.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Release\Controller.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Release\Model.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Release\GoogleApi.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Release\Controller.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Release\Model.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Release\GoogleApi.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Release\View.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Release\View.FCar.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Release\View.FClient.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Release\View.FDriver.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Release\View.FEntry.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Release\View.FMain.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Release\View.FOrder.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Release\View.FProfit_driver.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Release\View.FRedactCar.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Release\View.FRedactClient.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Release\View.FRedactDriver.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Release\View.FRedactOrder.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Release\View.Properties.Resources.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Release\View.csproj.GenerateResource.Cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Release\curs.1.exe
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Release\curs.1.pdb

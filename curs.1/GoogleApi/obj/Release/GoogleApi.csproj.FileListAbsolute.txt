@@ -1,0 +1,5 @@
+F:\name-cursovaia (4)\name-cursovaia\curs.1\GoogleApi\bin\Release\GoogleApi.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\GoogleApi\bin\Release\GoogleApi.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\GoogleApi\obj\Release\GoogleApi.csprojResolveAssemblyReference.cache
+F:\name-cursovaia (4)\name-cursovaia\curs.1\GoogleApi\obj\Release\GoogleApi.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\GoogleApi\obj\Release\GoogleApi.pdb

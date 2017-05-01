@@ -43,3 +43,21 @@ C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Windo
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe.config
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\bin\Debug\DesignLib.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\bin\Debug\Model.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\bin\Debug\Controller.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\bin\Debug\itextsharp.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\bin\Debug\GoogleApi.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\bin\Debug\itextsharp.xml
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojResolveAssemblyReference.cache
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\bin\Debug\DesignLib.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\bin\Debug\Model.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\bin\Debug\Controller.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\bin\Debug\GoogleApi.pdb

@@ -51,16 +51,17 @@ namespace DesignLib
         bool canreg = false;
         private void button2_Click(object sender, EventArgs e)
         {
+          
             int x1 = button1.Location.X;
             int y1 = button1.Location.Y;
             int x2 = button2.Location.X;
             int y2 = button2.Location.Y;
             if (!reg)
             {
-                this.Size = new Size(this.Width, this.Height + 200);
-                button2.Location = new Point(x2, y1 + 200);
-                button1.Location = new Point(x1, y1 + 200);
-                rlogtb.Visible = rpasstb.Visible = rphonetb.Visible = rfnametb.Visible = rcomptb.Visible = true;
+                this.Size = new Size(this.Width, this.Height + 230);
+                button2.Location = new Point(x2, y1 + 230);
+                button1.Location = new Point(x1, y1 + 230);
+                rmailtb.Visible=rlogtb.Visible = rpasstb.Visible = rphonetb.Visible = rfnametb.Visible = rcomptb.Visible = true;
                 reg = !reg;
             }
             else
@@ -101,10 +102,10 @@ namespace DesignLib
                     timer3.Start();
                     tr1.Start();
                   
-                        this.Size = new Size(this.Width, this.Height - 200);
-                        button2.Location = new Point(x2, y2 - 200);
-                        button1.Location = new Point(x1, y1 - 200);
-                        rlogtb.Visible = rpasstb.Visible = rphonetb.Visible = rfnametb.Visible = rcomptb.Visible = false;
+                        this.Size = new Size(this.Width, this.Height - 230);
+                        button2.Location = new Point(x2, y2 - 230);
+                        button1.Location = new Point(x1, y1 - 230);
+                         rmailtb.Visible=rlogtb.Visible = rpasstb.Visible = rphonetb.Visible = rfnametb.Visible = rcomptb.Visible = false;
                         s = "Регистрация прошла успешно"; c = Color.YellowGreen;
                         setmsglbl();
                         canreg = false;
@@ -119,7 +120,7 @@ namespace DesignLib
         }
         void registration() {
             button2.Text = "";
-            clientdb.Insert(rlogtb.Text, rpasstb.Text, rfnametb.Text, rphonetb.Text, rcomptb.Text);
+            clientdb.Insert(rlogtb.Text, rpasstb.Text, rfnametb.Text, rphonetb.Text, rcomptb.Text,rmailtb.Text);
             button2.Text = "Регистрация";
             timer3.Stop();
         }
@@ -200,10 +201,10 @@ namespace DesignLib
             int y2 = button2.Location.Y;
             if (reg)
             {
-                this.Size = new Size(this.Width, this.Height - 200);
-                button2.Location = new Point(x2, y2 - 200);
-                button1.Location = new Point(x1, y1 - 200);
-                rlogtb.Visible = rpasstb.Visible = rphonetb.Visible = rfnametb.Visible = rcomptb.Visible = false;
+                this.Size = new Size(this.Width, this.Height - 230);
+                button2.Location = new Point(x2, y2 - 230);
+                button1.Location = new Point(x1, y1 - 230);
+                rmailtb.Visible=rlogtb.Visible = rpasstb.Visible = rphonetb.Visible = rfnametb.Visible = rcomptb.Visible = false;
                 reg = !reg;
             }
             else

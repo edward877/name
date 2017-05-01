@@ -159,3 +159,40 @@ C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Desig
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Debug\System.Data.SQLite.xml
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\obj\Debug\DesignLib.MapF.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\obj\Debug\DesignLib.csprojResolveAssemblyReference.cache
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\obj\Debug\DesignLib.Form1.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\obj\Debug\DesignLib.LoginF.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\obj\Debug\DesignLib.MapF.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\obj\Debug\DesignLib.Properties.Resources.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\obj\Debug\DesignLib.UserControl2.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\obj\Debug\DesignLib.csproj.GenerateResource.Cache
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\obj\Debug\DesignLib.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\DesignLib.dll.config
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\DesignLib.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\DesignLib.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\AjaxMin.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\Controller.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\curs.1.exe
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\EntityFramework.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\EntityFramework.SqlServer.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\GMap.NET.Core.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\GMap.NET.WindowsForms.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\itextsharp.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\MapLibrary.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\Model.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\Newtonsoft.Json.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\System.Data.SQLite.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\System.Data.SQLite.EF6.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\System.Data.SQLite.Linq.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\GoogleApi.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\Controller.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\curs.1.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\MapLibrary.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\Model.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\EntityFramework.xml
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\EntityFramework.SqlServer.xml
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\itextsharp.xml
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\Newtonsoft.Json.xml
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\System.Data.SQLite.xml
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Debug\GoogleApi.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\obj\Debug\DesignLib.pdb

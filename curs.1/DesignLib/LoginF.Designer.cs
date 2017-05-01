@@ -51,6 +51,7 @@
             this.button9 = new System.Windows.Forms.Button();
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.timer4 = new System.Windows.Forms.Timer(this.components);
+            this.rmailtb = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -172,7 +173,7 @@
             this.rcomptb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rcomptb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.rcomptb.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.rcomptb.Location = new System.Drawing.Point(31, 272);
+            this.rcomptb.Location = new System.Drawing.Point(33, 326);
             this.rcomptb.Name = "rcomptb";
             this.rcomptb.Size = new System.Drawing.Size(234, 29);
             this.rcomptb.TabIndex = 31;
@@ -233,7 +234,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(30, 326);
+            this.label1.Location = new System.Drawing.Point(40, 367);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(223, 23);
             this.label1.TabIndex = 36;
@@ -322,6 +323,20 @@
             // 
             this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
             // 
+            // rmailtb
+            // 
+            this.rmailtb.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.rmailtb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rmailtb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rmailtb.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.rmailtb.Location = new System.Drawing.Point(32, 273);
+            this.rmailtb.Name = "rmailtb";
+            this.rmailtb.Size = new System.Drawing.Size(234, 29);
+            this.rmailtb.TabIndex = 40;
+            this.rmailtb.Text = "Эл. почта*";
+            this.rmailtb.Visible = false;
+            this.rmailtb.Enter += new System.EventHandler(this.rlogtb_Enter);
+            // 
             // LoginF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -330,6 +345,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(300, 230);
+            this.Controls.Add(this.rmailtb);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button1);
@@ -386,5 +402,6 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.Timer timer4;
+        private System.Windows.Forms.TextBox rmailtb;
     }
 }

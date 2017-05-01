@@ -298,7 +298,7 @@ namespace DesignLib
                 userinfo[2] = fio[2];
 
             userinfo[3] = client.phone_number;
-            userinfo[4] = "emptymail@mail.ru";
+            userinfo[4] = client.e_mail==null?"-":client.e_mail;
             userinfo[5] = client.company;
 
         }
@@ -816,8 +816,9 @@ namespace DesignLib
 
             foreach (var a in orderdb.Show())
             {
-                
-                    if (a.id_client == client.id_client)
+               // richTextBox1.Text += a.id_client + " " + a.id_order + " " + a.point_of_arrival + " " + a.point_of_departure + " " + a.distance + " " + a.cost + "\n";
+
+                if (a.id_client == client.id_client)
                     {
                         p.Add(new Panel());
                         p[i1].Name = "" + a.id_order;
@@ -888,7 +889,7 @@ namespace DesignLib
                         l.Location = new Point(360, 35);
                         l.Font = new Font(l.Font.Name, 14, l.Font.Style);
                         l.AutoSize = true;
-                        l.Text = "" + orderdb.Show()[i1].cost + " руб.";
+                        l.Text = "" + a.cost + " руб.";
                         l.ForeColor = Color.FromArgb(0, 202, 33);
                         p[i1].Controls.Add(l);
                         l = new Label();

@@ -77,3 +77,23 @@ C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Contr
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Debug\System.Data.SQLite.xml
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Debug\Controller.dll.config
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Debug\Controller.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Debug\Controller.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Debug\EntityFramework.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Debug\EntityFramework.SqlServer.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Debug\GoogleApi.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Debug\Model.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Debug\Newtonsoft.Json.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Debug\System.Data.SQLite.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Debug\System.Data.SQLite.EF6.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Debug\System.Data.SQLite.Linq.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Debug\GoogleApi.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Debug\Model.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Debug\EntityFramework.xml
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Debug\EntityFramework.SqlServer.xml
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Debug\Newtonsoft.Json.xml
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Debug\System.Data.SQLite.xml
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\obj\Debug\Controller.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\obj\Debug\Controller.pdb

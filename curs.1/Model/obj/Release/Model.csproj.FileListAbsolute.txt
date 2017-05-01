@@ -3,3 +3,8 @@ C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs
 C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\Model\bin\Release\Model.pdb
 C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\Model\obj\Release\Model.dll
 C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\Model\obj\Release\Model.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Model\bin\Release\Model.dll.config
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Model\bin\Release\Model.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Model\bin\Release\Model.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Model\obj\Release\Model.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Model\obj\Release\Model.pdb

@@ -29,3 +29,9 @@ E:\name-cursovaia (2)\name-cursovaia\curs.1\Model\bin\Debug\Model.dll
 E:\name-cursovaia (2)\name-cursovaia\curs.1\Model\bin\Debug\Model.pdb
 E:\name-cursovaia (2)\name-cursovaia\curs.1\Model\obj\Debug\Model.dll
 E:\name-cursovaia (2)\name-cursovaia\curs.1\Model\obj\Debug\Model.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Model\bin\Debug\Model.dll.config
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Model\bin\Debug\Model.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Model\bin\Debug\Model.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Model\obj\Debug\Model.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Model\obj\Debug\Model.pdb

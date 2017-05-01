@@ -1,0 +1,9 @@
+F:\name-cursovaia (4)\name-cursovaia\curs.1\MapLibrary\bin\Release\MapLibrary.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\MapLibrary\bin\Release\MapLibrary.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\MapLibrary\bin\Release\GMap.NET.Core.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\MapLibrary\bin\Release\GMap.NET.WindowsForms.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\MapLibrary\obj\Release\MapLibrary.csprojResolveAssemblyReference.cache
+F:\name-cursovaia (4)\name-cursovaia\curs.1\MapLibrary\obj\Release\MapLibrary.MapF.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\MapLibrary\obj\Release\MapLibrary.csproj.GenerateResource.Cache
+F:\name-cursovaia (4)\name-cursovaia\curs.1\MapLibrary\obj\Release\MapLibrary.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\MapLibrary\obj\Release\MapLibrary.pdb
