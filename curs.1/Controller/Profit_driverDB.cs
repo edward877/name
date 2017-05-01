@@ -14,6 +14,7 @@ namespace Controller
         public Profit_driverDB(DBDataContext db)
         {
             this.db = db;
+
         }
 
         public void Insert(int id_driver, int id_order)
