@@ -96,7 +96,7 @@ namespace Model
             }
         }
 
-        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_full_name", DbType = "VarChar(50) NOT NULL", CanBeNull = false)]
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_full_name", DbType = "nvarchar(50) NOT NULL", CanBeNull = false)]
         public string full_name
         {
             get
@@ -116,7 +116,7 @@ namespace Model
             }
         }
 
-        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_phone_number", DbType = "VarChar(20) NOT NULL", CanBeNull = false)]
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_phone_number", DbType = "nvarchar(20) NOT NULL", CanBeNull = false)]
         public string phone_number
         {
             get
@@ -136,7 +136,7 @@ namespace Model
             }
         }
 
-        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_company", DbType = "VarChar(30)")]
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_company", DbType = "nvarchar(30)")]
         public string company
         {
             get
@@ -156,7 +156,7 @@ namespace Model
             }
         }
 
-        [global::System.Data.Linq.Mapping.ColumnAttribute(Name = "[e-mail]", Storage = "_e_mail", DbType = "NChar(50)")]
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Name = "[e-mail]", Storage = "_e_mail", DbType = "nvarchar(50)")]
         public string e_mail
         {
             get

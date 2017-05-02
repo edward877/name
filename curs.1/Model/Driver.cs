@@ -73,7 +73,7 @@ namespace Model
             }
         }
 
-        [Column(Storage = "_full_name", DbType = "VarChar(50) NOT NULL", CanBeNull = false)]
+        [Column(Storage = "_full_name", DbType = "nvarchar(50) NOT NULL", CanBeNull = false)]
         public string full_name
         {
             get
@@ -93,7 +93,7 @@ namespace Model
             }
         }
 
-        [Column(Storage = "_phone_number", DbType = "VarChar(20) NOT NULL", CanBeNull = false)]
+        [Column(Storage = "_phone_number", DbType = "nvarchar(20) NOT NULL", CanBeNull = false)]
         public string phone_number
         {
             get
@@ -133,7 +133,7 @@ namespace Model
             }
         }
 
-        [Column(Storage = "_passport_number", DbType = "VarChar(10) NOT NULL", CanBeNull = false)]
+        [Column(Storage = "_passport_number", DbType = "nvarchar(10) NOT NULL", CanBeNull = false)]
         public string passport_number
         {
             get
@@ -153,7 +153,7 @@ namespace Model
             }
         }
 
-        [Column(Storage = "_adress", DbType = "VarChar(50) NOT NULL", CanBeNull = false)]
+        [Column(Storage = "_adress", DbType = "nvarchar(50) NOT NULL", CanBeNull = false)]
         public string adress
         {
             get

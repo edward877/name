@@ -61,7 +61,7 @@ namespace Model
             }
         }
 
-        [Column(Storage = "_login", DbType = "VarChar(16) NOT NULL", CanBeNull = false)]
+        [Column(Storage = "_login", DbType = "nvarchar(16) NOT NULL", CanBeNull = false)]
         public string login
         {
             get
@@ -81,7 +81,7 @@ namespace Model
             }
         }
 
-        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_password", DbType = "VarChar(16) NOT NULL", CanBeNull = false)]
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_password", DbType = "nvarchar(16) NOT NULL", CanBeNull = false)]
         public string password
         {
             get
@@ -101,7 +101,7 @@ namespace Model
             }
         }
 
-        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_role", DbType = "VarChar(16) NOT NULL", CanBeNull = false)]
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_role", DbType = "nvarchar(16) NOT NULL", CanBeNull = false)]
         public string role
         {
             get

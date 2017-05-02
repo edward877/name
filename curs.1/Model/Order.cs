@@ -204,7 +204,7 @@ namespace Model
             }
         }
 
-        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_point_of_departure", DbType = "VarChar(100) NOT NULL", CanBeNull = false)]
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_point_of_departure", DbType = "nvarchar(100) NOT NULL", CanBeNull = false)]
         public string point_of_departure
         {
             get
@@ -224,7 +224,7 @@ namespace Model
             }
         }
 
-        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_point_of_arrival", DbType = "VarChar(100) NOT NULL", CanBeNull = false)]
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_point_of_arrival", DbType = "nvarchar(100) NOT NULL", CanBeNull = false)]
         public string point_of_arrival
         {
             get
@@ -404,7 +404,7 @@ namespace Model
             }
         }
 
-        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_status", DbType = "VarChar(30) NOT NULL", CanBeNull = false)]
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_status", DbType = "nvarchar(30) NOT NULL", CanBeNull = false)]
         public string status
         {
             get
@@ -424,7 +424,7 @@ namespace Model
             }
         }
 
-        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_comment", DbType = "VarChar(255)")]
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_comment", DbType = "nvarchar(255)")]
         public string comment
         {
             get

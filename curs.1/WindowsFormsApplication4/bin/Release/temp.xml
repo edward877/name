@@ -7,46 +7,166 @@
    <step>
     <travel_mode>DRIVING</travel_mode>
     <start_location>
-     <lat>54.2820782</lat>
-     <lng>48.2945782</lng>
+     <lat>54.3517583</lat>
+     <lng>48.3884936</lng>
     </start_location>
     <end_location>
-     <lat>54.2814396</lat>
-     <lng>48.2938431</lng>
+     <lat>54.3514239</lat>
+     <lng>48.3876104</lng>
     </end_location>
     <polyline>
-     <points>_~hjIcpweHTVn@p@x@hA</points>
+     <points>oqvjIa{ifHbAnD</points>
     </polyline>
     <duration>
-     <value>36</value>
+     <value>14</value>
      <text>1 min</text>
     </duration>
-    <html_instructions>Head &lt;b&gt;southwest&lt;/b&gt; toward &lt;b&gt;ул. Кузоватовская&lt;/b&gt;</html_instructions>
+    <html_instructions>Head &lt;b&gt;southwest&lt;/b&gt;</html_instructions>
     <distance>
-     <value>86</value>
-     <text>86 m</text>
+     <value>68</value>
+     <text>68 m</text>
     </distance>
    </step>
    <step>
     <travel_mode>DRIVING</travel_mode>
     <start_location>
-     <lat>54.2814396</lat>
-     <lng>48.2938431</lng>
+     <lat>54.3514239</lat>
+     <lng>48.3876104</lng>
     </start_location>
     <end_location>
-     <lat>54.2852645</lat>
-     <lng>48.2845127</lng>
+     <lat>54.3508876</lat>
+     <lng>48.3881088</lng>
     </end_location>
     <polyline>
-     <points>_zhjIokweHeAlDo@jBsB|GSr@k@hBQj@aBlFc@zAwArE_@pA{BdHeApD</points>
+     <points>kovjIquifHhBcB</points>
     </polyline>
     <duration>
-     <value>156</value>
-     <text>3 mins</text>
+     <value>18</value>
+     <text>1 min</text>
     </duration>
-    <html_instructions>Turn &lt;b&gt;right&lt;/b&gt; onto &lt;b&gt;ул. Кузоватовская&lt;/b&gt;</html_instructions>
+    <html_instructions>Turn &lt;b&gt;left&lt;/b&gt; toward &lt;b&gt;ул. Розы Люксембург&lt;/b&gt;</html_instructions>
     <distance>
-     <value>740</value>
+     <value>68</value>
+     <text>68 m</text>
+    </distance>
+    <maneuver>turn-left</maneuver>
+   </step>
+   <step>
+    <travel_mode>DRIVING</travel_mode>
+    <start_location>
+     <lat>54.3508876</lat>
+     <lng>48.3881088</lng>
+    </start_location>
+    <end_location>
+     <lat>54.3498342</lat>
+     <lng>48.3850579</lng>
+    </end_location>
+    <polyline>
+     <points>alvjIuxifHrBhIPn@\xAd@jBH`@</points>
+    </polyline>
+    <duration>
+     <value>53</value>
+     <text>1 min</text>
+    </duration>
+    <html_instructions>Turn &lt;b&gt;right&lt;/b&gt; toward &lt;b&gt;ул. Розы Люксембург&lt;/b&gt;</html_instructions>
+    <distance>
+     <value>230</value>
+     <text>0.2 km</text>
+    </distance>
+    <maneuver>turn-right</maneuver>
+   </step>
+   <step>
+    <travel_mode>DRIVING</travel_mode>
+    <start_location>
+     <lat>54.3498342</lat>
+     <lng>48.3850579</lng>
+    </start_location>
+    <end_location>
+     <lat>54.3500640</lat>
+     <lng>48.3848333</lng>
+    </end_location>
+    <polyline>
+     <points>mevjIseifHEDg@f@</points>
+    </polyline>
+    <duration>
+     <value>6</value>
+     <text>1 min</text>
+    </duration>
+    <html_instructions>Turn &lt;b&gt;right&lt;/b&gt; toward &lt;b&gt;ул. Розы Люксембург&lt;/b&gt;</html_instructions>
+    <distance>
+     <value>29</value>
+     <text>29 m</text>
+    </distance>
+    <maneuver>turn-right</maneuver>
+   </step>
+   <step>
+    <travel_mode>DRIVING</travel_mode>
+    <start_location>
+     <lat>54.3500640</lat>
+     <lng>48.3848333</lng>
+    </start_location>
+    <end_location>
+     <lat>54.3495045</lat>
+     <lng>48.3829791</lng>
+    </end_location>
+    <polyline>
+     <points>{fvjIedifH^~A~@|EDTH\</points>
+    </polyline>
+    <duration>
+     <value>33</value>
+     <text>1 min</text>
+    </duration>
+    <html_instructions>Turn &lt;b&gt;left&lt;/b&gt; toward &lt;b&gt;ул. Розы Люксембург&lt;/b&gt;</html_instructions>
+    <distance>
+     <value>135</value>
+     <text>0.1 km</text>
+    </distance>
+    <maneuver>turn-left</maneuver>
+   </step>
+   <step>
+    <travel_mode>DRIVING</travel_mode>
+    <start_location>
+     <lat>54.3495045</lat>
+     <lng>48.3829791</lng>
+    </start_location>
+    <end_location>
+     <lat>54.3430979</lat>
+     <lng>48.3893228</lng>
+    </end_location>
+    <polyline>
+     <points>kcvjIsxhfHbAcALKlEsEh@i@hAoAhAeA\[~@y@h@i@TSfAsALQDGxCqCr@w@HMnIuH</points>
+    </polyline>
+    <duration>
+     <value>121</value>
+     <text>2 mins</text>
+    </duration>
+    <html_instructions>Turn &lt;b&gt;left&lt;/b&gt; onto &lt;b&gt;ул. Розы Люксембург&lt;/b&gt;</html_instructions>
+    <distance>
+     <value>823</value>
+     <text>0.8 km</text>
+    </distance>
+    <maneuver>turn-left</maneuver>
+   </step>
+   <step>
+    <travel_mode>DRIVING</travel_mode>
+    <start_location>
+     <lat>54.3430979</lat>
+     <lng>48.3893228</lng>
+    </start_location>
+    <end_location>
+     <lat>54.3397305</lat>
+     <lng>48.3796363</lng>
+    </end_location>
+    <polyline>
+     <points>k{tjIg`jfHlAdF|@nDpBbIhCnKdAfEfBfH`@|AhAvE</points>
+    </polyline>
+    <duration>
+     <value>107</value>
+     <text>2 mins</text>
+    </duration>
+    <html_instructions>Turn &lt;b&gt;right&lt;/b&gt; onto &lt;b&gt;ул. Симбирская&lt;/b&gt;</html_instructions>
+    <distance>
+     <value>731</value>
      <text>0.7 km</text>
     </distance>
     <maneuver>turn-right</maneuver>
@@ -54,49 +174,98 @@
    <step>
     <travel_mode>DRIVING</travel_mode>
     <start_location>
-     <lat>54.2852645</lat>
-     <lng>48.2845127</lng>
+     <lat>54.3397305</lat>
+     <lng>48.3796363</lng>
     </start_location>
     <end_location>
-     <lat>54.2934046</lat>
-     <lng>48.2701276</lng>
+     <lat>54.3370164</lat>
+     <lng>48.3817763</lng>
     </end_location>
     <polyline>
-     <points>{qijIequeHWnAQn@GRELI\Wz@aB`G_@rAmAvEgBjFQn@Qb@iAjEe@pBgBlH{AlGi@hBc@`AU`@GJe@b@m@d@wLtJgDzBk@`@e@^</points>
+     <points>iftjIwchfHH\HZp@i@~FuFjAgAjC}B</points>
     </polyline>
     <duration>
-     <value>179</value>
-     <text>3 mins</text>
+     <value>80</value>
+     <text>1 min</text>
     </duration>
-    <html_instructions>Continue onto &lt;b&gt;просп. Олимпийский&lt;/b&gt;</html_instructions>
+    <html_instructions>Turn &lt;b&gt;left&lt;/b&gt; onto &lt;b&gt;пр. Нариманова&lt;/b&gt;/&lt;b&gt;Р241&lt;/b&gt;</html_instructions>
     <distance>
-     <value>1348</value>
-     <text>1.3 km</text>
+     <value>352</value>
+     <text>0.4 km</text>
     </distance>
+    <maneuver>turn-left</maneuver>
    </step>
    <step>
     <travel_mode>DRIVING</travel_mode>
     <start_location>
-     <lat>54.2934046</lat>
-     <lng>48.2701276</lng>
+     <lat>54.3370164</lat>
+     <lng>48.3817763</lng>
+    </start_location>
+    <end_location>
+     <lat>54.3071512</lat>
+     <lng>48.3496307</lng>
+    </end_location>
+    <polyline>
+     <points>kusjIcqhfHb@lBt@fDb@lBn@jC~@dEzBdKPr@vArGx@lD`@dBp@dDz@bEf@tBdB~HdAtEp@vC\bBTbANp@VhAZvANh@Nn@Vn@Pb@tAhDRd@t@nB`AdCd@hAN^JV^bAh@tAdAnCTh@f@pAh@vA`@dAh@rAJXRb@NX\d@RNFDNH^JbAHpAPnDRxE^bCPf@Dl@DpCRd@Rd@BzCR`A@tBKhCKpBEl@CbDG~GIv@Bv@Jd@Nv@XPHd@Vn@^lDzD~@dAxOpQpC|ChAfAXT^T|@ZrHxAhB^v@P^JfANB@</points>
+    </polyline>
+    <duration>
+     <value>523</value>
+     <text>9 mins</text>
+    </duration>
+    <html_instructions>Turn &lt;b&gt;right&lt;/b&gt; onto &lt;b&gt;ул. Урицкого&lt;/b&gt;/&lt;b&gt;Р241&lt;/b&gt;&lt;div style=&quot;font-size:0.9em&quot;&gt;Continue to follow Р241&lt;/div&gt;</html_instructions>
+    <distance>
+     <value>4301</value>
+     <text>4.3 km</text>
+    </distance>
+    <maneuver>turn-right</maneuver>
+   </step>
+   <step>
+    <travel_mode>DRIVING</travel_mode>
+    <start_location>
+     <lat>54.3071512</lat>
+     <lng>48.3496307</lng>
+    </start_location>
+    <end_location>
+     <lat>54.3068422</lat>
+     <lng>48.3489292</lng>
+    </end_location>
+    <polyline>
+     <points>uzmjIehbfHV`@NVJf@Hh@</points>
+    </polyline>
+    <duration>
+     <value>10</value>
+     <text>1 min</text>
+    </duration>
+    <html_instructions>Keep &lt;b&gt;right&lt;/b&gt; to continue toward &lt;b&gt;ш. Московское&lt;/b&gt;/&lt;b&gt;Р178&lt;/b&gt;</html_instructions>
+    <distance>
+     <value>58</value>
+     <text>58 m</text>
+    </distance>
+    <maneuver>keep-right</maneuver>
+   </step>
+   <step>
+    <travel_mode>DRIVING</travel_mode>
+    <start_location>
+     <lat>54.3068422</lat>
+     <lng>48.3489292</lng>
     </start_location>
     <end_location>
      <lat>54.2912740</lat>
      <lng>48.2553011</lng>
     </end_location>
     <polyline>
-     <points>wdkjIiwreHdCrMBXFZD\RfB|@nK^dEFt@VfDXpDH~@jAbP\xD@nB@fBAb@C`AAVGfA?L?NAR?H?f@</points>
+     <points>wxmjIycbfHOrAIdASxAI~@InAMdEeB~j@E|AcAbZCn@Cx@E~ASrFCz@EjAQpF?XBfAHzAL`BRlBLlAZdDhAnLHv@\lDHr@LnAXtCt@hId@`FLtA|@bJPxBh@tFj@jGrB~Rv@|Hx@`Ij@dFh@dFz@|INdBRvB`AtK|@`JJdATvBTnBJdAT~BRnARz@\nAnBvG^lAhGxR~@tC\dA|@hCt@|BrCfIjBzFhA|Dl@xBp@bCpCrLdBvHVtAXxAzB~LZdBd@dCZbBd@bCP|@lArGLt@TdA\dBP~@dCrMBXFZD\RfB|@nK^dEFt@VfDXpDH~@jAbP\xD@nB@fBAb@C`AAVGfA?L?NAR?H?f@</points>
     </polyline>
     <duration>
-     <value>84</value>
-     <text>1 min</text>
+     <value>635</value>
+     <text>11 mins</text>
     </duration>
-    <html_instructions>Turn &lt;b&gt;left&lt;/b&gt; onto &lt;b&gt;ш. Московское&lt;/b&gt;/&lt;b&gt;Р178&lt;/b&gt;</html_instructions>
+    <html_instructions>Turn &lt;b&gt;right&lt;/b&gt; onto &lt;b&gt;ш. Московское&lt;/b&gt;/&lt;b&gt;Р178&lt;/b&gt;</html_instructions>
     <distance>
-     <value>1003</value>
-     <text>1.0 km</text>
+     <value>6518</value>
+     <text>6.5 km</text>
     </distance>
-    <maneuver>turn-left</maneuver>
+    <maneuver>turn-right</maneuver>
    </step>
    <step>
     <travel_mode>DRIVING</travel_mode>
@@ -1073,48 +1242,49 @@
     </distance>
    </step>
    <duration>
-    <value>42884</value>
-    <text>11 hours 55 mins</text>
+    <value>44029</value>
+    <text>12 hours 14 mins</text>
    </duration>
    <distance>
-    <value>868624</value>
-    <text>869 km</text>
+    <value>878760</value>
+    <text>879 km</text>
    </distance>
    <start_location>
-    <lat>54.2820782</lat>
-    <lng>48.2945782</lng>
+    <lat>54.3517583</lat>
+    <lng>48.3884936</lng>
    </start_location>
    <end_location>
     <lat>55.7536656</lat>
     <lng>37.6225908</lng>
    </end_location>
-   <start_address>Kuzovatovskaya ul., 21, Ulyanovsk, Ulyanovskaya oblast', Russia, 432045</start_address>
-   <end_address>Krasnaya ploshad, Moskva, Russia, 109012</end_address>
+   <start_address>ul. Severnyy Venets, 32, Ulyanovsk, Ulyanovskaya oblast', Russia, 432027</start_address>
+   <end_address>Red Square, Moskva, Russia, 109012</end_address>
   </leg>
   <copyrights>Map data ©2017 Google</copyrights>
   <overview_polyline>
-   <points>_~hjIcpweHok@j`C}KzqBqFfvB`C|gRokAvuPbEdmE}o@|rBpoBbf]qdCzxd@hX|rF~|AdwH~xCpwP`G`eCe_BxjKz[b~KqLjhGcn@hqC_nAbmFsyBruDymCz`F{cDl~Ncu@f}Me~EteMmnBhyOaqDjkTy[~vBl]~bFxcEdkPrbBdxMfZhzN{xAb{Tvw@~aV{PlyWdbAdxZd}@~{Cg@r{CbZfoHzBjbFraEv`RcQ|dK|vD`bR`xClcNraGvzKhzAd`HtvCxrEz~@f|Aw`AxzA}lBrzH~jBpc`@d@rdEkpAzzD{oBb`HkdBhiAy`@p}AsiBj~Bm`AxhFsgGfgKub@doFnm@lvEvgBbuHj]v{J~BhhTdc@zsDx}@r`DeIpsGsXtwJfDdiEc}AtkQg~@vcLqrAruNax@xuZen@lmIq_Cx~H_yCtf@w_AhhAku@~iAj_@pxDw@hlPhaH|sXfmNh`g@f{@nyBvoCpqA`tBhy@bvBitAr|Dqo@phGveBt~K`zEbgAr}GhhAjpA~pC`wMjqCvvMtv@foFoBfwB~`@zMpeAxAjK|x@pLrp@g`@~v@c~@vkCa`A`kEe|Ap}AinC`gE_Y|tA_HnzEowAfvDg`BngBc^|cDe~@zwEqs@~uBg`B`iAq|DpgCmn@nfAbg@r{Od{@fmGaz@|eG}k@lsDx`A|_I`jBfzFd}C`xXwBdtVlyCrsXx|Cj{C~}@ztCrvBj~Cld@vhLiUpfIyeAv~E{s@`uD`E|}AtbAbhD`|Ctr@yVz|GafIheb@iaGly[wqCvhS}nBzsLuj@lhAe~A`gC{oCloByVb_CmDfoF{_@xjNerFxhJaaChkEwcArlKgbAb_Vld@z|Hqs@pyM||A~bXsFrmPch@`lLob@pzCgnCznHodBroD}aD`zDyhDdJkmFfmH_tAzhBkyBf}@mu@r}ByjCpxH{_ApnEuv@dqEeoDpzH}}AblBo|ClvHsd@p}Kcq@byG{_AplC_`Exc@yz@_k@w^jYyaAh~DuzAdeGibOzd^eeS`jf@weNloYodFl}KaaElyIc}BtdB}`DhzDo}BaZszB~Duq@no@ykAldI_}AxrKm_B|aIicAnxFqxAhsBqdC~GqeC~gFedCl~N{aL`_PckGvdEyhBz_D_UzoB]`mBko@dhEeo@tmCsEtcFn@tdCkxAfz@ysBrgBu`DhvC_bDzjBayCxjE_`H|hKoyEdlKgrDrgHc~A~`BiyCdaHonGxnOsiBvhHsh@j`JqoC`sJy~B`bEg`@t{@zZnj@Pj@</points>
+   <points>oqvjIa{ifHbVhXjb@yP`f@|q@pYxqAfk@~u@`jBtl@nm@ptJhx@jaF~J`rMa\xsK_x@twRoq@hpBjeAn}Tbc@ztL{bCbbd@jyDdkPjhBzcOg}Ah}If@`mEjZvsM{jAf}FabCz{HelBdnBouEh~Nut@puGwv@hdLgyE|tL}~Evo^etAtxGn@djDj_CfwKlmBvmHj`BfjPdLnvN}rAnmSli@xo]mAvpR|Vb_Lth@fhIbw@xyC_CroDf^d`HLtvB||@nlJ|iBzvF`YhxDsOdkHhmAhoGngEheRl}@lpEpcFjqIryA~hHhgFtoImhBvcE_u@nnJbV|kIfpAtsUaxBhkJmkBznEaxApvA{yC`cFusB|iIeiD~wEi[pyCyHh`ErnAhkGzrA`_GfZjoRjA`yMp{@dvB|ZpeIko@jhEuM`uRulAdaNwvBxkScg@hfQar@viSkdBpdKgx@tiBcfAlM_pAlUyn@n`Aaw@jZn[b_DmOjkF|VbkN``EdnO`vEdoPf|Gl`VhfB~jGbzF~eD|rAIrmBwzAjoE{]vnIjjDj|EbqBtkBlbBlb@tgGxH`Jr~@ze@ri@naDdmAdkFroAzoFhbBl}G~RbsCrShbF~gBvPrYjjBygArdB{dBzbIg`El}D}o@fhCjLflBsiAjxDyn@vgCy}AveBav@fpFgkBxkGksGfmEmg@z_AnIbjHjxAbeO}cBjcMxxBp_MzfA|wGxeCvlSsWj`ChFddNprA|rM~|@dvJ~VhxBl}Ch|CpwDbyHd`@puMoe@leJajBrgIdF~fB|lAxaDlpChi@mBlz@egD`{WozFbvYyeGzo]mbDnnSa`AbzCymFdyFqUtzBwIrmM_[roGkz@riB{kChxDolBdjD{|AphEim@riJ}u@xoM~^lxOwr@brMp_@pyHfcAxdRgBhrPgsAvjJie@nhEotEzpJo`DtrDcbB_EafAlRe{Ad`CssBbtCcm@|d@msB`zB_tBjjAkaA~jGa_C|lDa_@r{GawBl~DwnFp{JosBxwG_z@pvPys@bjEa_B|y@geCbKsy@wi@kfA|iCyuGtkSkwVpbm@ii`@xh{@eoHldKolCtl@}iC_]klB`mByvAbpLejEjqVe_At_CcmBzq@sjAhKy{AjrCw|A`cGwfBr`KypFpiHyvFngGyrDflCcq@vrA}iAhoCbDz_@kEj}BwzA`mI}FdlJyrCvtAu`CdcDejEnvB}nIriKepIjbQ}lC|{EkiEb`H{yH~nQ_cEpzPiuBdkNsjA|gDugAzpAigA~{Cd`@rZ</points>
   </overview_polyline>
   <bounds>
    <southwest>
-    <lat>53.9980719</lat>
+    <lat>53.9978868</lat>
     <lng>37.6225908</lng>
    </southwest>
    <northeast>
-    <lat>55.7582246</lat>
-    <lng>48.2945782</lng>
+    <lat>55.7589835</lat>
+    <lng>48.3884936</lng>
    </northeast>
   </bounds>
  </route>
  <geocoded_waypoint>
   <geocoder_status>OK</geocoder_status>
   <type>street_address</type>
-  <place_id>ChIJIX64NqA2XUER3KMmhIcLZC0</place_id>
+  <place_id>ChIJd6QZ3gM6XUERd1k7e7T1Ikw</place_id>
  </geocoded_waypoint>
  <geocoded_waypoint>
   <geocoder_status>OK</geocoder_status>
-  <type>route</type>
-  <place_id>ChIJAcyCZFdKtUYRv6AmH5Tglts</place_id>
+  <type>establishment</type>
+  <type>point_of_interest</type>
+  <place_id>ChIJGaSPc1pKtUYRHzFSa1B9NHw</place_id>
  </geocoded_waypoint>
 </DirectionsResponse>
 
