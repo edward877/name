@@ -67,6 +67,7 @@ namespace View
         private void button6_Click(object sender, EventArgs e)
         {
             SendEmail send = new SendEmail();
+            //  send.SendMessage("eduard.arkhipov2017@yandex.ru", "test", "hehe", "D:\\1.ods");
             send.SendMessage("eduard.arkhipov2017@yandex.ru", "test", "hehe");
         }
     }

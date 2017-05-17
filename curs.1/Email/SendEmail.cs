@@ -31,6 +31,19 @@ namespace Email
             Message.Body = text;
             Smtp.Send(Message);
         }
+        public void SendMessage(string email, string subject, string text, string file)
+        {
+            MailMessage Message = new MailMessage();
+            Message.From = new MailAddress("the.garage@mail.ru");
+            Message.To.Add(new MailAddress(email));
+            Message.Subject = subject;
+            Message.Body = text;
+            Attachment attach = new Attachment(file,  MediaTypeNames.Application.Octet);
+            Message.Attachments.Add(attach);
+            Smtp.Send(Message);
+        }
+
+       
 
     }
 }
