@@ -241,8 +241,13 @@ namespace Model
 
         public override string ToString()
         {
-            return full_name + " || " + phone_number + " || " + date_of_birth.ToString("dd'/'MM'/'yyyy")
-                + " || " + passport_number + " || " + adress + " || " + status;
+            string driver = full_name + " || " + phone_number + " || " + date_of_birth.ToString("dd'/'MM'/'yyyy")
+                + " || " + passport_number + " || " + adress + " || ";
+            if (status)
+            {
+                driver += "свободен";
+            } else { driver += "занят"; }
+            return driver;
         }
     }
 

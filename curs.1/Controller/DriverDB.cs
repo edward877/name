@@ -59,6 +59,11 @@ namespace Controller
             return db.Driver.Where(d => d.id_driver >= 0).ToList();
         }
 
+        public Driver Show(int id_driver)
+        {
+            return db.Driver.Where(d => d.id_driver == id_driver).FirstOrDefault();
+        }
+
         public int? FindFreeDriver()
         {
             Driver driver = db.Driver.Where(d => d.status).FirstOrDefault();

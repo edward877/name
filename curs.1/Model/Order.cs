@@ -53,6 +53,7 @@ namespace Model
 
         private EntityRef<Driver> _Driver;
         private DBDataContext db;
+       
 
         #region Определения метода расширяемости
         partial void OnLoaded();
@@ -611,13 +612,13 @@ namespace Model
             entity.Order = null;
         }
 
-        public override string ToString()
-        {
-            return _id_order + " || " + _id_driver + " || " + _id_car
-                + " || " + _id_client + " || " + _point_of_departure + " || " + _point_of_arrival
-                + " || " + _weight + " || " + _express + " || " + _reg_date.ToString("dd'/'MM'/'yyyy")
-                + " || " + _cost + " || " + _paid + " || " + _status;
-        }
+        //public override string ToString()
+        //{
+        //    return _id_order + " || " + _id_driver + " || " + _id_car
+        //        + " || " + _id_client + " || " + _point_of_departure + " || " + _point_of_arrival
+        //        + " || " + _weight + " || " + _express + " || " + _reg_date.ToString("dd'/'MM'/'yyyy")
+        //        + " || " + _cost + " || " + _paid + " || " + _status;
+        //}
         
 
     }

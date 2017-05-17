@@ -14,12 +14,15 @@ namespace Controller
         DriverDB driverdb;
         CarDB cardb;
         Profit_driverDB profitdb;
+        ClientDB clientdb;
+
         public OrderDB(DBDataContext db)
         {
             this.db = db;
             driverdb = new DriverDB(db);
             cardb = new CarDB(db);
             profitdb = new Profit_driverDB(db);
+            clientdb = new ClientDB(db);
         }
 
 
@@ -104,11 +107,15 @@ namespace Controller
             Order order = db.Order.Where(o => o.id_order == id_order).FirstOrDefault();
             if (order.status != "готово")
             {
-                if (order.id_driver != null)
-                    driverdb.SetFree(order.id_driver);
+                if (order.status == "готово")
+                {
+                    if (order.id_driver != null)
+                        driverdb.SetFree(order.id_driver);
 
-                if (order.id_car != null)
-                    cardb.SetFree(order.id_car);
+                    if (order.id_car != null)
+                        cardb.SetFree(order.id_car);
+                }
+               
             }
             db.Order.DeleteOnSubmit(order);
             db.SubmitChanges();
@@ -154,32 +161,6 @@ namespace Controller
             }
             catch { }
             return distance;
-        }
-
-        public double CountCost(Order order, decimal? distance)
-        {
-            ClientDB clientdb = new ClientDB(db);
-            
-            double cost = 0;
-            if (distance > 100)
-            {
-                cost += 200 + (double)distance * 15;
-            }
-            else
-            {
-                cost += 400 + (double)distance * 20;
-            }
-
-            if (order.width > 500)
-                cost =  cost + ((double)order.width - 500) * 2;
-            if (order.express)
-                cost *= 1.5;
-            if (clientdb.IsVIPClient(order.id_client))
-            {
-                cost *= 0.85;
-            }
-
-            return cost;
         }
 
         public double CountCost(double distance, double width, bool express, int id)
@@ -232,6 +213,49 @@ namespace Controller
                 }
             }
         }
+
+        public string ShowString(Order order)
+        {
+            string orderStr = "";
+            string tab = " || ";
+            orderStr += order.id_order + tab;
+            if (order.id_driver != null)
+            {
+                orderStr += driverdb.Show((int)order.id_driver).full_name + tab;
+            }else
+            {
+                orderStr += "водитель не назначен" + tab ;
+            }
+
+            if (order.id_car != null)
+            {
+                orderStr += cardb.Show((int)order.id_car).brand + tab;
+            }
+            else
+            {
+                orderStr += "машина не назначена" + tab;
+            }
+            orderStr += clientdb.Show((int)order.id_client).full_name + tab;
+          //  orderStr += order.id_client + tab;
+            orderStr += order.point_of_departure + tab;
+            orderStr += order.point_of_arrival + tab;
+            orderStr += order.weight + tab;
+            orderStr += order.express ? "экспресс доставка" : "обычная доставка" + tab;
+            orderStr += order.reg_date.ToString("dd'/'MM'/'yyyy") + tab;
+            orderStr += order.cost + " рублей" +tab;
+            orderStr += order.paid + " заплачено" + tab;
+            orderStr += order.status;
+            return orderStr;
+        }
+
+        //public override string ToString()
+        //{
+        //    return _id_order + " || " + _id_driver + " || " + _id_car
+        //        + " || " + _id_client + " || " + _point_of_departure + " || " + _point_of_arrival
+        //        + " || " + _weight + " || " + _express + " || " + _reg_date.ToString("dd'/'MM'/'yyyy")
+        //        + " || " + _cost + " || " + _paid + " || " + _status;
+        //}
+
 
     }
 }

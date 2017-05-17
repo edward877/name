@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Report;
 
 namespace View
 {
@@ -27,18 +28,21 @@ namespace View
 
         void showbd()
         {
+            ReportProfitController report = new ReportProfitController(db);
             try
             {
                 listBox1.Items.Clear();
-                foreach (var v in profit_driverdb.Show())
+                foreach (var v in report.Money())
                 {
-                     listBox1.Items.Add(v);
+                    listBox1.Items.Add(v);
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+
+
         }
     }
 }

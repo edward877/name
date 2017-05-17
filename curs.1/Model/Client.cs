@@ -257,7 +257,7 @@ namespace Model
 
         public override string ToString()
         {
-            return _id_client + " || " + _id_user + " || " + _full_name + " || " + _phone_number
+            return _id_client + " || " + _full_name + " || " + _phone_number
                 + " || " + _company + " || " + _e_mail;
         }
     }

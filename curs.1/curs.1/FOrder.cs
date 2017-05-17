@@ -75,9 +75,6 @@ namespace View
 
                 Order order = new Order();
 
-                //orderdb.Insert(point_of_departure, point_of_arrival, weight, width, height,
-                //    length, express, comment, orderdb.countDistantion(point_of_departure, point_of_arrival));
-
                 showbd();
 
              }
@@ -139,14 +136,14 @@ namespace View
                 {
                     foreach (var v in orderdb.Show(Visitor.client.id_client))
                     {
-                        listBox1.Items.Add(v);
+                        listBox1.Items.Add(orderdb.ShowString(v));
                     }
                 }
                 else
                 {
                     foreach (var v in orderdb.Show())
                     {
-                        listBox1.Items.Add(v);
+                        listBox1.Items.Add(orderdb.ShowString(v));
                     }
                 }
                

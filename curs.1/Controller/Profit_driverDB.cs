@@ -14,7 +14,6 @@ namespace Controller
         public Profit_driverDB(DBDataContext db)
         {
             this.db = db;
-
         }
 
         public void Insert(int id_driver, int id_order)
@@ -39,7 +38,7 @@ namespace Controller
             Order order = db.Order.Where(o => o.id_order == id_order).FirstOrDefault();
             return (order.cost/10);
         }
-        
+
 
     }
 }

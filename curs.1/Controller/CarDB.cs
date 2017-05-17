@@ -61,6 +61,11 @@ namespace Controller
             return db.Car.Where(c => c.id_car >= 0).ToList();
         }
 
+        public Car Show(int id_car)
+        {
+            return db.Car.Where(c => c.id_car == id_car).FirstOrDefault();
+        }
+
         public int? FindFreeCar(Order order)
         {
             List<Car> cars = db.Car.Where(c => c.status).ToList();

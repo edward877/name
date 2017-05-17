@@ -188,6 +188,10 @@
       <Project>{f96284c0-044f-442d-84d6-55406797be85}</Project>
       <Name>Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Report\Report.csproj">
+      <Project>{b3e4cd69-6582-4603-ad5f-bad9ac4788a3}</Project>
+      <Name>Report</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

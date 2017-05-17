@@ -56,6 +56,10 @@ namespace Controller
             return db.Client.Where(c => c.id_client >= 0).ToList();
         }
 
+        public Client Show(int id_client)
+        {
+            return db.Client.Where(c => c.id_client == id_client).FirstOrDefault();
+        }
 
         public bool IsVIPClient(int client_id)
         {

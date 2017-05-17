@@ -13,3 +13,4 @@ C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Model
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Model\bin\Release\Model.pdb
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Model\obj\Release\Model.dll
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Model\obj\Release\Model.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
