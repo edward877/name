@@ -610,6 +610,16 @@ namespace Model
             this.SendPropertyChanging();
             entity.Order = null;
         }
+
+        public override string ToString()
+        {
+            return _id_order + " || " + _id_driver + " || " + _id_car
+                + " || " + _id_client + " || " + _point_of_departure + " || " + _point_of_arrival
+                + " || " + _weight + " || " + _express + " || " + _reg_date.ToString("dd'/'MM'/'yyyy")
+                + " || " + _cost + " || " + _paid + " || " + _status;
+        }
+        
+
     }
 
 
