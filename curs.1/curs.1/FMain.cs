@@ -2,6 +2,7 @@
 using Controller;
 using System;
 using System.Windows.Forms;
+using Email;
 
 namespace View
 {
@@ -61,6 +62,12 @@ namespace View
         private void FMain_Load_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            SendEmail send = new SendEmail();
+            send.SendMessage("eduard.arkhipov2017@yandex.ru", "test", "hehe");
         }
     }
 }

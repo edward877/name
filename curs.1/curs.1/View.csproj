@@ -180,6 +180,10 @@
       <Project>{0c0239bb-3e91-4056-bec5-54f2a47aedf2}</Project>
       <Name>Controller</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Email\Email.csproj">
+      <Project>{1b1f03cf-545c-409e-ae46-534c2d2b0617}</Project>
+      <Name>Email</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{f96284c0-044f-442d-84d6-55406797be85}</Project>
       <Name>Model</Name>
