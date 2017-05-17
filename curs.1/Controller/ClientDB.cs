@@ -17,27 +17,28 @@ namespace Controller
 
         public void Insert(string login, string password, string full_name, string phone_number, string company, string email)
         {
-                User user = userdb.Insert(login, password, "client");
+            User user = userdb.Insert(login, password, "client");
 
-                Client client = new Client();
-                client.id_user = user.Id_user;
-                client.full_name = full_name;
-                client.phone_number = phone_number;
-                client.company = company;
-                client.e_mail = email;
-                db.Client.InsertOnSubmit(client);
-                db.SubmitChanges();
+            Client client = new Client();
+            client.id_user = user.Id_user;
+            client.full_name = full_name;
+            client.phone_number = phone_number;
+            client.company = company;
+            client.e_mail = email;
+            db.Client.InsertOnSubmit(client);
+            db.SubmitChanges();
 
 
         }
 
 
-        public void Update(int id_client, string full_name, string phone_number, string company)
+        public void Update(int id_client, string full_name, string phone_number, string company, string email)
         {
             Client client = db.Client.Where(c => c.id_client == id_client).FirstOrDefault();
             client.full_name = full_name;
             client.phone_number = phone_number;
             client.company = company;
+            client.e_mail = email;
             db.SubmitChanges();
         }
 

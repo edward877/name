@@ -31,6 +31,8 @@ namespace View
 
         string password;
 
+        string email;
+
         ClientDB clientdb;
 
 
@@ -53,8 +55,8 @@ namespace View
                 login = f_red.textBox5.Text;
 
                 password = f_red.textBox6.Text;
-                
-               // clientdb.Insert(login, password, full_name, phone_number, company);
+
+                clientdb.Insert(login, password, full_name, phone_number, company, email);
                 
                 showbd();
             }
@@ -89,7 +91,7 @@ namespace View
 
                 FillFields();
 
-                clientdb.Update(client.id_client, full_name, phone_number, company);
+                clientdb.Update(client.id_client, full_name, phone_number, company, email);
 
                 showbd();
             }
@@ -125,6 +127,8 @@ namespace View
             phone_number = f_red.textBox2.Text;
 
             company = f_red.textBox3.Text;
+
+            email = f_red.textBoxEmail.Text;
         }
 
         private void FClient_Load(object sender, EventArgs e)

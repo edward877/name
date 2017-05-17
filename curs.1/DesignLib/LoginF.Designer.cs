@@ -402,6 +402,6 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.Timer timer4;
-        private System.Windows.Forms.TextBox rmailtb;
+        public System.Windows.Forms.TextBox rmailtb;
     }
 }

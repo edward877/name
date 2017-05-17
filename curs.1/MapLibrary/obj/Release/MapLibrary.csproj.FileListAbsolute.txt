@@ -7,3 +7,12 @@ F:\name-cursovaia (4)\name-cursovaia\curs.1\MapLibrary\obj\Release\MapLibrary.Ma
 F:\name-cursovaia (4)\name-cursovaia\curs.1\MapLibrary\obj\Release\MapLibrary.csproj.GenerateResource.Cache
 F:\name-cursovaia (4)\name-cursovaia\curs.1\MapLibrary\obj\Release\MapLibrary.dll
 F:\name-cursovaia (4)\name-cursovaia\curs.1\MapLibrary\obj\Release\MapLibrary.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\MapLibrary\bin\Release\MapLibrary.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\MapLibrary\bin\Release\MapLibrary.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\MapLibrary\bin\Release\GMap.NET.Core.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\MapLibrary\bin\Release\GMap.NET.WindowsForms.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\MapLibrary\obj\Release\MapLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\MapLibrary\obj\Release\MapLibrary.MapF.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\MapLibrary\obj\Release\MapLibrary.csproj.GenerateResource.Cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\MapLibrary\obj\Release\MapLibrary.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\MapLibrary\obj\Release\MapLibrary.pdb

@@ -335,7 +335,7 @@ namespace DesignLib
         Thread tprof;
         void updprofinfo()
         {
-            clientdb.Update(client.id_client, famtb.Text + " " + imyatb.Text + " " + otchtb.Text, phonetb.Text, comptb.Text);
+            clientdb.Update(client.id_client, famtb.Text + " " + imyatb.Text + " " + otchtb.Text, phonetb.Text, comptb.Text, mailtb.Text);
         }
         private void button2_Click(object sender, EventArgs e)
         {
