@@ -102,6 +102,8 @@
             this.ordmanpan = new System.Windows.Forms.Panel();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.btninfo = new System.Windows.Forms.Button();
+            this.lblinfo = new System.Windows.Forms.Label();
             this.profpanel.SuspendLayout();
             this.menupan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.paypb)).BeginInit();
@@ -1076,6 +1078,37 @@
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
+            // btninfo
+            // 
+            this.btninfo.BackColor = System.Drawing.Color.Transparent;
+            this.btninfo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btninfo.BackgroundImage")));
+            this.btninfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btninfo.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btninfo.FlatAppearance.BorderSize = 0;
+            this.btninfo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btninfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btninfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btninfo.Location = new System.Drawing.Point(716, 461);
+            this.btninfo.Name = "btninfo";
+            this.btninfo.Size = new System.Drawing.Size(40, 40);
+            this.btninfo.TabIndex = 30;
+            this.btninfo.UseVisualStyleBackColor = false;
+            this.btninfo.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
+            this.btninfo.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
+            // 
+            // lblinfo
+            // 
+            this.lblinfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblinfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblinfo.Enabled = false;
+            this.lblinfo.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblinfo.ForeColor = System.Drawing.Color.White;
+            this.lblinfo.Location = new System.Drawing.Point(346, 463);
+            this.lblinfo.Name = "lblinfo";
+            this.lblinfo.Size = new System.Drawing.Size(364, 128);
+            this.lblinfo.TabIndex = 31;
+            this.lblinfo.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1083,6 +1116,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.lblinfo);
+            this.Controls.Add(this.btninfo);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.ordmanpan);
@@ -1213,5 +1248,7 @@
         private System.Windows.Forms.Panel ordmanpan;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btninfo;
+        private System.Windows.Forms.Label lblinfo;
     }
 }

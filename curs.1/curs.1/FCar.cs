@@ -127,5 +127,10 @@ namespace View
             status = f_red.checkBox1.Checked;
 
         }
+
+        private void FCar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
