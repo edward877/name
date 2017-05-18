@@ -24,3 +24,12 @@ F:\name-cursovaia (4)\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.MapF
 F:\name-cursovaia (4)\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.csproj.GenerateResource.Cache
 F:\name-cursovaia (4)\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.dll
 F:\name-cursovaia (4)\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.pdb
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\MapLibrary\bin\Debug\MapLibrary.dll
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\MapLibrary\bin\Debug\MapLibrary.pdb
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\MapLibrary\bin\Debug\GMap.NET.Core.dll
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\MapLibrary\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\MapLibrary\obj\Debug\MapLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\MapLibrary\obj\Debug\MapLibrary.MapF.resources
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\MapLibrary\obj\Debug\MapLibrary.csproj.GenerateResource.Cache
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\MapLibrary\obj\Debug\MapLibrary.dll
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\MapLibrary\obj\Debug\MapLibrary.pdb

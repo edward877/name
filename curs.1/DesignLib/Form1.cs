@@ -118,6 +118,7 @@ namespace DesignLib
             ordlist.Add(orderpan);
             ordlist.Add(orderpan2);
             ordlist.Add(orderpan3);
+          
         }
         void fillordmanlist()
         {
@@ -182,6 +183,40 @@ namespace DesignLib
             widthtb.Text = lengthtb.Text = heighttb.Text = "0";
             adralbl.Text = "Введите адрес";
             adrblbl.Text = "Введите адрес";
+            Panel p = new Panel();
+            p.Controls.Add(new Label() { Text = "%", ForeColor = Color.Black, Font = new Font("Times new Roman",16,FontStyle.Bold), Location=new Point(-1,2) });
+            p.Size = new Size(30,30);
+            p.BackColor = Color.Gold;
+            profpanel.Controls.Add(p);
+            profpanel.Controls[profpanel.Controls.IndexOf(p)].Location=new Point(profpanel.Size.Width-p.Width,0);
+            costL = new List<String>();
+            costL.Clear();
+
+
+            //    costL.Add(15);
+            //      costL.Add(20);
+            //      costL.Add(22);
+            //      costL.Add(2);
+            //       costL.Add(0.9);
+            //       costL.Add(1.5);
+            //       costL.Add(1.1);
+            //        costL.Add(0.85);
+            /*0*/
+            costL.Add("Начальная цена составляет 300 рублей");
+            /*1*/
+            costL.Add("Выбрана экспресс доставка. Цена увеличена на 50%");
+            /*2*/
+            costL.Add("В зимнее время цена увеличена на 10%");
+            /*3*/
+            costL.Add("Сегодня 11-е число. Действует скидка 10%");
+            /*4*/
+            costL.Add("Действует скидка постоянному клиенту 15%");
+            /*5*/
+            costL.Add("Вес груза>500. За каждый кг сверх 500кг к стоимости добавлено 2 рубля");
+            /*6*/
+            costL.Add("Длина маршрута более 100км. Цена за километр составляет 15 рублей");
+            /*7*/
+            costL.Add("Длина маршрута менее 100км. Цена за километр составляет 20 рублей");
         }
         private Int32 tmpX;
         private Int32 tmpY;
@@ -218,6 +253,8 @@ namespace DesignLib
             foreach (Control a in ordlist)
                 a.Visible = false;
             ordmanpan.Visible = false;
+            btninfo.Visible=false;
+            lblinfo.Visible=false;
         }
         private void famlbl_Click(object sender, EventArgs e)
         {
@@ -487,14 +524,78 @@ namespace DesignLib
         {
             costlbl.Text = "" + cost + " руб.";
             createordbtn.Enabled = true;
+            foreach (String a in costL1)
+            {
+                lblinfo.Text += a + "\n";
+            }
         }
         delegate void costdel();
+        List<String> costL;
+        List<String> costL1;
+        public double CountCost(double distance, double weight, bool express, int id)
+        {  
+            costL1=new List<String>();
+            costL1.Clear();
+            costL1.Add(costL[0]);
+
+
+            double cost = 0;
+            DateTime curDate = DateTime.Now;
+          
+            if (distance > 100)
+            {
+                cost += 300 +distance*15;
+                costL[6] += " (" + distance*15 + " руб).";
+                costL1.Add(costL[6]);
+            }
+            else
+            {
+                cost += 300 + distance*20;
+                costL[7] += " (" + distance*20 + " руб).";
+                costL1.Add(costL[7]);
+            }
+
+            if (weight > 500)
+            {
+                cost += (weight - 500) * 2;
+                costL[5]+=" ("+ (weight - 500) * 2 + " руб).";
+                costL1.Add(costL[5]);
+
+            }
+            if (express)
+            {
+                costL[1] += " (" + cost * 0.5 + " руб).";
+                cost *= 1.5;
+                costL1.Add(costL[1]);
+            }
+
+            if (curDate.Date.Day == 11)
+            {
+                costL[3] += " (" + cost * 0.1 + " руб).";
+                cost *= 0.9;
+                costL1.Add(costL[3]);
+            }
+            if (curDate.Date.Month < 4)
+            {
+                costL[2] += " (" + cost * 0.1 + " руб).";
+                cost *= 1.1;
+                costL1.Add(costL[2]);
+            }
+            if (clientdb.IsVIPClient(id))
+            {
+                costL[4] += " (" + cost * 0.15 + " руб).";
+                cost *= 0.85;
+                costL1.Add(costL[4]);
+            }
+            
+            return cost;
+        }
         void costcnt()
         {
             
             costdel cd = printcost;
            
-            cost =  orderdb.CountCost(dist, ves, checkBox1.Checked, client.id_client);
+            cost =  CountCost(dist, ves, checkBox1.Checked, client.id_client);
             Invoke(cd);
 
 
@@ -570,7 +671,11 @@ namespace DesignLib
                     {
                         costtr = new Thread(costcnt) { IsBackground = true };
                         costtr.Start();
+                        lblinfo.Text = "";
+                       
                         nextbtn.Visible = false;
+                        btninfo.Visible = true;
+                       
 
                     }
 
@@ -682,7 +787,7 @@ namespace DesignLib
             l.Font = new Font(l.Font.Name, 11, l.Font.Style);
             l.AutoSize = true;
             l.Text = "" + orderdb.Show()[orderdb.Show().Count - 1].distance + " км";
-            l.ForeColor = Color.FromArgb(255, 4, 193, 229);
+            l.ForeColor = Color.Red;
             p[i1].Controls.Add(l);
             l = new Label();
             l.Location = new Point(360, 35);
@@ -883,7 +988,7 @@ namespace DesignLib
                         l.Font = new Font(l.Font.Name, 11, l.Font.Style);
                         // l.AutoSize = true; orderdb.Show()[i1].
                         l.Text = "" +a.distance + " км";
-                        l.ForeColor = Color.FromArgb(255, 4, 193, 229);
+                        l.ForeColor = Color.Red;
                         p[i1].Controls.Add(l);
                         l = new Label();
                         l.Location = new Point(360, 35);
@@ -1030,6 +1135,18 @@ namespace DesignLib
             adrblbl.Visible = !adrblbl.Visible;
             adralbl.Visible = true;
             distcnt();
+        }
+
+        private void button1_MouseEnter(object sender, EventArgs e)
+        {
+            lblinfo.Enabled = true;
+            lblinfo.Visible = true;
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            lblinfo.Visible = false;
+            lblinfo.Enabled = false;
         }
     }
 }

@@ -1,0 +1,11 @@
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\Report\bin\Debug\Report.dll
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\Report\bin\Debug\Report.pdb
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\Report\bin\Debug\Controller.dll
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\Report\bin\Debug\Model.dll
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\Report\bin\Debug\GoogleApi.dll
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\Report\bin\Debug\Controller.pdb
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\Report\bin\Debug\Model.pdb
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\Report\bin\Debug\GoogleApi.pdb
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\Report\obj\Debug\Report.csprojResolveAssemblyReference.cache
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\Report\obj\Debug\Report.dll
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\Report\obj\Debug\Report.pdb

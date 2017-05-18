@@ -83,6 +83,7 @@
             this.Controls.Add(this.btnAdd);
             this.Name = "FCar";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FCar_Load);
             this.ResumeLayout(false);
 
         }
