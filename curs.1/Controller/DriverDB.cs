@@ -83,6 +83,30 @@ namespace Controller
             driver.status = true;
         }
 
-       
+        public List<Driver> Query(string full_name, string phone_number, string passport_number)
+        {
+            List<Driver> listDrivers = null;
+            listDrivers = db.Driver.Where(c => 
+                 c.full_name.Contains(full_name)
+                 && c.phone_number.Contains(phone_number)
+                 && c.passport_number.Contains(passport_number)
+            ).ToList();
+
+            return listDrivers;
+        }
+
+        public List<Driver> QueryStatus(string full_name, string phone_number, string passport_number, bool status)
+        {
+            List<Driver> listDrivers = null;
+            listDrivers = db.Driver.Where(c =>
+                 c.full_name.Contains(full_name)
+                 && c.phone_number.Contains(phone_number)
+                 && c.passport_number.Contains(passport_number)
+                 && c.status == status
+            ).ToList();
+
+            return listDrivers;
+        }
+
     }
 }

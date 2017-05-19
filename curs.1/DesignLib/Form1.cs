@@ -25,10 +25,6 @@ namespace DesignLib
         List<Label> lbllistprof;
         List<PictureBox> pblistmenu;
         int ves;
-        int height = 0;
-        int width = 0;
-        int length = 0;
-        int waylength = 0;
         DelMap dm;
         public Form1()
         {

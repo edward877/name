@@ -73,5 +73,34 @@ namespace Controller
             }
             return false;
         }
+
+
+        public List<Client> Query(string full_name, string number, string company, string email)
+        {
+            List<Client> listClient = null;
+
+            listClient = db.Client.Where(
+                c => c.full_name.Contains(full_name) &&
+                c.phone_number.Contains(number) &&
+                c.company.Contains(company) &&
+                c.e_mail.Contains(email)
+            ).ToList();
+
+            return listClient;
+        }
+
+        public List<Client> Query(string full_name, string number, string company, string email, bool isVIP)
+        {
+            List<Client> listClient = null;
+
+            listClient = db.Client.Where(
+                c => c.full_name.Contains(full_name) &&
+                c.phone_number.Contains(number) &&
+                c.company.Contains(company) &&
+                c.e_mail.Contains(email) && ( (c.Order.Count >= 3)==isVIP )
+            ).ToList();
+
+            return listClient;
+        }
     }
 }

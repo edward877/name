@@ -39,6 +39,10 @@ namespace Controller
             return (order.cost/10);
         }
 
+        public List<Profit_driver> Query(string Fio)
+        {
 
+             return db.Profit_driver.Where(p => p.Order.Driver.full_name.Contains(Fio)).ToList();
+        }
     }
 }

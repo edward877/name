@@ -236,7 +236,6 @@ namespace Controller
                 orderStr += "машина не назначена" + tab;
             }
             orderStr += clientdb.Show((int)order.id_client).full_name + tab;
-          //  orderStr += order.id_client + tab;
             orderStr += order.point_of_departure + tab;
             orderStr += order.point_of_arrival + tab;
             orderStr += order.weight + tab;
@@ -248,14 +247,48 @@ namespace Controller
             return orderStr;
         }
 
-        //public override string ToString()
-        //{
-        //    return _id_order + " || " + _id_driver + " || " + _id_car
-        //        + " || " + _id_client + " || " + _point_of_departure + " || " + _point_of_arrival
-        //        + " || " + _weight + " || " + _express + " || " + _reg_date.ToString("dd'/'MM'/'yyyy")
-        //        + " || " + _cost + " || " + _paid + " || " + _status;
-        //}
+        public List<Order> Query(string full_name, string car, string client, decimal cost, decimal paid)
+        {
 
+            List<Order> listOrder = null;
+            if (full_name == "" || car == "")
+            {
+                if (car != "")
+                {
+                    listOrder = db.Order.Where(
+                                     o => o.Car.number.Contains(car) &&
+                                     o.Client.full_name.Contains(client) &&
+                                     o.cost > cost && (o.paid > paid || o.paid == paid)
+                                  ).ToList();
+                }
+                else if (full_name != "")
+                {
+                    listOrder = db.Order.Where(
+                         o => o.Driver.full_name.Contains(full_name) &&
+                         o.Client.full_name.Contains(client) &&
+                         o.cost > cost && (o.paid > paid || o.paid == paid)
+                    ).ToList();
+                }
+                else
+                {
+                    listOrder = db.Order.Where(
+                      o => o.Client.full_name.Contains(client) &&
+                      o.cost > cost && (o.paid > paid || o.paid == paid)
+                 ).ToList();
+                }
+            }
+            else
+            {
+                listOrder = db.Order.Where(
+                 o => o.Driver.full_name.Contains(full_name) &&
+                 o.Car.number.Contains(car) &&
+                 o.Client.full_name.Contains(client) &&
+                 o.cost > cost && (o.paid > paid || o.paid == paid)
+              ).ToList();
+            }
+
+            return listOrder;
+        }
 
     }
 }

@@ -103,5 +103,32 @@ namespace Controller
             Car car = db.Car.Where(c => c.id_car == id_car).FirstOrDefault();
             car.status = true;
         }
+
+        public List<Car> Query(string number, string brand, decimal carrying_capacity)
+        {
+            List<Car> listCar = null;
+
+            listCar =  db.Car.Where(
+                c => c.number.Contains(number) &&
+                c.brand.Contains(brand) &&
+                c.carrying_capacity > carrying_capacity
+                ).ToList();
+
+            return listCar;
+        }
+
+        public List<Car> QueryStatus(string number, string brand, decimal carrying_capacity, bool status)
+        {
+            List<Car> listCar = null;
+
+            listCar = db.Car.Where(
+                c => c.number.Contains(number) &&
+                c.brand.Contains(brand) &&
+                c.carrying_capacity > carrying_capacity
+                && c.status == status
+                ).ToList();
+
+            return listCar;
+        }
     }
 }
