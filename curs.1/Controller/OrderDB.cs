@@ -293,28 +293,33 @@ namespace Controller
         public List<decimal> getMoney(int day)
         {
             List<decimal> listMoney = new List<decimal>();
-            List<Order> orders;
+            List<Order> orders = db.Order.Where(o => o.id_order >= 0).ToList();
             decimal money;
-            DateTime dateNow = DateTime.Now;
-            for(int i = day-1; i >= 0; i--)
+            int year =  DateTime.Now.Year;
+            int dayOfYear = DateTime.Now.DayOfYear;
+            int month = DateTime.Now.Month;
+            for (int i = day-1; i >= 0; i--)
             {
                 money = 0;
                 if (day != 12)
                 {
-                    orders = db.Order.Where(o => o.reg_date.Year == dateNow.Year &&
-                                    o.reg_date.DayOfYear == (dateNow.DayOfYear - i)
-                   ).ToList();
+                    foreach (Order o in orders)
+                    {
+                        if (o.reg_date.Year == year && o.reg_date.DayOfYear == dayOfYear-i)
+                        {
+                            money += o.cost;
+                        }
+                    }
                 }
                 else
                 {
-                    orders = db.Order.Where(o => o.reg_date.Year == dateNow.Year &&
-                                   o.reg_date.Month == (dateNow.Month - i)
-                    ).ToList();
-                }
-               
-                foreach( Order o in orders)
-                {
-                    money += o.cost;
+                    foreach (Order o in orders)
+                    {
+                        if (o.reg_date.Year == year && o.reg_date.Month == month - i)
+                        {
+                            money += o.cost;
+                        }
+                    }
                 }
                 listMoney.Add(money);
             }

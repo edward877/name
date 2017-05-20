@@ -27,15 +27,36 @@ namespace View
             myChart.Dock = DockStyle.Fill;
             ChartArea area = new ChartArea("Report");
             myChart.ChartAreas.Add(area);
-            area.AxisX.Minimum = 1;
+           // area.AxisX.Minimum = 0;
             Series mySeriesOfPoint = new Series("выручка");
             mySeriesOfPoint.ChartType = SeriesChartType.Column;
             mySeriesOfPoint.ChartArea = "Report";
-            List<string> day = new List<string>();
-            for (int i = 1; i <= listMoney.Count; i++)
+            int n = listMoney.Count;
+            DateTime date;
+
+            if (n == 7)
             {
-                mySeriesOfPoint.Points.AddXY(i, listMoney[i - 1]);
+                date = DateTime.Now.AddDays(-7);
+                for (int i = 1; i <= 7; i++)
+                {
+                        mySeriesOfPoint.Points.AddXY(date.AddDays(i).DayOfWeek.ToString(), listMoney[i - 1]);                 
+                }
+            }else if (n == 30)
+            {
+                date = DateTime.Now.AddDays(-30);
+                for (int i = 1; i <= 30; i++)
+                {
+                    mySeriesOfPoint.Points.AddXY(date.AddDays(i).Day.ToString(), listMoney[i - 1]);
+                }
+            }else if (n==12)
+            {
+                date = DateTime.Now.AddMonths(-12);
+                for (int i = 1; i <= 12; i++)
+                {
+                    mySeriesOfPoint.Points.AddXY(date.AddMonths(i).ToString("MMM"), listMoney[i - 1]);
+                }
             }
+           
             path = @"..\..\..\Report\chart";
             myChart.Series.Add(mySeriesOfPoint);
             myChart.SaveImage(path + ".png", ChartImageFormat.Png);

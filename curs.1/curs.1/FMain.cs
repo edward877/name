@@ -239,7 +239,7 @@ namespace View
             }
             catch (Exception ex)
             {
-               // MessageBox.Show(ex.Message);
+               MessageBox.Show(ex.Message);
             }
         }
         void showbdClients(List<Client> clientList)
@@ -674,8 +674,7 @@ namespace View
             Graph g = new Graph();
             g.Show();
             g.ShowGr(orderdb.getMoney(day));
-            
-           
+
         }
     }
 }
