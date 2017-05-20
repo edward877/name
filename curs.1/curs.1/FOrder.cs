@@ -129,29 +129,29 @@ namespace View
 
         void showbd()
         {
-            try
-            {
-                listBox1.Items.Clear();
-                if (Visitor.user.role == "client")
-                {
-                    foreach (var v in orderdb.Show(Visitor.client.id_client))
-                    {
-                        listBox1.Items.Add(orderdb.ShowString(v));
-                    }
-                }
-                else
-                {
-                    foreach (var v in orderdb.Show())
-                    {
-                        listBox1.Items.Add(orderdb.ShowString(v));
-                    }
-                }
+            //try
+            //{
+            //    listBox1.Items.Clear();
+            //    if (Visitor.user.role == "client")
+            //    {
+            //        foreach (var v in orderdb.Show(Visitor.client.id_client))
+            //        {
+            //          //  listBox1.Items.Add(orderdb.ShowString(v));
+            //        }
+            //    }
+            //    else
+            //    {
+            //        foreach (var v in orderdb.Show())
+            //        {
+            //          //  listBox1.Items.Add(orderdb.ShowString(v));
+            //        }
+            //    }
                
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
         }
 
         void FillFields()

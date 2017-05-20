@@ -643,5 +643,39 @@ namespace View
         {
             showbdProfit(profit_driverdb.Query(textBox18.Text));
         }
+
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button9_Click_1(object sender, EventArgs e)
+        {
+            groupBox1.Visible = true;
+
+        }
+
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button8_Click_2(object sender, EventArgs e)
+        {
+            groupBox1.Visible = false;
+            int day = 0;
+            switch (comboBox4.SelectedIndex)
+            {
+                case 0: day = 7; break;
+                case 1: day = 30; break;
+                case 2: day = 12; break;
+            }
+            
+            Graph g = new Graph();
+            g.Show();
+            g.ShowGr(orderdb.getMoney(day));
+            
+           
+        }
     }
 }

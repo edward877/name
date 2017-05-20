@@ -214,38 +214,38 @@ namespace Controller
             }
         }
 
-        public string ShowString(Order order)
-        {
-            string orderStr = "";
-            string tab = " || ";
-            orderStr += order.id_order + tab;
-            if (order.id_driver != null)
-            {
-                orderStr += driverdb.Show((int)order.id_driver).full_name + tab;
-            }else
-            {
-                orderStr += "водитель не назначен" + tab ;
-            }
+        //public string ShowString(Order order)
+        //{
+        //    string orderStr = "";
+        //    string tab = " || ";
+        //    orderStr += order.id_order + tab;
+        //    if (order.id_driver != null)
+        //    {
+        //        orderStr += driverdb.Show((int)order.id_driver).full_name + tab;
+        //    }else
+        //    {
+        //        orderStr += "водитель не назначен" + tab ;
+        //    }
 
-            if (order.id_car != null)
-            {
-                orderStr += cardb.Show((int)order.id_car).brand + tab;
-            }
-            else
-            {
-                orderStr += "машина не назначена" + tab;
-            }
-            orderStr += clientdb.Show((int)order.id_client).full_name + tab;
-            orderStr += order.point_of_departure + tab;
-            orderStr += order.point_of_arrival + tab;
-            orderStr += order.weight + tab;
-            orderStr += order.express ? "экспресс доставка" : "обычная доставка" + tab;
-            orderStr += order.reg_date.ToString("dd'/'MM'/'yyyy") + tab;
-            orderStr += order.cost + " рублей" +tab;
-            orderStr += order.paid + " заплачено" + tab;
-            orderStr += order.status;
-            return orderStr;
-        }
+        //    if (order.id_car != null)
+        //    {
+        //        orderStr += cardb.Show((int)order.id_car).brand + tab;
+        //    }
+        //    else
+        //    {
+        //        orderStr += "машина не назначена" + tab;
+        //    }
+        //    orderStr += clientdb.Show((int)order.id_client).full_name + tab;
+        //    orderStr += order.point_of_departure + tab;
+        //    orderStr += order.point_of_arrival + tab;
+        //    orderStr += order.weight + tab;
+        //    orderStr += order.express ? "экспресс доставка" : "обычная доставка" + tab;
+        //    orderStr += order.reg_date.ToString("dd'/'MM'/'yyyy") + tab;
+        //    orderStr += order.cost + " рублей" +tab;
+        //    orderStr += order.paid + " заплачено" + tab;
+        //    orderStr += order.status;
+        //    return orderStr;
+        //}
 
         public List<Order> Query(string full_name, string car, string client, decimal cost, decimal paid)
         {
@@ -289,6 +289,38 @@ namespace Controller
 
             return listOrder;
         }
+
+        public List<decimal> getMoney(int day)
+        {
+            List<decimal> listMoney = new List<decimal>();
+            List<Order> orders;
+            decimal money;
+            DateTime dateNow = DateTime.Now;
+            for(int i = day-1; i >= 0; i--)
+            {
+                money = 0;
+                if (day != 12)
+                {
+                    orders = db.Order.Where(o => o.reg_date.Year == dateNow.Year &&
+                                    o.reg_date.DayOfYear == (dateNow.DayOfYear - i)
+                   ).ToList();
+                }
+                else
+                {
+                    orders = db.Order.Where(o => o.reg_date.Year == dateNow.Year &&
+                                   o.reg_date.Month == (dateNow.Month - i)
+                    ).ToList();
+                }
+               
+                foreach( Order o in orders)
+                {
+                    money += o.cost;
+                }
+                listMoney.Add(money);
+            }
+            return listMoney;
+        }
+        
 
     }
 }
