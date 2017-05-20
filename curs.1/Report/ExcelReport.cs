@@ -20,6 +20,7 @@ namespace Report
             excelchart = (Chart)excelapp.Charts.Add(Type.Missing, Type.Missing, Type.Missing, Type.Missing);
             FileStream fs = new FileStream(path + ".png", FileMode.Open);
             excelchart.Shapes.AddPicture(fs.Name, MsoTriState.msoFalse, MsoTriState.msoCTrue, 0, 0, 2000, 2000);
+            excelchart.SizeWithWindow = true;
             excelappworkbooks = excelapp.Workbooks;
             excelappworkbook = excelappworkbooks[1];
             fs.Close();

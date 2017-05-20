@@ -237,3 +237,7 @@ C:\Users\Sindragoz\Source\Repos\name3\curs.1\DesignLib\obj\Debug\DesignLib.UserC
 C:\Users\Sindragoz\Source\Repos\name3\curs.1\DesignLib\obj\Debug\DesignLib.csproj.GenerateResource.Cache
 C:\Users\Sindragoz\Source\Repos\name3\curs.1\DesignLib\obj\Debug\DesignLib.dll
 C:\Users\Sindragoz\Source\Repos\name3\curs.1\DesignLib\obj\Debug\DesignLib.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Debug\Report.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Debug\Email.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Debug\Report.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Debug\Email.pdb
