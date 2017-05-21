@@ -47,19 +47,12 @@ namespace Controller
             order.length = length;
             order.express = express;
             order.comment = comment;
-           
             order.id_car = cardb.FindFreeCar(order);
             order.distance = (decimal)distance;
             order.reg_date = DateTime.Now;
             order.cost = cost;
             order.paid = paid;
-            if (order.paid >= order.cost)
-            {
-                order.status = "готово";
-            }else
-            {
-                order.status = "заказ обрабатывается";
-            }
+            order.status = "заказ обрабатывается";
             db.Order.InsertOnSubmit(order);
             db.SubmitChanges();
         }
@@ -111,13 +104,9 @@ namespace Controller
         {
             Order order = db.Order.Where(o => o.id_order == id_order).FirstOrDefault();
             order.paid += paid;
-            if (order.paid>= order.cost)
-            {
-                order.status = "готово";
-            }
             db.SubmitChanges();
         }
-
+        
 
         public void Delete(int id_order)
         {
@@ -144,7 +133,7 @@ namespace Controller
 
         public List<Order> Show()
         {
-            return db.Order.Where(o => o.id_order >= 0).ToList();
+            return db.Order.Where(o => o.id_order >= 0).OrderBy(o => o.reg_date).ToList();
         }
 
         public List<Order> Show(int id_client)
@@ -207,7 +196,7 @@ namespace Controller
 
         public void SetDriver()
         {
-            Order order = db.Order.Where(o => o.id_driver == null).FirstOrDefault();
+            Order order = db.Order.OrderBy(o => o.reg_date).Where(o => o.id_driver == null).FirstOrDefault();
             if (order != null)
             {
                 order.id_driver = driverdb.FindFreeDriver();
@@ -220,7 +209,7 @@ namespace Controller
 
         public void SetCar()
         {
-            Order order = db.Order.Where(o => o.id_car == null).FirstOrDefault();
+            Order order = db.Order.OrderBy(o => o.reg_date).Where(o => o.id_car == null).FirstOrDefault();
             if (order != null)
             {
                 order.id_car = cardb.FindFreeCar(order);
