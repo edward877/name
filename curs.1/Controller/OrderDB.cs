@@ -27,7 +27,7 @@ namespace Controller
 
 
         public void Insert(string point_of_departure, string point_of_arrival, decimal weight,
-            decimal? width, decimal? height, decimal? length, bool express,  string comment, double distance, decimal cost)
+            decimal? width, decimal? height, decimal? length, bool express,  string comment, double distance, decimal cost, decimal paid)
         {
             Order order = new Order(db);
 
@@ -52,8 +52,14 @@ namespace Controller
             order.distance = (decimal)distance;
             order.reg_date = DateTime.Now;
             order.cost = cost;
-            order.paid = 0;  //(order.cost/10);
-            order.status = "заказ обрабатывается";
+            order.paid = paid;
+            if (order.paid >= order.cost)
+            {
+                order.status = "готово";
+            }else
+            {
+                order.status = "заказ обрабатывается";
+            }
             db.Order.InsertOnSubmit(order);
             db.SubmitChanges();
         }
@@ -98,9 +104,20 @@ namespace Controller
             }
             SetDriver();
             SetCar();
-
-
         }
+
+
+        public void PayMoney(int id_order, decimal paid)
+        {
+            Order order = db.Order.Where(o => o.id_order == id_order).FirstOrDefault();
+            order.paid += paid;
+            if (order.paid>= order.cost)
+            {
+                order.status = "готово";
+            }
+            db.SubmitChanges();
+        }
+
 
         public void Delete(int id_order)
         {
@@ -213,39 +230,7 @@ namespace Controller
                 }
             }
         }
-
-        //public string ShowString(Order order)
-        //{
-        //    string orderStr = "";
-        //    string tab = " || ";
-        //    orderStr += order.id_order + tab;
-        //    if (order.id_driver != null)
-        //    {
-        //        orderStr += driverdb.Show((int)order.id_driver).full_name + tab;
-        //    }else
-        //    {
-        //        orderStr += "водитель не назначен" + tab ;
-        //    }
-
-        //    if (order.id_car != null)
-        //    {
-        //        orderStr += cardb.Show((int)order.id_car).brand + tab;
-        //    }
-        //    else
-        //    {
-        //        orderStr += "машина не назначена" + tab;
-        //    }
-        //    orderStr += clientdb.Show((int)order.id_client).full_name + tab;
-        //    orderStr += order.point_of_departure + tab;
-        //    orderStr += order.point_of_arrival + tab;
-        //    orderStr += order.weight + tab;
-        //    orderStr += order.express ? "экспресс доставка" : "обычная доставка" + tab;
-        //    orderStr += order.reg_date.ToString("dd'/'MM'/'yyyy") + tab;
-        //    orderStr += order.cost + " рублей" +tab;
-        //    orderStr += order.paid + " заплачено" + tab;
-        //    orderStr += order.status;
-        //    return orderStr;
-        //}
+        
 
         public List<Order> Query(string full_name, string car, string client, decimal cost, decimal paid)
         {

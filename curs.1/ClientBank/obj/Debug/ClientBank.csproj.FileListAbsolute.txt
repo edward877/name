@@ -1,0 +1,7 @@
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\ClientBank\bin\Debug\ClientBank.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\ClientBank\bin\Debug\ClientBank.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\ClientBank\obj\Debug\ClientBank.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\ClientBank\obj\Debug\ClientBank.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\ClientBank\obj\Debug\ClientBank.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\ClientBank\bin\Debug\Model.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\ClientBank\bin\Debug\Model.pdb

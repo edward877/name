@@ -34,3 +34,5 @@ C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Windo
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\WindowsFormsApplication4\obj\Debug\Run.csproj.GenerateResource.Cache
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\WindowsFormsApplication4\bin\Debug\ClientBank.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\WindowsFormsApplication4\bin\Debug\ClientBank.pdb

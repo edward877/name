@@ -134,6 +134,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ClientBank\ClientBank.csproj">
+      <Project>{d62411bf-8515-4101-8f90-2fdeb02c3488}</Project>
+      <Name>ClientBank</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Controller\Controller.csproj">
       <Project>{0c0239bb-3e91-4056-bec5-54f2a47aedf2}</Project>
       <Name>Controller</Name>

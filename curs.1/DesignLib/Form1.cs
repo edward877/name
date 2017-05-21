@@ -13,7 +13,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using ClientBank;
 
 namespace DesignLib
 {
@@ -25,7 +25,8 @@ namespace DesignLib
         List<Label> lbllistprof;
         List<PictureBox> pblistmenu;
         int ves;
-        DelMap dm;
+
+
         public Form1()
         {
           
@@ -92,7 +93,6 @@ namespace DesignLib
         List<Control> proflist;
         List<Control> ordlist;
         List<Control> ordmanlist;
-        List<Control> paylist;
         void fillproflist()
         {
 
@@ -477,7 +477,6 @@ namespace DesignLib
         {
             (sender as Control).Size = new Size((sender as Control).Size.Width - 5, (sender as Control).Size.Height - 5);
         }
-        int i = 0;
         void printves()
         {
             veslbl.Text = "" + ves + " кг";
@@ -706,11 +705,46 @@ namespace DesignLib
 
         private void button1_Click(object sender, EventArgs e)
         {
-            orderdb.Insert(adralbl.Text, adrblbl.Text, (decimal)ves, Convert.ToDecimal(widthtb.Text), Convert.ToDecimal(heighttb.Text), Convert.ToDecimal(lengthtb.Text), checkBox1.Checked,commenttb.Text,dist, (decimal)cost);
-            MessageBox.Show("Заказ на сумму" + cost + " руб. успешно создан!");
-           
-                createorderpan();
-           
+            FileDialog fd = new OpenFileDialog();
+            fd.Filter = "Text Files|*.txt";
+            if (fd.ShowDialog() != DialogResult.OK) return;
+            Bank bank = new Bank(fd.FileName);
+
+            //платим в  клиент-банке
+            //try
+            //{
+            //    bank.WritePaid(client, Convert.ToDouble(textBox1.Text));
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
+
+
+            //считываем счет клиент-банка
+            double paid = 0;
+            foreach (Doc1C cb in bank.Parser())
+            {
+                if (cb.Recieveraccount.Equals(Bank.OURAdress))
+                {
+                    paid += Convert.ToDouble(cb.Summ);
+                }
+            }
+            //если денег хватает на аванс, то создаем заказ
+            if (cost / 10 <= paid)
+            {
+                orderdb.Insert(adralbl.Text, adrblbl.Text, (decimal)ves, Convert.ToDecimal(widthtb.Text),
+                        Convert.ToDecimal(heighttb.Text), Convert.ToDecimal(lengthtb.Text),
+                        checkBox1.Checked, commenttb.Text, dist, (decimal)cost, (decimal)paid);
+                MessageBox.Show("Заказ на сумму" + cost + " руб. успешно создан!");
+            }
+            else
+            {
+                MessageBox.Show("денег не хватает" + (cost / 10 - paid));
+            }
+            
+            createorderpan();
+
         }
 
         List<Panel> p;
@@ -834,27 +868,19 @@ namespace DesignLib
             try
             {
                 if (p != null)
-                foreach (var a in p)
-                {
-
-                    if (a.Contains(sender as PictureBox))
+                    foreach (var a in p)
                     {
-
-                        //try
-                        //  {
-                        
-
+                        if (a.Contains(sender as PictureBox))
+                        {
                             foreach (var b in orderdb.Show())
-                                if (b.id_order == Convert.ToInt32(a.Name)) {
+                                if (b.id_order == Convert.ToInt32(a.Name))
+                                {
                                     iTextSharp.text.Document document = new iTextSharp.text.Document();
                                     PdfWriter writer = PdfWriter.GetInstance(document,
                                      new FileStream("заказ_от_" + b.reg_date.Day + "." + b.reg_date.Month + "." + b.reg_date.Year + ".pdf", FileMode.OpenOrCreate)
                                      );
 
                                     document.Open();
-
-
-
 
                                     iTextSharp.text.Paragraph p = new iTextSharp.text.Paragraph(); //System.Diagnostics.Process.Start("путь к файлу");
                                     p = new iTextSharp.text.Paragraph();
@@ -893,16 +919,12 @@ namespace DesignLib
                                     System.Diagnostics.Process.Start("заказ_от_" + b.reg_date.Day + "." + b.reg_date.Month + "." + b.reg_date.Year + ".pdf");
                                 }
 
-                            //   }
-                            //   catch (Exception ex) { MessageBox.Show(ex.Message); }
-
                             break;
-
-
                         }
-        }
-                 }
-                                catch(Exception ex) {  }
+                    }
+            } catch (Exception ex) {
+                MessageBox.Show(ex.Message);
+            }
         }
 
 
@@ -917,8 +939,6 @@ namespace DesignLib
 
             foreach (var a in orderdb.Show())
             {
-               // richTextBox1.Text += a.id_client + " " + a.id_order + " " + a.point_of_arrival + " " + a.point_of_departure + " " + a.distance + " " + a.cost + "\n";
-
                 if (a.id_client == client.id_client)
                     {
                         p.Add(new Panel());
@@ -1029,14 +1049,8 @@ namespace DesignLib
                         i1++;
                     }
             }
-
-
-
-            //p1.BackColor = Color.Red;
-            //  p1.Location = new Point(10, 10);
-            //  p1.Size = new Size(100,100);
-            // this.Controls.Add(p1);
         }
+
         private void setloactionorderlist()
         {
             int ordY1 = 0;
@@ -1050,8 +1064,10 @@ namespace DesignLib
                     (a as Control).Location = new Point(0, ordY1);
                     ordY1 += ordmanpan.Size.Height / 4 - 2;
                 }
-                catch { }
-                //
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
 
 
@@ -1079,8 +1095,10 @@ namespace DesignLib
                             a.Dispose();
                             p.Remove(a);
                         }
-                        catch { }
-
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
                         break;
                     }
 
@@ -1144,5 +1162,6 @@ namespace DesignLib
             lblinfo.Visible = false;
             lblinfo.Enabled = false;
         }
+        
     }
 }
