@@ -13,3 +13,8 @@ D:\name-cursovaia_cur\name-cursovaia\curs.1\Email\bin\Debug\Email.pdb
 D:\name-cursovaia_cur\name-cursovaia\curs.1\Email\obj\Debug\Email.csprojResolveAssemblyReference.cache
 D:\name-cursovaia_cur\name-cursovaia\curs.1\Email\obj\Debug\Email.dll
 D:\name-cursovaia_cur\name-cursovaia\curs.1\Email\obj\Debug\Email.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\Email\bin\Debug\Email.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\Email\bin\Debug\Email.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\Email\obj\Debug\Email.csprojResolveAssemblyReference.cache
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\Email\obj\Debug\Email.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\Email\obj\Debug\Email.pdb

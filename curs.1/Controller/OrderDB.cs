@@ -144,7 +144,10 @@ namespace Controller
         {
             return db.Order.ToList();
         }
-
+        public List<Order> Show(int id_order,string s)
+        {
+            return db.Order.Where(o => o.id_order == id_order).ToList();
+        }
         public List<Order> Show(int id_client)
         {
             return db.Order.Where(o => o.id_client == id_client).ToList();

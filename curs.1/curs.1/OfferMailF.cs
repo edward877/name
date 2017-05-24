@@ -16,6 +16,7 @@ namespace View
         public OfferMailF()
         {
             InitializeComponent();
+            send = false;
             theme = new List<Image>();
              theme.Add(Image.FromFile("theme1.png"));
             theme.Add(Image.FromFile("theme2.png"));
@@ -29,13 +30,13 @@ namespace View
         {
             
             formGraphics =Graphics.FromImage(pictureBox1.BackgroundImage);
-            string drawString = textBox1.Text;
+            string drawString = rtbText.Text;
             System.Drawing.Font drawFont = new System.Drawing.Font(
                 "Times New Roman", (int)nupdScaleText.Value);
             System.Drawing.SolidBrush drawBrush = new
                 System.Drawing.SolidBrush(System.Drawing.Color.Black);
             Point p = this.PointToClient(Cursor.Position);
-            formGraphics.DrawString(drawString, drawFont, drawBrush,p);
+            formGraphics.DrawString(drawString, rtbText.Font, drawBrush,p);
             pictureBox1.Refresh();
 
             drawFont.Dispose();
@@ -44,8 +45,9 @@ namespace View
     
         private void button1_Click(object sender, EventArgs e)
         {
-            textBox1.Visible = !textBox1.Visible;
+            rtbText.Visible = !rtbText.Visible;
             nupdScaleText.Visible = !nupdScaleText.Visible;
+      
         }
 
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
@@ -64,15 +66,33 @@ namespace View
         {
          
         }
-
+       public bool send = false;
         private void button3_Click_1(object sender, EventArgs e)
         {try
             {
+                send = true;
                 pictureBox1.BackgroundImage.Save("1.bmp");
             }
             catch { }
             this.Close();
          //   formGraphics.Save();
+        }
+        bool bold = false;
+        bool italic = false;
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+           
+         
+        }
+
+        private void nupdScaleText_ValueChanged(object sender, EventArgs e)
+        {
+          rtbText.Font= new Font(rtbText.Font.FontFamily, (int)nupdScaleText.Value);
+        }
+
+        private void btnItalic_Click(object sender, EventArgs e)
+        {
+       
         }
     }
 }

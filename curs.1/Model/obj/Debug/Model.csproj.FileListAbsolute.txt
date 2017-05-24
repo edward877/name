@@ -47,3 +47,8 @@ D:\name-cursovaia_cur\name-cursovaia\curs.1\Model\bin\Debug\Model.pdb
 D:\name-cursovaia_cur\name-cursovaia\curs.1\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 D:\name-cursovaia_cur\name-cursovaia\curs.1\Model\obj\Debug\Model.dll
 D:\name-cursovaia_cur\name-cursovaia\curs.1\Model\obj\Debug\Model.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\Model\bin\Debug\Model.dll.config
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\Model\bin\Debug\Model.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\Model\bin\Debug\Model.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\Model\obj\Debug\Model.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\Model\obj\Debug\Model.pdb

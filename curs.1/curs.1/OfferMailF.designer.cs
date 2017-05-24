@@ -29,28 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OfferMailF));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnText = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnTheme = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.nupdScaleText = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.rtbText = new System.Windows.Forms.RichTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.nupdScaleText)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(1, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(630, 758);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
             // 
             // btnText
             // 
@@ -66,17 +53,6 @@
             this.btnText.Text = "Добавить текст";
             this.btnText.UseVisualStyleBackColor = false;
             this.btnText.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(12, 75);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox1.Size = new System.Drawing.Size(610, 226);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Visible = false;
             // 
             // btnTheme
             // 
@@ -130,35 +106,57 @@
             0,
             0});
             this.nupdScaleText.Visible = false;
+            this.nupdScaleText.ValueChanged += new System.EventHandler(this.nupdScaleText_ValueChanged);
+            // 
+            // rtbText
+            // 
+            this.rtbText.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rtbText.Location = new System.Drawing.Point(12, 60);
+            this.rtbText.Name = "rtbText";
+            this.rtbText.Size = new System.Drawing.Size(610, 241);
+            this.rtbText.TabIndex = 7;
+            this.rtbText.Text = "";
+            this.rtbText.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(1, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(630, 758);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
             // 
             // OfferMailF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 761);
+            this.Controls.Add(this.rtbText);
             this.Controls.Add(this.nupdScaleText);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnTheme);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnText);
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.Name = "OfferMailF";
             this.Text = "OfferMailF";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupdScaleText)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnText;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnTheme;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.NumericUpDown nupdScaleText;
+        private System.Windows.Forms.RichTextBox rtbText;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

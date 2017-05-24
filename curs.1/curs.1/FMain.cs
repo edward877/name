@@ -45,6 +45,8 @@ namespace View
             profit_driverdb = new Profit_driverDB(db);
             orderdb = new OrderDB(db);
             clientdb = new ClientDB(db);
+            FrameOrderF f = new FrameOrderF(orderdb);
+            f.ShowDialog();
         }
         void showdbCar(List<Car> listCar)
         {
@@ -338,6 +340,7 @@ namespace View
                 MessageBox.Show(ex.Message);
             }
         }
+         
         private void button8_Click(object sender, EventArgs e)
         {
             btnSetReady.Visible = false;
@@ -350,13 +353,16 @@ namespace View
             btnProfitDriver.Visible = btnDriverInfo.Visible = false;
             //  send.SendMessage("eduard.arkhipov2017@yandex.ru", "test", "hehe", "D:\\1.ods");
             int error = 0;
-           for (int i=0;i<dgwValues.Rows.Count;i++)
-            try { send.SendMessage(dgwValues.Rows[i].Cells[4].Value+"", "Выгодное предложение", "", "1.bmp"); }
-            catch { error++; }
-            if (error > 0)
-                MessageBox.Show("Несколько писем не было отправлено: " + error);
-            else
-                MessageBox.Show("Все письма были отправлены.");
+            if (f.send)
+            {
+                for (int i = 0; i < dgwValues.Rows.Count; i++)
+                    try { send.SendMessage(dgwValues.Rows[i].Cells[4].Value + "", "Выгодное предложение", "", "1.bmp"); }
+                    catch { error++; }
+                if (error > 0)
+                    MessageBox.Show("Несколько писем не было отправлено: " + error);
+                else
+                    MessageBox.Show("Все письма были отправлены.");
+            }
         }
         Thread tr;
         private delegate void del();
@@ -395,7 +401,7 @@ namespace View
 
         private void resetgrid()
         {
-            btnrating.Visible = true;
+           
             panRateClients.Visible = false;
             // panRateClients.Visible = true;
             btnProfitDriver.Visible = btnDriverInfo.Visible = false;
@@ -412,10 +418,12 @@ namespace View
 
         private void button9_Click(object sender, EventArgs e)
         {
+            btnrating.Enabled = true;
             btnSetReady.Visible = false;
             btnprintsalary.Visible = false;
             btnGraph.Visible = false;
             btnMail.Enabled = true;
+            btnrating.Visible = true;
             btnFilter.Enabled = true;
             btnRedact.Enabled = btnInsert.Enabled = btnDelete.Enabled = false;
             panel = 4;
@@ -696,7 +704,8 @@ namespace View
         private void button3_Click_1(object sender, EventArgs e)
         {
             panRateClients.Visible = true;
-            btnRedact.Enabled = btnInsert.Enabled = btnDelete.Enabled =btnFilter.Enabled= false;
+            panRateClients.Enabled = false;
+            btnRedact.Enabled = btnInsert.Enabled = btnDelete.Enabled =btnFilter.Enabled=btnrating.Enabled= false;
             bgwrate.RunWorkerAsync();          
             
         }
@@ -791,7 +800,7 @@ namespace View
 
         private void bgwrate_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            
+            panRateClients.Enabled = true;
         }
 
         private void btnOrders_Click(object sender, EventArgs e)

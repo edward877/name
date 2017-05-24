@@ -47,7 +47,6 @@
             this.btnDriverInfo = new System.Windows.Forms.Button();
             this.btnProfitDriver = new System.Windows.Forms.Button();
             this.panRateClients = new System.Windows.Forms.Panel();
-            this.btnrating = new System.Windows.Forms.Button();
             this.bgwrate = new System.ComponentModel.BackgroundWorker();
             this.bgwclient = new System.ComponentModel.BackgroundWorker();
             this.bgwdrivers = new System.ComponentModel.BackgroundWorker();
@@ -58,6 +57,8 @@
             this.btnprintsalary = new System.Windows.Forms.Button();
             this.btnGraph = new System.Windows.Forms.Button();
             this.btnSetReady = new System.Windows.Forms.Button();
+            this.btnrating = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -358,19 +359,6 @@
             this.panRateClients.TabIndex = 29;
             this.panRateClients.Visible = false;
             // 
-            // btnrating
-            // 
-            this.btnrating.BackColor = System.Drawing.Color.White;
-            this.btnrating.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnrating.Location = new System.Drawing.Point(494, 54);
-            this.btnrating.Name = "btnrating";
-            this.btnrating.Size = new System.Drawing.Size(113, 23);
-            this.btnrating.TabIndex = 30;
-            this.btnrating.Text = "Рейтинг";
-            this.btnrating.UseVisualStyleBackColor = false;
-            this.btnrating.Visible = false;
-            this.btnrating.Click += new System.EventHandler(this.button3_Click_1);
-            // 
             // bgwrate
             // 
             this.bgwrate.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgwrate_DoWork);
@@ -463,6 +451,31 @@
             this.btnSetReady.Visible = false;
             this.btnSetReady.Click += new System.EventHandler(this.button1_Click_4);
             // 
+            // btnrating
+            // 
+            this.btnrating.BackColor = System.Drawing.Color.White;
+            this.btnrating.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrating.Location = new System.Drawing.Point(494, 54);
+            this.btnrating.Name = "btnrating";
+            this.btnrating.Size = new System.Drawing.Size(113, 23);
+            this.btnrating.TabIndex = 30;
+            this.btnrating.Text = "Рейтинг";
+            this.btnrating.UseVisualStyleBackColor = false;
+            this.btnrating.Visible = false;
+            this.btnrating.Click += new System.EventHandler(this.button3_Click_1);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(206, 56);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(113, 23);
+            this.button1.TabIndex = 39;
+            this.button1.Text = "Фреймы";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Visible = false;
+            // 
             // FMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -470,6 +483,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(892, 400);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSetReady);
             this.Controls.Add(this.btnGraph);
             this.Controls.Add(this.btnprintsalary);
@@ -520,7 +534,6 @@
         private System.Windows.Forms.Button btnDriverInfo;
         private System.Windows.Forms.Button btnProfitDriver;
         private System.Windows.Forms.Panel panRateClients;
-        private System.Windows.Forms.Button btnrating;
         private System.ComponentModel.BackgroundWorker bgwrate;
         private System.ComponentModel.BackgroundWorker bgwclient;
         private System.ComponentModel.BackgroundWorker bgwdrivers;
@@ -531,5 +544,7 @@
         private System.Windows.Forms.Button btnprintsalary;
         private System.Windows.Forms.Button btnGraph;
         private System.Windows.Forms.Button btnSetReady;
+        private System.Windows.Forms.Button btnrating;
+        private System.Windows.Forms.Button button1;
     }
 }

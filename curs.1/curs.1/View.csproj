@@ -149,6 +149,12 @@
     <Compile Include="FProfit_driver.Designer.cs">
       <DependentUpon>FProfit_driver.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrameOrderF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrameOrderF.designer.cs">
+      <DependentUpon>FrameOrderF.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRedactCar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +222,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FProfit_driver.resx">
       <DependentUpon>FProfit_driver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameOrderF.resx">
+      <DependentUpon>FrameOrderF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRedactCar.resx">
       <DependentUpon>FRedactCar.cs</DependentUpon>

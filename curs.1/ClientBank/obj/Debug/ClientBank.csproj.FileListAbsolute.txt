@@ -12,3 +12,9 @@ D:\name-cursovaia_cur\name-cursovaia\curs.1\ClientBank\bin\Debug\Model.pdb
 D:\name-cursovaia_cur\name-cursovaia\curs.1\ClientBank\obj\Debug\ClientBank.dll
 D:\name-cursovaia_cur\name-cursovaia\curs.1\ClientBank\obj\Debug\ClientBank.pdb
 D:\name-cursovaia_cur\name-cursovaia\curs.1\ClientBank\obj\Debug\ClientBank.csprojResolveAssemblyReference.cache
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\ClientBank\bin\Debug\ClientBank.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\ClientBank\bin\Debug\ClientBank.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\ClientBank\bin\Debug\Model.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\ClientBank\bin\Debug\Model.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\ClientBank\obj\Debug\ClientBank.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\ClientBank\obj\Debug\ClientBank.pdb
