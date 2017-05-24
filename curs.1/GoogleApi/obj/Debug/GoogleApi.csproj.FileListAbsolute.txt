@@ -27,3 +27,8 @@ C:\Users\Sindragoz\Source\Repos\name3\curs.1\GoogleApi\bin\Debug\GoogleApi.pdb
 C:\Users\Sindragoz\Source\Repos\name3\curs.1\GoogleApi\obj\Debug\GoogleApi.csprojResolveAssemblyReference.cache
 C:\Users\Sindragoz\Source\Repos\name3\curs.1\GoogleApi\obj\Debug\GoogleApi.dll
 C:\Users\Sindragoz\Source\Repos\name3\curs.1\GoogleApi\obj\Debug\GoogleApi.pdb
+D:\name-cursovaia_cur\name-cursovaia\curs.1\GoogleApi\bin\Debug\GoogleApi.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\GoogleApi\bin\Debug\GoogleApi.pdb
+D:\name-cursovaia_cur\name-cursovaia\curs.1\GoogleApi\obj\Debug\GoogleApi.csprojResolveAssemblyReference.cache
+D:\name-cursovaia_cur\name-cursovaia\curs.1\GoogleApi\obj\Debug\GoogleApi.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\GoogleApi\obj\Debug\GoogleApi.pdb

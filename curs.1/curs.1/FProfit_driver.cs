@@ -44,5 +44,10 @@ namespace View
 
 
         }
+
+        private void FProfit_driver_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

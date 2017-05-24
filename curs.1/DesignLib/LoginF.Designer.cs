@@ -365,6 +365,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginF";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginF";
             this.Load += new System.EventHandler(this.LoginF_Load);
             this.Enter += new System.EventHandler(this.rlogtb_Enter);

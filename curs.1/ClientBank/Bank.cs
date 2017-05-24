@@ -19,11 +19,12 @@ namespace ClientBank
         public Bank(string path)
         {
             this.path = path;
-            listCB = new List<Doc1C>();
+           
         }
 
         public List<Doc1C> Parser()
         {
+            listCB = new List<Doc1C>();
             massiveOfString = File.ReadAllLines(path, Encoding.UTF8);
             Doc1C cb = null;
             foreach (string str in massiveOfString)

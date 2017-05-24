@@ -1,4 +1,5 @@
-﻿using Controller;
+﻿using ClientBank;
+using Controller;
 using iTextSharp.text.pdf;
 using Model;
 using System;
@@ -13,7 +14,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ClientBank;
+
 
 namespace DesignLib
 {
@@ -25,14 +26,17 @@ namespace DesignLib
         List<Label> lbllistprof;
         List<PictureBox> pblistmenu;
         int ves;
-
-
+        int height = 0;
+        int width = 0;
+        int length = 0;
+        int waylength = 0;
+        DelMap dm;
         public Form1()
         {
           
             InitializeComponent();
-           
-            ves = 100;
+            lblpaid = new List<Label>();
+             ves = 100;
             printves();
             tblistprof = new List<TextBox>();
             lbllistprof = new List<Label>();
@@ -93,6 +97,7 @@ namespace DesignLib
         List<Control> proflist;
         List<Control> ordlist;
         List<Control> ordmanlist;
+        List<Control> paylist;
         void fillproflist()
         {
 
@@ -179,12 +184,7 @@ namespace DesignLib
             widthtb.Text = lengthtb.Text = heighttb.Text = "0";
             adralbl.Text = "Введите адрес";
             adrblbl.Text = "Введите адрес";
-            Panel p = new Panel();
-            p.Controls.Add(new Label() { Text = "%", ForeColor = Color.Black, Font = new Font("Times new Roman",16,FontStyle.Bold), Location=new Point(-1,2) });
-            p.Size = new Size(30,30);
-            p.BackColor = Color.Gold;
-            profpanel.Controls.Add(p);
-            profpanel.Controls[profpanel.Controls.IndexOf(p)].Location=new Point(profpanel.Size.Width-p.Width,0);
+           
             costL = new List<String>();
             costL.Clear();
 
@@ -329,11 +329,17 @@ namespace DesignLib
                 userinfo[1] = fio[1];
             if (fio.Length >= 3)
                 userinfo[2] = fio[2];
+           // clientdb.
 
             userinfo[3] = client.phone_number;
             userinfo[4] = client.e_mail==null?"-":client.e_mail;
             userinfo[5] = client.company;
-
+            Panel p = new Panel() {Visible = clientdb.IsVIPClient(client.id_client) };
+            p.Controls.Add(new Label() { Text = "%", ForeColor = Color.Black, Font = new Font("Times new Roman", 16, FontStyle.Bold), Location = new Point(-1, 2) });
+            p.Size = new Size(30, 30);
+            p.BackColor = Color.Gold;
+            profpanel.Controls.Add(p);
+            profpanel.Controls[profpanel.Controls.IndexOf(p)].Location = new Point(profpanel.Size.Width - p.Width, 0);
         }
         void filltextproftblbl()
         {
@@ -453,8 +459,9 @@ namespace DesignLib
 
         private void paylbl_Click(object sender, EventArgs e)
         {
-            hidemenupb();
-            paypb.Visible = true;
+            //  hidemenupb();
+            //    paypb.Visible = true;
+            System.Diagnostics.Process.Start("http://ibank2.ru");
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -477,12 +484,14 @@ namespace DesignLib
         {
             (sender as Control).Size = new Size((sender as Control).Size.Width - 5, (sender as Control).Size.Height - 5);
         }
+        int i = 0;
         void printves()
         {
-            veslbl.Text = "" + ves + " кг";
+            tbVes.Text = "" + ves;
         }
         private void minbtn_Click(object sender, EventArgs e)
         {
+            ves = Convert.ToInt32(tbVes.Text);
             if (ves >= 10)
                 ves -= 10;
             printves();
@@ -490,6 +499,7 @@ namespace DesignLib
 
         private void maxbtn_Click(object sender, EventArgs e)
         {
+            ves = Convert.ToInt32(tbVes.Text);
             ves += 10;
             printves();
         }
@@ -505,7 +515,7 @@ namespace DesignLib
                 {
                     try
                     {
-                        dist = orderdb.countDistantion(adralbl.Text, adrblbl.Text);
+                        dist = orderdb.CountDistantion(adralbl.Text, adrblbl.Text);
                         wlengthlbl.Text = "" + dist + " км";
                     }
                     catch { }
@@ -702,59 +712,30 @@ namespace DesignLib
             nextbtn.Visible = true;
 
         }
-
+        double paid = 0;
         private void button1_Click(object sender, EventArgs e)
         {
-            FileDialog fd = new OpenFileDialog();
-            fd.Filter = "Text Files|*.txt";
-            if (fd.ShowDialog() != DialogResult.OK) return;
-            Bank bank = new Bank(fd.FileName);
-
-            //платим в  клиент-банке
-            //try
-            //{
-            //    bank.WritePaid(client, Convert.ToDouble(textBox1.Text));
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message);
-            //}
-
-
-            //считываем счет клиент-банка
-            double paid = 0;
-            foreach (Doc1C cb in bank.Parser())
-            {
-                if (cb.Recieveraccount.Equals(Bank.OURAdress))
-                {
-                    paid += Convert.ToDouble(cb.Summ);
-                }
-            }
-            //если денег хватает на аванс, то создаем заказ
-            if (cost / 10 <= paid)
-            {
+           
                 orderdb.Insert(adralbl.Text, adrblbl.Text, (decimal)ves, Convert.ToDecimal(widthtb.Text),
                         Convert.ToDecimal(heighttb.Text), Convert.ToDecimal(lengthtb.Text),
                         checkBox1.Checked, commenttb.Text, dist, (decimal)cost, (decimal)paid);
                 MessageBox.Show("Заказ на сумму" + cost + " руб. успешно создан!");
-            }
-            else
-            {
-                MessageBox.Show("денег не хватает" + (cost / 10 - paid));
-            }
-            
-            createorderpan();
+            t = new Thread(createorderpan) { IsBackground = true};
+            t.Start();
 
         }
-
+        Thread t;
         List<Panel> p;
+        List<Label> lblpaid;
+        int i1;
+        private delegate void pandel();
         void createorderpan() {
             int ordY = 0;
-            
+            pandel pd = addpan;
             Label l;
             PictureBox pb;
             p.Add(new Panel());
-            int i1 =p.Count - 1;
+            i1 =p.Count - 1;
             p[i1].Name = "" + orderdb.Show()[orderdb.Show().Count-1].id_order;
             p[i1].BackColor = Color.Transparent;
             p[i1].Location = new Point(0, ordY);
@@ -833,6 +814,7 @@ namespace DesignLib
             l.Text = "" + orderdb.Show()[orderdb.Show().Count - 1].paid + " руб.";
             l.ForeColor = Color.White;
             p[i1].Controls.Add(l);
+            lblpaid.Add(l);
             l = new Label();
             l.Location = new Point(p[i1].Size.Width - 15, p[i1].Size.Height - 15);
             l.AutoSize = false;
@@ -840,8 +822,9 @@ namespace DesignLib
             l.BackColor = orderdb.Show()[orderdb.Show().Count - 1].status.Equals("заказ обрабатывается") ? Color.Gold : Color.Green;
             p[i1].Controls.Add(l);
             pb = new PictureBox();
-            pb.BackgroundImage = Image.FromFile("removeorder.png");
-            pb.BackgroundImageLayout = ImageLayout.Center;
+            pb.BackgroundImage = Image.FromFile("pay.jpg");
+            pb.BackgroundImageLayout = ImageLayout.Stretch;
+           
             pb.Size = new Size(20, 20);
             pb.Location = new Point(492, 5);
             pb.MouseEnter += btn_MouseEnter;
@@ -857,10 +840,16 @@ namespace DesignLib
             pb.MouseLeave += btn_MouseLeave;
             pb.MouseClick += Pb_MouseClick1;
             p[i1].Controls.Add(pb);
-            ordmanpan.Controls.Add(p[i1]);
+            Invoke(pd);
            
-            setloactionorderlist();
+            
 
+        }
+
+        private void addpan()
+        {
+            ordmanpan.Controls.Add(p[i1]);
+            setloactionorderlist();
         }
 
         private void Pb_MouseClick1(object sender, MouseEventArgs e)
@@ -868,19 +857,27 @@ namespace DesignLib
             try
             {
                 if (p != null)
-                    foreach (var a in p)
+                foreach (var a in p)
+                {
+
+                    if (a.Contains(sender as PictureBox))
                     {
-                        if (a.Contains(sender as PictureBox))
-                        {
+
+                        //try
+                        //  {
+                        
+
                             foreach (var b in orderdb.Show())
-                                if (b.id_order == Convert.ToInt32(a.Name))
-                                {
+                                if (b.id_order == Convert.ToInt32(a.Name)) {
                                     iTextSharp.text.Document document = new iTextSharp.text.Document();
                                     PdfWriter writer = PdfWriter.GetInstance(document,
                                      new FileStream("заказ_от_" + b.reg_date.Day + "." + b.reg_date.Month + "." + b.reg_date.Year + ".pdf", FileMode.OpenOrCreate)
                                      );
 
                                     document.Open();
+
+
+
 
                                     iTextSharp.text.Paragraph p = new iTextSharp.text.Paragraph(); //System.Diagnostics.Process.Start("путь к файлу");
                                     p = new iTextSharp.text.Paragraph();
@@ -916,15 +913,19 @@ namespace DesignLib
 
                                     document.Close();
                                     writer.Close();
-                                    System.Diagnostics.Process.Start("заказ_от_" + b.reg_date.Day + "." + b.reg_date.Month + "." + b.reg_date.Year + ".pdf");
+                                    System.Diagnostics.Process.Start("заказ №_"+b.id_order+"_от_" + b.reg_date.Day + "." + b.reg_date.Month + "." + b.reg_date.Year + ".pdf");
                                 }
 
+                            //   }
+                            //   catch (Exception ex) { MessageBox.Show(ex.Message); }
+
                             break;
+
+
                         }
-                    }
-            } catch (Exception ex) {
-                MessageBox.Show(ex.Message);
-            }
+        }
+                 }
+                                catch(Exception ex) {  }
         }
 
 
@@ -939,6 +940,8 @@ namespace DesignLib
 
             foreach (var a in orderdb.Show())
             {
+               // richTextBox1.Text += a.id_client + " " + a.id_order + " " + a.point_of_arrival + " " + a.point_of_departure + " " + a.distance + " " + a.cost + "\n";
+
                 if (a.id_client == client.id_client)
                     {
                         p.Add(new Panel());
@@ -1018,23 +1021,27 @@ namespace DesignLib
                         l.Font = new Font(l.Font.Name, 12, l.Font.Style);
                         l.AutoSize = true;
                         l.Text = "" + a.paid + " руб.";
+
                         l.ForeColor = Color.White;
                         p[i1].Controls.Add(l);
-                        l = new Label();
+                    lblpaid.Add(l);
+                    l = new Label();
                         l.Location = new Point(p[i1].Size.Width - 15, p[i1].Size.Height - 15);
                         l.AutoSize = false;
                         l.Size = new Size(15, 15);
                         l.BackColor = a.status.Equals("заказ обрабатывается") ? Color.Gold : Color.Green;
                         p[i1].Controls.Add(l);
                         pb = new PictureBox();
-                        pb.BackgroundImage = Image.FromFile("removeorder.png");
-                        pb.BackgroundImageLayout = ImageLayout.Center;
+                        pb.BackgroundImage = Image.FromFile("pay.png");
+                    pb.BackgroundImageLayout = ImageLayout.Stretch;
+               
                         pb.Size = new Size(20, 20);
                         pb.Location = new Point(492, 5);
                         pb.MouseEnter += btn_MouseEnter;
                         pb.MouseLeave += btn_MouseLeave;
                         pb.MouseClick += Pb_MouseClick;
                         p[i1].Controls.Add(pb);
+                    
                         pb = new PictureBox();
                         pb.BackgroundImage = Image.FromFile("printorder.png");
                         pb.BackgroundImageLayout = ImageLayout.Center;
@@ -1049,8 +1056,14 @@ namespace DesignLib
                         i1++;
                     }
             }
-        }
 
+
+
+            //p1.BackColor = Color.Red;
+            //  p1.Location = new Point(10, 10);
+            //  p1.Size = new Size(100,100);
+            // this.Controls.Add(p1);
+        }
         private void setloactionorderlist()
         {
             int ordY1 = 0;
@@ -1064,10 +1077,8 @@ namespace DesignLib
                     (a as Control).Location = new Point(0, ordY1);
                     ordY1 += ordmanpan.Size.Height / 4 - 2;
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+                catch { }
+                //
             }
 
 
@@ -1077,6 +1088,8 @@ namespace DesignLib
         int ypan = -1;
         private void Pb_MouseClick(object sender, MouseEventArgs e)
         {
+            paid = 0;
+            int i = 0;
             // setloactionorderlist();
             if (p != null)
                 foreach (var a in p)
@@ -1087,21 +1100,29 @@ namespace DesignLib
 
                         try
                         {
+                            FileDialog fd = new OpenFileDialog();
+                            fd.Filter = "Text Files|*.txt";
+                            if (fd.ShowDialog() != DialogResult.OK) return;
 
+                            Bank bank = new Bank(fd.FileName);
+                            foreach (Doc1C cb in bank.Parser())
+                            {
+                                if (cb.Recieveraccount.Equals(Bank.OURAdress))
+                                {
+                                    paid = Convert.ToDouble(cb.Summ);
+                                  
+                                }
+                            }
                             ypan = a.Location.Y;
-                            orderdb.Delete(Convert.ToInt32(a.Name));
-                            foreach (var a1 in a.Controls)
-                                (a1 as Control).Dispose();
-                            a.Dispose();
-                            p.Remove(a);
+                            orderdb.PayMoney(Convert.ToInt32(a.Name),(decimal)paid);
+                           
+                          
                         }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show(ex.Message);
-                        }
+                        catch { }
+                        lblpaid[i].Text = "" + orderdb.GetOrder(Convert.ToInt32(a.Name)).paid+" руб.";
                         break;
                     }
-
+                    i++;
                 }
 
             setloactionorderlist();
@@ -1162,6 +1183,61 @@ namespace DesignLib
             lblinfo.Visible = false;
             lblinfo.Enabled = false;
         }
-        
+
+        private void button10_MouseEnter(object sender, EventArgs e)
+        {
+            (sender as Button).ForeColor = Color.White;
+        }
+
+        private void button10_MouseLeave(object sender, EventArgs e)
+        {
+            (sender as Button).ForeColor = Color.Silver;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            paid = 0;
+            //orderdb.Insert(adralbl.Text, adrblbl.Text, (decimal)Convert.ToInt32(tbVes.Text), Convert.ToDecimal(widthtb.Text), Convert.ToDecimal(heighttb.Text), Convert.ToDecimal(lengthtb.Text), checkBox1.Checked,commenttb.Text,dist, (decimal)cost,0);
+            //MessageBox.Show("Заказ на сумму" + cost + " руб. успешно создан!");
+
+            //    createorderpan();
+            FileDialog fd = new OpenFileDialog();
+            fd.Filter = "Text Files|*.txt";
+            if (fd.ShowDialog() != DialogResult.OK) return;
+            
+            Bank bank = new Bank(fd.FileName);
+
+            //платим в  клиент-банке
+            //try
+            //{
+            //    bank.WritePaid(client, Convert.ToDouble(textBox1.Text));
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
+
+
+            //считываем счет клиент-банка
+
+            foreach (Doc1C cb in bank.Parser())
+            {
+                if (cb.Recieveraccount.Equals(Bank.OURAdress))
+                {
+                    paid = Convert.ToDouble(cb.Summ);
+                    lblPrePay.Text = (int)paid + " руб.";
+                }
+            }
+            //если денег хватает на аванс, то создаем заказ
+            if (cost / 10 <= paid)
+            {
+                createordbtn.Enabled = true;
+            }
+            else
+            {
+                createordbtn.Enabled = false;
+                MessageBox.Show("Не хватает денег для создания заказа." + (cost / 10 - paid));
+            }
+        }
     }
 }

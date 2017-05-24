@@ -1,4 +1,5 @@
-﻿using Report;
+﻿using Controller;
+using Report;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -7,6 +8,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
@@ -16,18 +18,19 @@ namespace View
     public partial class Graph : Form
     {
         string path;
-        public Graph()
+        public Graph(OrderDB db)
         {
+            orderdb = db;
             InitializeComponent();
         }
-
+        OrderDB orderdb;
         public void ShowGr(List<decimal> listMoney)
         {
+           
             System.Windows.Forms.DataVisualization.Charting.Chart myChart = chart;
             myChart.Dock = DockStyle.Fill;
             ChartArea area = new ChartArea("Report");
             myChart.ChartAreas.Add(area);
-           // area.AxisX.Minimum = 0;
             Series mySeriesOfPoint = new Series("выручка");
             mySeriesOfPoint.ChartType = SeriesChartType.Column;
             mySeriesOfPoint.ChartArea = "Report";
@@ -64,12 +67,66 @@ namespace View
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FileDialog fd = new SaveFileDialog();
-            fd.Filter = "Excel Files|*.xls;*.xlsx;*.xlsm";
-            if (fd.ShowDialog() != DialogResult.OK) return;
+            tr = new Thread(DoWork) { IsBackground = true };
+            try
+            {
+                tr.Start();
+            }
+            catch { }
+        }
+        Thread tr;
+        FileDialog fd1;
+        bool res;
+        private void dialogres() {
+            res= (fd1.ShowDialog() == DialogResult.OK);
+        }
+        private void setenablebtn() {
+            button1.Enabled = !button1.Enabled;
+        }
+        private delegate void del();
+        private void DoWork()
+        {
+            del d = setenablebtn;
+            Invoke(d);
+            d = dialogres;
+            fd1 = new SaveFileDialog();
+            fd1.Filter = "Excel Files|*.xls;*.xlsx;*.xlsm";
+
+            Invoke(d);
+            if (!res)
+            {
+                d = setenablebtn;
+
+                Invoke(d);
+                return;
+            }
             ExcelReport excel = new ExcelReport();
             excel.NewReport(path);
-            excel.Save(fd.FileName);
+           
+                excel.Save(fd1.FileName);
+            MessageBox.Show("Файл успешно сохранен.");
+            d = setenablebtn;
+            Invoke(d);
+
+        }
+
+        private void chart_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int day = 0;
+           
+            switch (comboBox1.SelectedIndex)
+            {
+                case 0: day = 7; break;
+                case 1: day = 30; break;
+                case 2: day = 12; break;
+            }
+            comboBox1.Enabled = false;
+            ShowGr(orderdb.getMoney(day));
         }
     }
 }

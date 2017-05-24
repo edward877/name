@@ -37,6 +37,9 @@
       <HintPath>..\packages\Chart.Mvc.1.0.0.2\lib\net45\Chart.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\name-cursovaia (1)\name-cursovaia\curs.1\curs.1\bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
       <Private>True</Private>
@@ -86,6 +89,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClientInfoF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientInfoF.designer.cs">
+      <DependentUpon>ClientInfoF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientOrdF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientOrdF.designer.cs">
+      <DependentUpon>ClientOrdF.cs</DependentUpon>
+    </Compile>
     <Compile Include="FCar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +124,12 @@
     </Compile>
     <Compile Include="FEntry.Designer.cs">
       <DependentUpon>FEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilterF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilterF.designer.cs">
+      <DependentUpon>FilterF.cs</DependentUpon>
     </Compile>
     <Compile Include="FMain.cs">
       <SubType>Form</SubType>
@@ -155,11 +176,23 @@
     <Compile Include="Graph.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Graph.Designer.cs">
+    <Compile Include="Graph.designer.cs">
       <DependentUpon>Graph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfferMailF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OfferMailF.designer.cs">
+      <DependentUpon>OfferMailF.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ClientInfoF.resx">
+      <DependentUpon>ClientInfoF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientOrdF.resx">
+      <DependentUpon>ClientOrdF.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FCar.resx">
       <DependentUpon>FCar.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FEntry.resx">
       <DependentUpon>FEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterF.resx">
+      <DependentUpon>FilterF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FMain.resx">
       <DependentUpon>FMain.cs</DependentUpon>
@@ -195,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Graph.resx">
       <DependentUpon>Graph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfferMailF.resx">
+      <DependentUpon>OfferMailF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

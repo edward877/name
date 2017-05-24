@@ -8,3 +8,8 @@ C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Email
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Email\obj\Debug\Email.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Email\obj\Debug\Email.dll
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Email\obj\Debug\Email.pdb
+D:\name-cursovaia_cur\name-cursovaia\curs.1\Email\bin\Debug\Email.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\Email\bin\Debug\Email.pdb
+D:\name-cursovaia_cur\name-cursovaia\curs.1\Email\obj\Debug\Email.csprojResolveAssemblyReference.cache
+D:\name-cursovaia_cur\name-cursovaia\curs.1\Email\obj\Debug\Email.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\Email\obj\Debug\Email.pdb

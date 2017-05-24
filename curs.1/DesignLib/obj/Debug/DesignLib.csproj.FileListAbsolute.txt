@@ -243,3 +243,46 @@ C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Desig
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Debug\Email.pdb
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Debug\ClientBank.dll
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Debug\ClientBank.pdb
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\DesignLib.dll.config
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\DesignLib.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\DesignLib.pdb
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\AjaxMin.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\ClientBank.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\Controller.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\curs.1.exe
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\EntityFramework.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\EntityFramework.SqlServer.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\GMap.NET.Core.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\GMap.NET.WindowsForms.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\itextsharp.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\MapLibrary.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\Model.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\Newtonsoft.Json.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\System.Data.SQLite.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\System.Data.SQLite.EF6.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\System.Data.SQLite.Linq.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\GoogleApi.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\Report.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\Email.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\ClientBank.pdb
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\Controller.pdb
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\curs.1.pdb
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\MapLibrary.pdb
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\Model.pdb
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\EntityFramework.xml
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\EntityFramework.SqlServer.xml
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\itextsharp.xml
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\Newtonsoft.Json.xml
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\System.Data.SQLite.xml
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\GoogleApi.pdb
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\Report.pdb
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\bin\Debug\Email.pdb
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\obj\Debug\DesignLib.csprojResolveAssemblyReference.cache
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\obj\Debug\DesignLib.Form1.resources
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\obj\Debug\DesignLib.LoginF.resources
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\obj\Debug\DesignLib.MapF.resources
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\obj\Debug\DesignLib.Properties.Resources.resources
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\obj\Debug\DesignLib.UserControl2.resources
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\obj\Debug\DesignLib.csproj.GenerateResource.Cache
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\obj\Debug\DesignLib.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\DesignLib\obj\Debug\DesignLib.pdb

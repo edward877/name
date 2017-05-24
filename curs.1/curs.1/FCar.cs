@@ -42,13 +42,13 @@ namespace View
         {
             try {
 
-                f_red = new FRedactCar();
+           //     f_red = new FRedactCar();
 
-                FillFields();
+           //     FillFields();
 
-                cardb.Insert(number, brand, carrying_capacity, width, heigth, length, status);
+          //      cardb.Insert(number, brand, carrying_capacity, width, heigth, length, status);
 
-                showbd();
+         //       showbd();
 
             }
             catch (Exception ex)

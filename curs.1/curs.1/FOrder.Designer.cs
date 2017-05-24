@@ -97,6 +97,7 @@
             this.Controls.Add(this.btnAdd);
             this.Name = "FOrder";
             this.Text = "FOrder";
+            this.Load += new System.EventHandler(this.FOrder_Load);
             this.ResumeLayout(false);
 
         }

@@ -42,3 +42,12 @@ C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\MapLi
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\MapLibrary\obj\Debug\MapLibrary.csproj.GenerateResource.Cache
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\MapLibrary\obj\Debug\MapLibrary.dll
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\MapLibrary\obj\Debug\MapLibrary.pdb
+D:\name-cursovaia_cur\name-cursovaia\curs.1\MapLibrary\bin\Debug\MapLibrary.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\MapLibrary\bin\Debug\MapLibrary.pdb
+D:\name-cursovaia_cur\name-cursovaia\curs.1\MapLibrary\bin\Debug\GMap.NET.Core.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\MapLibrary\bin\Debug\GMap.NET.WindowsForms.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.csprojResolveAssemblyReference.cache
+D:\name-cursovaia_cur\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.MapF.resources
+D:\name-cursovaia_cur\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.csproj.GenerateResource.Cache
+D:\name-cursovaia_cur\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.pdb

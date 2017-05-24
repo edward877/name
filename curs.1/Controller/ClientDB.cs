@@ -53,7 +53,7 @@ namespace Controller
 
         public List<Client> Show()
         {
-            return db.Client.Where(c => c.id_client >= 0).ToList();
+            return db.Client.ToList();
         }
 
         public Client Show(int id_client)

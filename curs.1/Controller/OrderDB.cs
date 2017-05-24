@@ -106,23 +106,16 @@ namespace Controller
             order.paid += paid;
             db.SubmitChanges();
         }
-        
+
 
         public void Delete(int id_order)
         {
             Order order = db.Order.Where(o => o.id_order == id_order).FirstOrDefault();
-            if (order.status != "готово")
-            {
-                if (order.status == "готово")
-                {
-                    if (order.id_driver != null)
-                        driverdb.SetFree(order.id_driver);
+            if (order.id_driver != null)
+                driverdb.SetFree(order.id_driver);
 
-                    if (order.id_car != null)
-                        cardb.SetFree(order.id_car);
-                }
-               
-            }
+            if (order.id_car != null)
+                cardb.SetFree(order.id_car);
             db.Order.DeleteOnSubmit(order);
             db.SubmitChanges();
 
@@ -130,18 +123,37 @@ namespace Controller
             SetCar();
 
         }
+        public void Done(int id_order)
+        {
+            Order order = db.Order.Where(o => o.id_order == id_order).FirstOrDefault();
+           
+            if (order.id_driver != null)
+            {
+                driverdb.SetFree(order.id_driver);
+                profitdb.Insert((int)order.id_driver, order.id_order);
+            }
 
+            if (order.id_car != null)
+                cardb.SetFree(order.id_car);
+
+            order.status = "готово";
+            SetDriver();
+            SetCar();
+        }
         public List<Order> Show()
         {
-            return db.Order.Where(o => o.id_order >= 0).OrderBy(o => o.reg_date).ToList();
+            return db.Order.ToList();
         }
 
         public List<Order> Show(int id_client)
         {
             return db.Order.Where(o => o.id_client == id_client).ToList();
         }
-
-        public double countDistantion(string point_of_departure, string point_of_arrival)
+        public Order GetOrder(int id_order)
+        {
+            return db.Order.Where(o => o.id_order == id_order).FirstOrDefault();
+        }
+        public double CountDistantion(string point_of_departure, string point_of_arrival)
         {
             ConnectMaps google = new ConnectMaps(point_of_departure, point_of_arrival);
             Distantion d = new Distantion();
@@ -196,20 +208,18 @@ namespace Controller
 
         public void SetDriver()
         {
-            Order order = db.Order.OrderBy(o => o.reg_date).Where(o => o.id_driver == null).FirstOrDefault();
+            Order order = db.Order.Where(o => o.id_driver == null).FirstOrDefault();
             if (order != null)
             {
-                order.id_driver = driverdb.FindFreeDriver();
-                if (order.id_driver != null)
-                {
-                    db.SubmitChanges();
-                }
+                order.Driver = db.Driver.Where(o => o.id_driver == driverdb.FindFreeDriver()).FirstOrDefault();
+                
+                db.SubmitChanges();
             }
         }
 
         public void SetCar()
         {
-            Order order = db.Order.OrderBy(o => o.reg_date).Where(o => o.id_car == null).FirstOrDefault();
+            Order order = db.Order.Where(o => o.id_car == null).FirstOrDefault();
             if (order != null)
             {
                 order.id_car = cardb.FindFreeCar(order);
@@ -267,7 +277,7 @@ namespace Controller
         public List<decimal> getMoney(int day)
         {
             List<decimal> listMoney = new List<decimal>();
-            List<Order> orders = db.Order.Where(o => o.id_order >= 0).ToList();
+            List<Order> orders = db.Order.ToList();
             decimal money;
             int year =  DateTime.Now.Year;
             int dayOfYear = DateTime.Now.DayOfYear;

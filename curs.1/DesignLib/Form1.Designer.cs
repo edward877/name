@@ -88,7 +88,7 @@
             this.heightlbl = new System.Windows.Forms.PictureBox();
             this.widthlbl = new System.Windows.Forms.PictureBox();
             this.vespan = new System.Windows.Forms.Panel();
-            this.veslbl = new System.Windows.Forms.Label();
+            this.tbVes = new System.Windows.Forms.TextBox();
             this.waypb = new System.Windows.Forms.PictureBox();
             this.nextbtn = new System.Windows.Forms.Button();
             this.backbtn = new System.Windows.Forms.Button();
@@ -104,6 +104,8 @@
             this.button9 = new System.Windows.Forms.Button();
             this.btninfo = new System.Windows.Forms.Button();
             this.lblinfo = new System.Windows.Forms.Label();
+            this.btnPrePay = new System.Windows.Forms.Button();
+            this.lblPrePay = new System.Windows.Forms.Label();
             this.profpanel.SuspendLayout();
             this.menupan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.paypb)).BeginInit();
@@ -881,22 +883,20 @@
             this.vespan.BackColor = System.Drawing.Color.Transparent;
             this.vespan.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("vespan.BackgroundImage")));
             this.vespan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.vespan.Controls.Add(this.veslbl);
+            this.vespan.Controls.Add(this.tbVes);
             this.vespan.Location = new System.Drawing.Point(225, 202);
             this.vespan.Name = "vespan";
             this.vespan.Size = new System.Drawing.Size(91, 33);
             this.vespan.TabIndex = 21;
             // 
-            // veslbl
+            // tbVes
             // 
-            this.veslbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.veslbl.ForeColor = System.Drawing.Color.White;
-            this.veslbl.Location = new System.Drawing.Point(6, 2);
-            this.veslbl.Name = "veslbl";
-            this.veslbl.Size = new System.Drawing.Size(80, 31);
-            this.veslbl.TabIndex = 20;
-            this.veslbl.Text = "0 кг";
-            this.veslbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tbVes.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tbVes.Location = new System.Drawing.Point(0, 1);
+            this.tbVes.Name = "tbVes";
+            this.tbVes.Size = new System.Drawing.Size(91, 31);
+            this.tbVes.TabIndex = 0;
+            this.tbVes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // waypb
             // 
@@ -981,6 +981,8 @@
             this.orderpan3.BackColor = System.Drawing.Color.Transparent;
             this.orderpan3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("orderpan3.BackgroundImage")));
             this.orderpan3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.orderpan3.Controls.Add(this.lblPrePay);
+            this.orderpan3.Controls.Add(this.btnPrePay);
             this.orderpan3.Controls.Add(this.createordbtn);
             this.orderpan3.Controls.Add(this.costlbl);
             this.orderpan3.Controls.Add(this.label14);
@@ -995,11 +997,12 @@
             this.createordbtn.BackColor = System.Drawing.Color.Transparent;
             this.createordbtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("createordbtn.BackgroundImage")));
             this.createordbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.createordbtn.Enabled = false;
             this.createordbtn.FlatAppearance.BorderSize = 0;
-            this.createordbtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PowderBlue;
-            this.createordbtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCyan;
+            this.createordbtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.createordbtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.createordbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.createordbtn.Location = new System.Drawing.Point(156, 180);
+            this.createordbtn.Location = new System.Drawing.Point(156, 229);
             this.createordbtn.Name = "createordbtn";
             this.createordbtn.Size = new System.Drawing.Size(238, 78);
             this.createordbtn.TabIndex = 2;
@@ -1035,7 +1038,7 @@
             this.ordmanpan.AutoScroll = true;
             this.ordmanpan.BackColor = System.Drawing.Color.Transparent;
             this.ordmanpan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ordmanpan.Location = new System.Drawing.Point(245, 110);
+            this.ordmanpan.Location = new System.Drawing.Point(246, 110);
             this.ordmanpan.Name = "ordmanpan";
             this.ordmanpan.Size = new System.Drawing.Size(542, 345);
             this.ordmanpan.TabIndex = 27;
@@ -1048,7 +1051,7 @@
             this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button10.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.button10.ForeColor = System.Drawing.Color.Silver;
             this.button10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.button10.Location = new System.Drawing.Point(752, 2);
             this.button10.Name = "button10";
@@ -1058,6 +1061,8 @@
             this.button10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.button10.MouseEnter += new System.EventHandler(this.button10_MouseEnter);
+            this.button10.MouseLeave += new System.EventHandler(this.button10_MouseLeave);
             // 
             // button9
             // 
@@ -1067,7 +1072,7 @@
             this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button9.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.button9.ForeColor = System.Drawing.Color.Silver;
             this.button9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.button9.Location = new System.Drawing.Point(770, 2);
             this.button9.Name = "button9";
@@ -1077,20 +1082,22 @@
             this.button9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.button9.MouseEnter += new System.EventHandler(this.button10_MouseEnter);
+            this.button9.MouseLeave += new System.EventHandler(this.button10_MouseLeave);
             // 
             // btninfo
             // 
             this.btninfo.BackColor = System.Drawing.Color.Transparent;
             this.btninfo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btninfo.BackgroundImage")));
-            this.btninfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btninfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btninfo.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btninfo.FlatAppearance.BorderSize = 0;
             this.btninfo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btninfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btninfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btninfo.Location = new System.Drawing.Point(716, 461);
+            this.btninfo.Location = new System.Drawing.Point(751, 461);
             this.btninfo.Name = "btninfo";
-            this.btninfo.Size = new System.Drawing.Size(40, 40);
+            this.btninfo.Size = new System.Drawing.Size(35, 35);
             this.btninfo.TabIndex = 30;
             this.btninfo.UseVisualStyleBackColor = false;
             this.btninfo.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
@@ -1101,13 +1108,40 @@
             this.lblinfo.BackColor = System.Drawing.Color.Transparent;
             this.lblinfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblinfo.Enabled = false;
-            this.lblinfo.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblinfo.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblinfo.ForeColor = System.Drawing.Color.White;
-            this.lblinfo.Location = new System.Drawing.Point(346, 463);
+            this.lblinfo.Location = new System.Drawing.Point(338, 461);
             this.lblinfo.Name = "lblinfo";
-            this.lblinfo.Size = new System.Drawing.Size(364, 128);
+            this.lblinfo.Size = new System.Drawing.Size(407, 128);
             this.lblinfo.TabIndex = 31;
             this.lblinfo.Visible = false;
+            // 
+            // btnPrePay
+            // 
+            this.btnPrePay.FlatAppearance.BorderSize = 2;
+            this.btnPrePay.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnPrePay.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnPrePay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrePay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnPrePay.ForeColor = System.Drawing.Color.White;
+            this.btnPrePay.Location = new System.Drawing.Point(295, 190);
+            this.btnPrePay.Name = "btnPrePay";
+            this.btnPrePay.Size = new System.Drawing.Size(99, 31);
+            this.btnPrePay.TabIndex = 3;
+            this.btnPrePay.Text = "Предоплата";
+            this.btnPrePay.UseVisualStyleBackColor = true;
+            this.btnPrePay.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // lblPrePay
+            // 
+            this.lblPrePay.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblPrePay.ForeColor = System.Drawing.Color.Yellow;
+            this.lblPrePay.Location = new System.Drawing.Point(156, 184);
+            this.lblPrePay.Name = "lblPrePay";
+            this.lblPrePay.Size = new System.Drawing.Size(133, 42);
+            this.lblPrePay.TabIndex = 4;
+            this.lblPrePay.Text = "0 руб.";
+            this.lblPrePay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -1164,6 +1198,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.heightlbl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.widthlbl)).EndInit();
             this.vespan.ResumeLayout(false);
+            this.vespan.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.waypb)).EndInit();
             this.orderpan2.ResumeLayout(false);
             this.orderpan2.PerformLayout();
@@ -1224,7 +1259,6 @@
         private System.Windows.Forms.PictureBox heightlbl;
         private System.Windows.Forms.PictureBox widthlbl;
         private System.Windows.Forms.Panel vespan;
-        private System.Windows.Forms.Label veslbl;
         private System.Windows.Forms.PictureBox waypb;
         private System.Windows.Forms.TextBox pbtb;
         private System.Windows.Forms.TextBox patb;
@@ -1250,5 +1284,8 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button btninfo;
         private System.Windows.Forms.Label lblinfo;
+        private System.Windows.Forms.TextBox tbVes;
+        private System.Windows.Forms.Label lblPrePay;
+        private System.Windows.Forms.Button btnPrePay;
     }
 }

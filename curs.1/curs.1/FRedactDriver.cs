@@ -1,4 +1,5 @@
-﻿using Model;
+﻿using Controller;
+using Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,31 +15,50 @@ namespace View
     public partial class FRedactDriver : Form
     {
 
-        public FRedactDriver()
+        public FRedactDriver(DriverDB db)
         {
+            driverdb = db;
             InitializeComponent();
         }
-
-        public FRedactDriver(Driver driver)
+        DriverDB driverdb;
+        int id;
+        bool red=false;
+        public FRedactDriver(int i,DriverDB db)
         {
+            id = i;
             InitializeComponent();
+            driverdb = db;
+            textBox1.Text = driverdb.Show(id).full_name;
 
-             textBox1.Text= driver.full_name;
+            textBox2.Text = driverdb.Show(id).phone_number;
 
-            textBox2.Text = driver.phone_number;
+            textBox3.Text = driverdb.Show(id).date_of_birth.ToString();
 
-            textBox3.Text = driver.date_of_birth.ToString();
+            textBox4.Text = driverdb.Show(id).passport_number;
 
-            textBox4.Text = driver.passport_number;
+            textBox5.Text = driverdb.Show(id).adress;
 
-            textBox5.Text = driver.adress;
-
-            checkBox1.Checked = driver.status;
+            checkBox1.Checked = driverdb.Show(id).status;
+            red = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {try {
+                if (red)
+          driverdb.Update(id, textBox1.Text, textBox2.Text, Convert.ToDateTime(textBox3.Text), textBox4.Text, textBox5.Text, checkBox1.Checked);
+        else
+            driverdb.Insert(textBox1.Text, textBox2.Text, Convert.ToDateTime(textBox3.Text), textBox4.Text, textBox5.Text, checkBox1.Checked);
             Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void FRedactDriver_Load(object sender, EventArgs e)
+        {
+           
         }
     }
 }

@@ -56,7 +56,7 @@ namespace Controller
 
         public List<Driver> Show()
         {
-            return db.Driver.Where(d => d.id_driver >= 0).ToList();
+            return db.Driver.ToList();
         }
 
         public Driver Show(int id_driver)

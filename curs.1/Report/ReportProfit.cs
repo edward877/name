@@ -20,7 +20,7 @@ namespace Report
 
         public override string ToString()
         {
-            return id + " || " + name + " || " + money;
+            return id + " " + name + " " + money+" руб.";
         }
     }
 }

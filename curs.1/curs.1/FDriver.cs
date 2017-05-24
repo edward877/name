@@ -40,13 +40,13 @@ namespace View
         {
             try
             {
-                f_red = new FRedactDriver();
+              //  f_red = new FRedactDriver();
 
-                FillFields();
+             //   FillFields();
 
-                driverdb.Insert(full_name, phone_number, date_of_birth, passport_number, adress, status);
-
-                showbd();
+           //     driverdb.Insert(full_name, phone_number, date_of_birth, passport_number, adress, status);
+           //
+            //    showbd();
              }
             catch (Exception ex)
             {
@@ -60,7 +60,7 @@ namespace View
             {
                 Driver driver = (listBox1.SelectedItem as Driver);
 
-                f_red = new FRedactDriver(driver);
+              //  f_red = new FRedactDriver(driver);
 
                 FillFields();
 

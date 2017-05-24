@@ -30,7 +30,7 @@ namespace Controller
 
         public List<Profit_driver> Show()
         {
-            return db.Profit_driver.Where(p => p.id_profit_driver >= 0).ToList();
+            return db.Profit_driver.ToList();
         }
 
         decimal CountValue(int id_order)

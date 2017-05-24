@@ -47,6 +47,7 @@
             this.Controls.Add(this.listBox1);
             this.Name = "FProfit_driver";
             this.Text = "FProfit_driver";
+            this.Load += new System.EventHandler(this.FProfit_driver_Load);
             this.ResumeLayout(false);
 
         }

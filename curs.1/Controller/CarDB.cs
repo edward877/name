@@ -58,7 +58,7 @@ namespace Controller
 
         public List<Car> Show()
         {
-            return db.Car.Where(c => c.id_car >= 0).ToList();
+            return db.Car.ToList();
         }
 
         public Car Show(int id_car)

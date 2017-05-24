@@ -1,4 +1,5 @@
-﻿using Model;
+﻿using Controller;
+using Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +14,11 @@ namespace View
 {
     public partial class FRedactCar : Form
     {
-        public FRedactCar()
+        CarDB cdb;
+        public FRedactCar(CarDB d)
         {
             InitializeComponent();
+            cdb = d;
         }
 
         public FRedactCar(Car car)
@@ -31,8 +34,14 @@ namespace View
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-            Close(); 
+        {try
+            {
+                cdb.Insert(textBox1.Text, textBox2.Text, Convert.ToDecimal(textBox3.Text), Convert.ToDecimal(textBox4.Text), Convert.ToDecimal(textBox5.Text), Convert.ToDecimal(textBox6.Text), checkBox1.Checked);
+                Close();
+            }
+            catch {
+                MessageBox.Show("Введены некорректные данные!");
+            }
         }
     }
 }
