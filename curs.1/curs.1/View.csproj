@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{788C3C95-8344-48F6-89C9-C38962805998}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>View</RootNamespace>
+    <AssemblyName>curs.1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Chart.Mvc, Version=1.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Chart.Mvc.1.0.0.2\lib\net45\Chart.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\name-cursovaia (1)\name-cursovaia\curs.1\curs.1\bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientInfoF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientInfoF.designer.cs">
+      <DependentUpon>ClientInfoF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientOrdF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientOrdF.designer.cs">
+      <DependentUpon>ClientOrdF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCar.Designer.cs">
+      <DependentUpon>FCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FClient.Designer.cs">
+      <DependentUpon>FClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDriver.Designer.cs">
+      <DependentUpon>FDriver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FEntry.Designer.cs">
+      <DependentUpon>FEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilterF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilterF.designer.cs">
+      <DependentUpon>FilterF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMain.Designer.cs">
+      <DependentUpon>FMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FOrder.Designer.cs">
+      <DependentUpon>FOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FProfit_driver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FProfit_driver.Designer.cs">
+      <DependentUpon>FProfit_driver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrameOrderF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrameOrderF.designer.cs">
+      <DependentUpon>FrameOrderF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRedactCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRedactCar.Designer.cs">
+      <DependentUpon>FRedactCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRedactClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRedactClient.Designer.cs">
+      <DependentUpon>FRedactClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRedactDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRedactDriver.Designer.cs">
+      <DependentUpon>FRedactDriver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRedactOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRedactOrder.Designer.cs">
+      <DependentUpon>FRedactOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph.designer.cs">
+      <DependentUpon>Graph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfferMailF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OfferMailF.designer.cs">
+      <DependentUpon>OfferMailF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ClientInfoF.resx">
+      <DependentUpon>ClientInfoF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientOrdF.resx">
+      <DependentUpon>ClientOrdF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCar.resx">
+      <DependentUpon>FCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FClient.resx">
+      <DependentUpon>FClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDriver.resx">
+      <DependentUpon>FDriver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FEntry.resx">
+      <DependentUpon>FEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterF.resx">
+      <DependentUpon>FilterF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMain.resx">
+      <DependentUpon>FMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FOrder.resx">
+      <DependentUpon>FOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FProfit_driver.resx">
+      <DependentUpon>FProfit_driver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameOrderF.resx">
+      <DependentUpon>FrameOrderF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRedactCar.resx">
+      <DependentUpon>FRedactCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRedactClient.resx">
+      <DependentUpon>FRedactClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRedactDriver.resx">
+      <DependentUpon>FRedactDriver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRedactOrder.resx">
+      <DependentUpon>FRedactOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph.resx">
+      <DependentUpon>Graph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfferMailF.resx">
+      <DependentUpon>OfferMailF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controller\Controller.csproj">
+      <Project>{0c0239bb-3e91-4056-bec5-54f2a47aedf2}</Project>
+      <Name>Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Email\Email.csproj">
+      <Project>{1b1f03cf-545c-409e-ae46-534c2d2b0617}</Project>
+      <Name>Email</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{f96284c0-044f-442d-84d6-55406797be85}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Report\Report.csproj">
+      <Project>{b3e4cd69-6582-4603-ad5f-bad9ac4788a3}</Project>
+      <Name>Report</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="License-LGPL.txt" />
+    <Content Include="Scripts\Chart.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

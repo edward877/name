@@ -1,0 +1,36 @@
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\bin\Release\WindowsFormsApplication4.exe.config
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\bin\Release\WindowsFormsApplication4.exe
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\bin\Release\WindowsFormsApplication4.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\bin\Release\DesignLib.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\bin\Release\Model.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\bin\Release\Controller.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\bin\Release\itextsharp.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\bin\Release\GoogleApi.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\bin\Release\DesignLib.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\bin\Release\Model.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\bin\Release\Controller.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\bin\Release\itextsharp.xml
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\bin\Release\GoogleApi.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\obj\Release\WindowsFormsApplication4.csprojResolveAssemblyReference.cache
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\obj\Release\WindowsFormsApplication4.Properties.Resources.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\obj\Release\WindowsFormsApplication4.csproj.GenerateResource.Cache
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\obj\Release\WindowsFormsApplication4.exe
+F:\name-cursovaia (4)\name-cursovaia\curs.1\WindowsFormsApplication4\obj\Release\WindowsFormsApplication4.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\WindowsFormsApplication4\bin\Release\WindowsFormsApplication4.exe.config
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\WindowsFormsApplication4\obj\Release\WindowsFormsApplication4.exe
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\WindowsFormsApplication4\obj\Release\WindowsFormsApplication4.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\WindowsFormsApplication4\bin\Release\WindowsFormsApplication4.exe
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\WindowsFormsApplication4\bin\Release\WindowsFormsApplication4.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\WindowsFormsApplication4\bin\Release\DesignLib.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\WindowsFormsApplication4\bin\Release\Model.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\WindowsFormsApplication4\bin\Release\Controller.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\WindowsFormsApplication4\bin\Release\itextsharp.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\WindowsFormsApplication4\bin\Release\GoogleApi.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\WindowsFormsApplication4\bin\Release\DesignLib.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\WindowsFormsApplication4\bin\Release\Model.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\WindowsFormsApplication4\bin\Release\Controller.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\WindowsFormsApplication4\bin\Release\itextsharp.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\WindowsFormsApplication4\bin\Release\GoogleApi.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\WindowsFormsApplication4\obj\Release\WindowsFormsApplication4.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\WindowsFormsApplication4\obj\Release\WindowsFormsApplication4.Properties.Resources.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\WindowsFormsApplication4\obj\Release\WindowsFormsApplication4.csproj.GenerateResource.Cache

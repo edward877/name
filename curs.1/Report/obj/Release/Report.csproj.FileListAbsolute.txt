@@ -1,0 +1,13 @@
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Report\obj\Release\Report.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Report\bin\Release\Report.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Report\bin\Release\Report.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Report\bin\Release\Controller.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Report\bin\Release\Model.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Report\bin\Release\GoogleApi.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Report\bin\Release\Controller.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Report\bin\Release\Model.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Report\bin\Release\GoogleApi.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Report\obj\Release\Report.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Report\obj\Release\Report.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Report\bin\Release\Report.dll.config
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Report\obj\Release\Report.csproj.ResolveComReference.cache

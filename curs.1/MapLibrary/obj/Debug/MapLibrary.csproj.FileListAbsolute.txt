@@ -1,0 +1,62 @@
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\MapLibrary\bin\Debug\MapLibrary.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\MapLibrary\bin\Debug\MapLibrary.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\MapLibrary\bin\Debug\GMap.NET.Core.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\MapLibrary\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.csproj.GenerateResource.Cache
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.MapF.resources
+E:\name-cursovaia (2)\name-cursovaia\curs.1\MapLibrary\bin\Debug\MapLibrary.dll
+E:\name-cursovaia (2)\name-cursovaia\curs.1\MapLibrary\bin\Debug\MapLibrary.pdb
+E:\name-cursovaia (2)\name-cursovaia\curs.1\MapLibrary\bin\Debug\GMap.NET.Core.dll
+E:\name-cursovaia (2)\name-cursovaia\curs.1\MapLibrary\bin\Debug\GMap.NET.WindowsForms.dll
+E:\name-cursovaia (2)\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.csprojResolveAssemblyReference.cache
+E:\name-cursovaia (2)\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.MapF.resources
+E:\name-cursovaia (2)\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.csproj.GenerateResource.Cache
+E:\name-cursovaia (2)\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.dll
+E:\name-cursovaia (2)\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\MapLibrary\bin\Debug\MapLibrary.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\MapLibrary\bin\Debug\MapLibrary.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\MapLibrary\bin\Debug\GMap.NET.Core.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\MapLibrary\bin\Debug\GMap.NET.WindowsForms.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.csprojResolveAssemblyReference.cache
+F:\name-cursovaia (4)\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.MapF.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.csproj.GenerateResource.Cache
+F:\name-cursovaia (4)\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.pdb
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\MapLibrary\bin\Debug\MapLibrary.dll
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\MapLibrary\bin\Debug\MapLibrary.pdb
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\MapLibrary\bin\Debug\GMap.NET.Core.dll
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\MapLibrary\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\MapLibrary\obj\Debug\MapLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\MapLibrary\obj\Debug\MapLibrary.MapF.resources
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\MapLibrary\obj\Debug\MapLibrary.csproj.GenerateResource.Cache
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\MapLibrary\obj\Debug\MapLibrary.dll
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\MapLibrary\obj\Debug\MapLibrary.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\MapLibrary\bin\Debug\MapLibrary.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\MapLibrary\bin\Debug\MapLibrary.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\MapLibrary\bin\Debug\GMap.NET.Core.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\MapLibrary\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\MapLibrary\obj\Debug\MapLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\MapLibrary\obj\Debug\MapLibrary.MapF.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\MapLibrary\obj\Debug\MapLibrary.csproj.GenerateResource.Cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\MapLibrary\obj\Debug\MapLibrary.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\MapLibrary\obj\Debug\MapLibrary.pdb
+D:\name-cursovaia_cur\name-cursovaia\curs.1\MapLibrary\bin\Debug\MapLibrary.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\MapLibrary\bin\Debug\MapLibrary.pdb
+D:\name-cursovaia_cur\name-cursovaia\curs.1\MapLibrary\bin\Debug\GMap.NET.Core.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\MapLibrary\bin\Debug\GMap.NET.WindowsForms.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.csprojResolveAssemblyReference.cache
+D:\name-cursovaia_cur\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.MapF.resources
+D:\name-cursovaia_cur\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.csproj.GenerateResource.Cache
+D:\name-cursovaia_cur\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\MapLibrary\bin\Debug\MapLibrary.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\MapLibrary\bin\Debug\MapLibrary.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\MapLibrary\bin\Debug\GMap.NET.Core.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\MapLibrary\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.MapF.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.csproj.GenerateResource.Cache
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\MapLibrary\obj\Debug\MapLibrary.pdb

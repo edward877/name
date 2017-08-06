@@ -1,0 +1,48 @@
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\Controller\bin\Release\Controller.dll.config
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\Controller\bin\Release\Controller.dll
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\Controller\bin\Release\Controller.pdb
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\Controller\bin\Release\Model.dll
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\Controller\bin\Release\Model.pdb
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\Controller\obj\Release\Controller.csprojResolveAssemblyReference.cache
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\Controller\obj\Release\Controller.dll
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\Controller\obj\Release\Controller.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Release\Controller.dll.config
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Release\Controller.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Release\Controller.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Release\EntityFramework.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Release\EntityFramework.SqlServer.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Release\GoogleApi.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Release\Model.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Release\Newtonsoft.Json.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Release\System.Data.SQLite.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Release\System.Data.SQLite.EF6.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Release\System.Data.SQLite.Linq.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Release\GoogleApi.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Release\Model.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Release\EntityFramework.xml
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Release\EntityFramework.SqlServer.xml
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Release\Newtonsoft.Json.xml
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\bin\Release\System.Data.SQLite.xml
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\obj\Release\Controller.csprojResolveAssemblyReference.cache
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\obj\Release\Controller.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\Controller\obj\Release\Controller.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Release\Controller.dll.config
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Release\Controller.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Release\Controller.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Release\EntityFramework.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Release\GoogleApi.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Release\Model.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Release\Newtonsoft.Json.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Release\System.Data.SQLite.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Release\System.Data.SQLite.EF6.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Release\System.Data.SQLite.Linq.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Release\GoogleApi.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Release\Model.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Release\EntityFramework.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Release\Newtonsoft.Json.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\bin\Release\System.Data.SQLite.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\obj\Release\Controller.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\obj\Release\Controller.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\Controller\obj\Release\Controller.pdb

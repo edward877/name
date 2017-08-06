@@ -1,0 +1,95 @@
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\bin\Release\DesignLib.dll
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\bin\Release\DesignLib.pdb
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\bin\Release\Controller.dll
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\bin\Release\curs.1.exe
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\bin\Release\Model.dll
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\bin\Release\Controller.pdb
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\bin\Release\curs.1.pdb
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\bin\Release\Model.pdb
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\obj\Release\DesignLib.csprojResolveAssemblyReference.cache
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\obj\Release\DesignLib.ClientF.resources
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\obj\Release\DesignLib.Form1.resources
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\obj\Release\DesignLib.LoginF.resources
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\obj\Release\DesignLib.Properties.Resources.resources
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\obj\Release\DesignLib.UserControl1.resources
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\obj\Release\DesignLib.csproj.GenerateResource.Cache
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\obj\Release\DesignLib.dll
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\DesignLib\obj\Release\DesignLib.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\DesignLib.dll.config
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\DesignLib.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\DesignLib.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\AjaxMin.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\Controller.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\curs.1.exe
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\EntityFramework.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\EntityFramework.SqlServer.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\GMap.NET.Core.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\GMap.NET.WindowsForms.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\itextsharp.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\MapLibrary.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\Model.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\Newtonsoft.Json.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\System.Data.SQLite.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\System.Data.SQLite.EF6.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\System.Data.SQLite.Linq.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\GoogleApi.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\Controller.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\curs.1.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\MapLibrary.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\Model.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\EntityFramework.xml
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\EntityFramework.SqlServer.xml
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\itextsharp.xml
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\Newtonsoft.Json.xml
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\System.Data.SQLite.xml
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\bin\Release\GoogleApi.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\obj\Release\DesignLib.csprojResolveAssemblyReference.cache
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\obj\Release\DesignLib.Form1.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\obj\Release\DesignLib.LoginF.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\obj\Release\DesignLib.MapF.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\obj\Release\DesignLib.Properties.Resources.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\obj\Release\DesignLib.UserControl2.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\obj\Release\DesignLib.csproj.GenerateResource.Cache
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\obj\Release\DesignLib.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\DesignLib\obj\Release\DesignLib.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\DesignLib.dll.config
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\DesignLib.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\DesignLib.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\AjaxMin.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\Controller.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\curs.1.exe
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\EntityFramework.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\GMap.NET.Core.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\GMap.NET.WindowsForms.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\itextsharp.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\MapLibrary.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\Model.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\Newtonsoft.Json.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\System.Data.SQLite.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\System.Data.SQLite.EF6.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\System.Data.SQLite.Linq.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\GoogleApi.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\Controller.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\curs.1.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\MapLibrary.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\Model.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\EntityFramework.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\itextsharp.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\Newtonsoft.Json.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\System.Data.SQLite.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\GoogleApi.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\obj\Release\DesignLib.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\obj\Release\DesignLib.Form1.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\obj\Release\DesignLib.LoginF.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\obj\Release\DesignLib.MapF.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\obj\Release\DesignLib.Properties.Resources.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\obj\Release\DesignLib.UserControl2.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\obj\Release\DesignLib.csproj.GenerateResource.Cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\obj\Release\DesignLib.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\obj\Release\DesignLib.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\Email.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\Email.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\Report.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\DesignLib\bin\Release\Report.pdb

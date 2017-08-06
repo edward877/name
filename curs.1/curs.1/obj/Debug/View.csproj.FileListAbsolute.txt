@@ -1,0 +1,343 @@
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\curs.1.exe.config
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\curs.1.exe
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\curs.1.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\Model.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\Model.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Debug\View.FCar.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Debug\View.FClient.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Debug\View.FDriver.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Debug\View.FEntry.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Debug\View.FMain.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Debug\View.FRedactCar.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Debug\View.FRedactClient.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Debug\View.FRedactDriver.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Debug\View.csproj.GenerateResource.Cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Debug\curs.1.exe
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Debug\curs.1.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Debug\View.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\Controller.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\Controller.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Debug\View.FProfit_driver.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Debug\View.Properties.Resources.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Debug\View.FRedactOrder.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Debug\View.FOrder.resources
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\bin\Debug\curs.1.exe.config
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\obj\Debug\curs.1.exe
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\bin\Debug\curs.1.exe
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\bin\Debug\curs.1.pdb
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\bin\Debug\Controller.dll
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\bin\Debug\Model.dll
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\bin\Debug\Controller.pdb
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\bin\Debug\Model.pdb
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\obj\Debug\View.csprojResolveAssemblyReference.cache
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\obj\Debug\View.FCar.resources
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\obj\Debug\View.FClient.resources
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\obj\Debug\View.FDriver.resources
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\obj\Debug\View.FEntry.resources
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\obj\Debug\View.FMain.resources
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\obj\Debug\View.FOrder.resources
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\obj\Debug\View.FProfit_driver.resources
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\obj\Debug\View.FRedactCar.resources
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\obj\Debug\View.FRedactClient.resources
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\obj\Debug\View.FRedactDriver.resources
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\obj\Debug\View.FRedactOrder.resources
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\obj\Debug\View.Properties.Resources.resources
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\obj\Debug\View.csproj.GenerateResource.Cache
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\obj\Debug\curs.1.pdb
+E:\curs.1\curs.1\bin\Debug\curs.1.exe.config
+E:\curs.1\curs.1\bin\Debug\curs.1.exe
+E:\curs.1\curs.1\bin\Debug\curs.1.pdb
+E:\curs.1\curs.1\bin\Debug\Controller.dll
+E:\curs.1\curs.1\bin\Debug\Model.dll
+E:\curs.1\curs.1\bin\Debug\Controller.pdb
+E:\curs.1\curs.1\bin\Debug\Model.pdb
+E:\curs.1\curs.1\obj\Debug\View.csprojResolveAssemblyReference.cache
+E:\curs.1\curs.1\obj\Debug\View.FCar.resources
+E:\curs.1\curs.1\obj\Debug\View.FClient.resources
+E:\curs.1\curs.1\obj\Debug\View.FDriver.resources
+E:\curs.1\curs.1\obj\Debug\View.FEntry.resources
+E:\curs.1\curs.1\obj\Debug\View.FMain.resources
+E:\curs.1\curs.1\obj\Debug\View.FOrder.resources
+E:\curs.1\curs.1\obj\Debug\View.FProfit_driver.resources
+E:\curs.1\curs.1\obj\Debug\View.FRedactCar.resources
+E:\curs.1\curs.1\obj\Debug\View.FRedactClient.resources
+E:\curs.1\curs.1\obj\Debug\View.FRedactDriver.resources
+E:\curs.1\curs.1\obj\Debug\View.FRedactOrder.resources
+E:\curs.1\curs.1\obj\Debug\View.Properties.Resources.resources
+E:\curs.1\curs.1\obj\Debug\View.csproj.GenerateResource.Cache
+E:\curs.1\curs.1\obj\Debug\curs.1.exe
+E:\curs.1\curs.1\obj\Debug\curs.1.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\GoogleApi.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\GoogleApi.pdb
+C:\Users\Sindragoz\documents\visual studio 2015\Projects\kursgruzoperevozki\curs.1\curs.1\bin\Debug\GoogleApi.dll
+D:\name-cursovaia\curs.1\curs.1\bin\Debug\curs.1.exe.config
+D:\name-cursovaia\curs.1\curs.1\obj\Debug\curs.1.exe
+D:\name-cursovaia\curs.1\curs.1\bin\Debug\curs.1.exe
+D:\name-cursovaia\curs.1\curs.1\bin\Debug\curs.1.pdb
+D:\name-cursovaia\curs.1\curs.1\bin\Debug\Controller.dll
+D:\name-cursovaia\curs.1\curs.1\bin\Debug\Model.dll
+D:\name-cursovaia\curs.1\curs.1\bin\Debug\GoogleApi.dll
+D:\name-cursovaia\curs.1\curs.1\bin\Debug\Controller.pdb
+D:\name-cursovaia\curs.1\curs.1\bin\Debug\Model.pdb
+D:\name-cursovaia\curs.1\curs.1\bin\Debug\GoogleApi.pdb
+D:\name-cursovaia\curs.1\curs.1\obj\Debug\View.csprojResolveAssemblyReference.cache
+D:\name-cursovaia\curs.1\curs.1\obj\Debug\View.FCar.resources
+D:\name-cursovaia\curs.1\curs.1\obj\Debug\View.FClient.resources
+D:\name-cursovaia\curs.1\curs.1\obj\Debug\View.FDriver.resources
+D:\name-cursovaia\curs.1\curs.1\obj\Debug\View.FEntry.resources
+D:\name-cursovaia\curs.1\curs.1\obj\Debug\View.FMain.resources
+D:\name-cursovaia\curs.1\curs.1\obj\Debug\View.FOrder.resources
+D:\name-cursovaia\curs.1\curs.1\obj\Debug\View.FProfit_driver.resources
+D:\name-cursovaia\curs.1\curs.1\obj\Debug\View.FRedactCar.resources
+D:\name-cursovaia\curs.1\curs.1\obj\Debug\View.FRedactClient.resources
+D:\name-cursovaia\curs.1\curs.1\obj\Debug\View.FRedactDriver.resources
+D:\name-cursovaia\curs.1\curs.1\obj\Debug\View.FRedactOrder.resources
+D:\name-cursovaia\curs.1\curs.1\obj\Debug\View.Properties.Resources.resources
+D:\name-cursovaia\curs.1\curs.1\obj\Debug\View.csproj.GenerateResource.Cache
+D:\name-cursovaia\curs.1\curs.1\obj\Debug\curs.1.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\bin\Debug\curs.1.exe.config
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\curs.1.exe
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\bin\Debug\curs.1.exe
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\bin\Debug\curs.1.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\bin\Debug\Controller.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\bin\Debug\Model.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\bin\Debug\GoogleApi.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\bin\Debug\Controller.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\bin\Debug\Model.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\bin\Debug\GoogleApi.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.csprojResolveAssemblyReference.cache
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FCar.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FClient.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FDriver.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FEntry.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FMain.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FOrder.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FProfit_driver.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FRedactCar.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FRedactClient.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FRedactDriver.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FRedactOrder.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.Properties.Resources.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.csproj.GenerateResource.Cache
+C:\Users\Sindragoz\Downloads\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\curs.1.pdb
+E:\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\bin\Debug\curs.1.exe.config
+E:\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\curs.1.exe
+E:\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\curs.1.pdb
+E:\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\bin\Debug\curs.1.exe
+E:\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\bin\Debug\curs.1.pdb
+E:\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\bin\Debug\Controller.dll
+E:\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\bin\Debug\Model.dll
+E:\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\bin\Debug\GoogleApi.dll
+E:\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\bin\Debug\Controller.pdb
+E:\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\bin\Debug\Model.pdb
+E:\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\bin\Debug\GoogleApi.pdb
+E:\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.csprojResolveAssemblyReference.cache
+E:\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FCar.resources
+E:\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FClient.resources
+E:\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FDriver.resources
+E:\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FEntry.resources
+E:\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FMain.resources
+E:\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FOrder.resources
+E:\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FProfit_driver.resources
+E:\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FRedactCar.resources
+E:\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FRedactClient.resources
+E:\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FRedactDriver.resources
+E:\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FRedactOrder.resources
+E:\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.Properties.Resources.resources
+E:\name-cursovaia (2)\name-cursovaia\curs.1\curs.1\obj\Debug\View.csproj.GenerateResource.Cache
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\bin\Debug\curs.1.exe.config
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Debug\curs.1.exe
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\bin\Debug\curs.1.exe
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\bin\Debug\curs.1.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\bin\Debug\Controller.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\bin\Debug\Model.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\bin\Debug\GoogleApi.dll
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\bin\Debug\Controller.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\bin\Debug\Model.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\bin\Debug\GoogleApi.pdb
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Debug\View.csprojResolveAssemblyReference.cache
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FCar.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FClient.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FDriver.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FEntry.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FMain.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FOrder.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FProfit_driver.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FRedactCar.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FRedactClient.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FRedactDriver.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Debug\View.FRedactOrder.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Debug\View.Properties.Resources.resources
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Debug\View.csproj.GenerateResource.Cache
+F:\name-cursovaia (4)\name-cursovaia\curs.1\curs.1\obj\Debug\curs.1.pdb
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\bin\Debug\curs.1.exe.config
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\bin\Debug\curs.1.exe
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\bin\Debug\curs.1.pdb
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\bin\Debug\Controller.dll
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\bin\Debug\Email.dll
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\bin\Debug\Model.dll
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\bin\Debug\Report.dll
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\bin\Debug\GoogleApi.dll
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\bin\Debug\Controller.pdb
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\bin\Debug\Email.pdb
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\bin\Debug\Model.pdb
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\bin\Debug\Report.pdb
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\bin\Debug\GoogleApi.pdb
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\obj\Debug\View.csprojResolveAssemblyReference.cache
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\obj\Debug\View.FCar.resources
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\obj\Debug\View.FClient.resources
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\obj\Debug\View.FDriver.resources
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\obj\Debug\View.FEntry.resources
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\obj\Debug\View.FMain.resources
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\obj\Debug\View.FOrder.resources
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\obj\Debug\View.FProfit_driver.resources
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\obj\Debug\View.FRedactCar.resources
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\obj\Debug\View.FRedactClient.resources
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\obj\Debug\View.FRedactDriver.resources
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\obj\Debug\View.FRedactOrder.resources
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\obj\Debug\View.Properties.Resources.resources
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\obj\Debug\View.csproj.GenerateResource.Cache
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\obj\Debug\curs.1.exe
+C:\Users\Sindragoz\Source\Repos\name3\curs.1\curs.1\obj\Debug\curs.1.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\Chart.Mvc.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\Email.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\Report.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\System.Web.Helpers.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\System.Web.Mvc.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\System.Web.Razor.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\System.Web.WebPages.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\Email.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\Report.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\Chart.Mvc.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\Chart.Mvc.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\System.Web.Helpers.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\System.Web.Mvc.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\System.Web.Razor.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\System.Web.WebPages.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Debug\View.Graph.resources
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\curs.1.exe.config
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\obj\Debug\curs.1.exe
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\curs.1.exe
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\curs.1.pdb
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\Chart.Mvc.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\Controller.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\Email.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\Model.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\Newtonsoft.Json.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\Report.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\System.Web.Helpers.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\System.Web.Mvc.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\System.Web.Razor.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\System.Web.WebPages.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\System.Web.WebPages.Razor.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\GoogleApi.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\Controller.pdb
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\Email.pdb
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\Model.pdb
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\Report.pdb
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\Chart.Mvc.pdb
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\Chart.Mvc.xml
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\Newtonsoft.Json.xml
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\System.Web.Helpers.xml
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\System.Web.Mvc.xml
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\System.Web.Razor.xml
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\System.Web.WebPages.xml
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\System.Web.WebPages.Razor.xml
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\GoogleApi.pdb
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\obj\Debug\View.csprojResolveAssemblyReference.cache
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\obj\Debug\View.FCar.resources
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\obj\Debug\View.FClient.resources
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\obj\Debug\View.FDriver.resources
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\obj\Debug\View.FEntry.resources
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\obj\Debug\View.FMain.resources
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\obj\Debug\View.FOrder.resources
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\obj\Debug\View.FProfit_driver.resources
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\obj\Debug\View.FRedactCar.resources
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\obj\Debug\View.FRedactClient.resources
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\obj\Debug\View.FRedactDriver.resources
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\obj\Debug\View.FRedactOrder.resources
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\obj\Debug\View.Properties.Resources.resources
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\obj\Debug\View.csproj.GenerateResource.Cache
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\obj\Debug\curs.1.pdb
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\obj\Debug\View.ClientInfoF.resources
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\obj\Debug\View.ClientOrdF.resources
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\obj\Debug\View.FilterF.resources
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\obj\Debug\View.Graph.resources
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\obj\Debug\View.OfferMailF.resources
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\itextsharp.dll
+D:\name-cursovaia_cur\name-cursovaia\curs.1\curs.1\bin\Debug\itextsharp.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\bin\Debug\itextsharp.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Debug\View.ClientInfoF.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Debug\View.ClientOrdF.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Debug\View.FilterF.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\cursovaia\name\curs.1\curs.1\obj\Debug\View.OfferMailF.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\curs.1.exe.config
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\obj\Debug\curs.1.exe
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\curs.1.exe
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\curs.1.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\Chart.Mvc.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\Controller.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\Email.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\Model.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\Report.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\System.Web.Helpers.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\System.Web.Mvc.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\System.Web.Razor.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\System.Web.WebPages.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\GoogleApi.dll
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\Controller.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\Email.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\Model.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\Report.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\Chart.Mvc.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\Chart.Mvc.xml
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\itextsharp.xml
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\System.Web.Helpers.xml
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\System.Web.Mvc.xml
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\System.Web.Razor.xml
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\System.Web.WebPages.xml
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\bin\Debug\GoogleApi.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\obj\Debug\View.csprojResolveAssemblyReference.cache
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\obj\Debug\View.ClientInfoF.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\obj\Debug\View.ClientOrdF.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\obj\Debug\View.FCar.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\obj\Debug\View.FClient.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\obj\Debug\View.FDriver.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\obj\Debug\View.FEntry.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\obj\Debug\View.FilterF.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\obj\Debug\View.FMain.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\obj\Debug\View.FOrder.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\obj\Debug\View.FProfit_driver.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\obj\Debug\View.FRedactCar.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\obj\Debug\View.FRedactClient.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\obj\Debug\View.FRedactDriver.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\obj\Debug\View.FRedactOrder.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\obj\Debug\View.Graph.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\obj\Debug\View.OfferMailF.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\obj\Debug\View.Properties.Resources.resources
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\obj\Debug\View.csproj.GenerateResource.Cache
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\obj\Debug\curs.1.pdb
+C:\Users\Sindragoz\Downloads\name-cursovaia\curs.1\curs.1\obj\Debug\View.FrameOrderF.resources
+D:\repos\curs.1\curs.1\bin\Debug\curs.1.exe.config
+D:\repos\curs.1\curs.1\obj\Debug\curs.1.exe
+D:\repos\curs.1\curs.1\obj\Debug\curs.1.pdb
+D:\repos\repos\curs.1\curs.1\bin\Debug\curs.1.exe.config
+D:\repos\repos\curs.1\curs.1\obj\Debug\curs.1.exe
+D:\repos\repos\curs.1\curs.1\obj\Debug\curs.1.pdb
